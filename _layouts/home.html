@@ -66,36 +66,30 @@
 		<h2 class="motto">NEW &amp; IMPROVED CONTENT</h2>
 		<div class="width-container selection-container">
 			<div class="selection">
-				<div class="selector selected" highlights="customization">
-					Unparalleled Customization
-				</div>
-				<div class="selector" highlights="masterminds">
-					Minion + Pet Customization
-				</div>
-				<div class="selector" highlights="newpowersets">
-					New Powersets
-				</div>
-				<div class="selector" highlights="uppowersets">
-					Updated Powersets
-				</div>
-				<div class="selector" highlights="scaling">
-					Content Scaling
-				</div>
+				{% for highlight in site.highlights %}
+					<div class="selector {% if forloop.index == 1 %} selected {% endif %}" highlights="{{ highlight.title | slugify }}">
+						{{ highlight.title}}
+					</div>
+				{% endfor %}
 			</div>
 
 			<div class="highlight-images">
-				<div class="image-container">
-					<div class="image" style="background-image: url(./img/aokk.gif)"></div>
-				</div>
+				{% for highlight in site.highlights %}
+					<div class="image-container highlight-section highlight-{{ highlight.title | slugify }} {% if forloop.index == 1 %} highlighted {% endif %}">
+						<div class="image" style="background-image: url({{ highlight.image }})"></div>
+					</div>
+				{% endfor %}
 			</div>
 
 			<div class="selection-info">
-				<span class="selection-title">Unparalleled Customization</span>
-				<div class="selection-description">
-					<p style="margin-bottom:2em;font-family:monospace">(FIEND'S NOTE: I haven't made this part functional yet, but it'll swap images and text when you click the buttons)</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque ipsum, vulputate eu dapibus et, facilisis a nunc. Cras nibh elit, placerat ac nisi eget, porttitor suscipit quam. Sed sollicitudin felis ac iaculis dapibus. Sed purus erat, iaculis nec orci eu, lacinia finibus massa. Cras non quam in leo posuere fermentum. Etiam ornare neque quis mauris imperdiet ullamcorper. Cras nec maximus tortor.</p>
-					<p>Vivamus vel interdum lorem, at fringilla erat. Vestibulum in orci vitae enim efficitur ullamcorper vitae ac leo. </p>
-				</div>
+				{% for highlight in site.highlights %}
+					<div class="highlight-section highlight-{{ highlight.title | slugify }} {% if forloop.index == 1 %} highlighted {% endif %}">
+						<span class="selection-title">{{ highlight.title }}</span>
+						<div class="selection-description">
+							{{ highlight.body | markdownify }}
+						</div>
+					</div>
+				{% endfor %}
 			</div>
 		</div>
 	</section>
@@ -197,14 +191,23 @@
 			}, 4200)
 		})
 
+		//when people click the highlight selector, swap the image and text being shown by toggling the highlighted class
 		let newStuffSelectors = document.querySelectorAll("#newstuff .selector")
 		for (let i = 0; i < newStuffSelectors.length; i++) {
 			const selector = newStuffSelectors[i];
+
 			selector.addEventListener('mousedown', function(){
 				let oldSelect = document.querySelector('#newstuff .selector.selected')
-				if(oldSelect) oldSelect.classList.remove('selected')
-				
+				if(oldSelect) {
+					oldSelect.classList.remove('selected')
+					let oldHighlight = oldSelect.getAttribute('highlights')
+					
+					//remove any old highlight
+					let oldHighlightElements = document.querySelectorAll(`.highlight-${oldHighlight}`).forEach(e => e.classList.remove('highlighted'))
+				}
+
 				selector.classList.add('selected')
+				document.querySelectorAll(`.highlight-${selector.getAttribute('highlights')}`).forEach(e => e.classList.add('highlighted'))
 			})			
 		}
 
@@ -222,7 +225,6 @@
 				selector.nextElementSibling.classList.add('active')
 			})			
 		}
-
 	</script>
 </body>
 </html>
