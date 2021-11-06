@@ -9,10 +9,3 @@ collections:
   highlights:
     title: Highlights
     output: false
-
-default:
-- scope
-    path: ''
-    type: highlights
-  values:
-    image:
