@@ -49,3 +49,4 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Order", name: "order", widget: "number", default: 1, value_type: "int"}

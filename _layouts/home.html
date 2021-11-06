@@ -65,8 +65,10 @@
 	<section id="newstuff" class="infosection">
 		<h2 class="motto">NEW &amp; IMPROVED CONTENT</h2>
 		<div class="width-container selection-container">
+			{% assign ordered_highlights = site.highlights | sort:"order" %}
+
 			<div class="selection">
-				{% for highlight in site.highlights %}
+				{% for highlight in ordered_highlights %}
 					<div class="selector {% if forloop.index == 1 %} selected {% endif %}" highlights="{{ highlight.title | slugify }}">
 						{{ highlight.title}}
 					</div>
@@ -74,7 +76,7 @@
 			</div>
 
 			<div class="highlight-images">
-				{% for highlight in site.highlights %}
+				{% for highlight in ordered_highlights %}
 					<div class="image-container highlight-section highlight-{{ highlight.title | slugify }} {% if forloop.index == 1 %} highlighted {% endif %}">
 						<div class="image" style="background-image: url({{ highlight.image }})"></div>
 					</div>
@@ -82,7 +84,7 @@
 			</div>
 
 			<div class="selection-info">
-				{% for highlight in site.highlights %}
+				{% for highlight in ordered_highlights %}
 					<div class="highlight-section highlight-{{ highlight.title | slugify }} {% if forloop.index == 1 %} highlighted {% endif %}">
 						<span class="selection-title">{{ highlight.title }}</span>
 						<div class="selection-description">
