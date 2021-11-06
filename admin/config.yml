@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: crekulon/tspy
+  branch: main
+  site_domain: (put netlify domain here)
+
+media_folder: "img/uploads"
+
+collections:
+  - name: "media"
+    label: "Media"
+    folder: "_media"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
