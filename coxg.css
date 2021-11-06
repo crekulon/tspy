@@ -567,6 +567,14 @@ h1::after, .h1::after {
     background-position: bottom;
 }
 
+.highlight-section {
+    display: none;
+}
+
+.highlight-section.highlighted {
+    display: block;
+}
+
 .highlight-images {
     padding: 10px 0 10px 5%;
     min-height: 50vh;
@@ -595,6 +603,7 @@ h1::after, .h1::after {
   
 
 .selection-info {
+    width: 100%;
     padding-top: 40px;
     color: white;
     margin-top: 5vh;

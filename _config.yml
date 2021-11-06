@@ -9,9 +9,6 @@ collections:
   media:
     title: Media
     output: false
-  hooks:
-    title: Hooks
-    output: false
 
 default:
 - scope:

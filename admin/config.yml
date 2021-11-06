@@ -7,6 +7,39 @@ backend:
 media_folder: "img/uploads"
 
 collections:
+  - name: "homepage"
+    label: "Homepage Info"
+    files:
+      - label: "How To Play"
+        name: "howtoplay"
+        file: "_data/howtoplay.yml"
+        fields: 
+          - {label: "Body", name: "body", widget: "markdown"}
+          
+      - label: "About Us"
+        name: "aboutus"
+        file: "_data/aboutus.yml"
+        fields: 
+          - {label: "Body", name: "body", widget: "markdown"}
+          
+      - label: "Support Us"
+        name: "supportus"
+        file: "_data/supportus.yml"
+        fields: 
+          - {label: "Body", name: "body", widget: "markdown"}
+          
+      - label: "Code of Conduct"
+        name: "codeofconduct"
+        file: "_data/codeofconduct.yml"
+        fields: 
+          - {label: "Body", name: "body", widget: "markdown"}
+          
+      - label: "Terms of Service"
+        name: "termsofservice"
+        file: "_data/termsofservice.yml"
+        fields: 
+          - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "media"
     label: "Media"
     folder: "_media"
