@@ -40,11 +40,12 @@ collections:
         fields: 
           - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "media"
-    label: "Media"
-    folder: "_media"
+  - name: "highlights"
+    label: "Homepage Highlights"
+    folder: "_highlights"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}

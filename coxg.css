@@ -752,7 +752,7 @@ h1::after, .h1::after {
     display: inline-block;
 }
 
-.playpanel li {
+.playpanel li, .playpanel p {
     margin-bottom: 0.5em;
 }
 
