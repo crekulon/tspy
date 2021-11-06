@@ -86,7 +86,7 @@
 					<div class="highlight-section highlight-{{ highlight.title | slugify }} {% if forloop.index == 1 %} highlighted {% endif %}">
 						<span class="selection-title">{{ highlight.title }}</span>
 						<div class="selection-description">
-							{{ highlight.body | markdownify }}
+							{{ highlight.content | markdownify }}
 						</div>
 					</div>
 				{% endfor %}
