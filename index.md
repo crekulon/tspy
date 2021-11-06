@@ -109,17 +109,7 @@
 		<div class="width-container play-container">
 			<div class="playpanel">
 				<h3 class="motto">How To play</h3>
-				<ol>
-					<li>Download and install the <a href="https://files.thunderspygaming.net/sweet-tea/installer.exe" target="_blank">Sweet Tea launcher</a>.</li>
-					<li>The Sweet Tea launcher should be available in your Start Menu.</li>
-					<li>If Thunderspy (/coxg/) server is not listed,
-						<ol>
-							<li>Go to the launcher's options menu</li>
-							<li>Add the link to this manifest: <a href="https://www.thunderspygaming.net/styles/freedom/manifest.xml">https://www.thunderspygaming.net/styles/freedom/manifest.xml</a></li>
-						</ol>
-					</li>
-					<li>If Sweet Tea doesn't work, try <a href="https://git.ourodev.com/community/sunrise-launcher/uploads/e549163a029e22fd43183c513c82d6f7/sunrise-launcher-portable.zip" target="_blank">Sunrise Launcher.</a></li>
-				</ol>
+				{{ site.data.howtoplay.body | markdownify}}
 			</div>
 
 			<div class="playpanel">
@@ -160,9 +150,10 @@
 
 			<div class="playpanel about">
 				<h3 class="motto">About Us</h3>		
-				<p>Thunderspy is a City of Heroes private server that is constantly updated with new content and features. Among many new features are original and re-balanced powersets, asymmetric and original costume parts, extra auras, and more.</p>
-				<p>Despite the rapid improvements, the Thunderspy server maintains a small, friendly community where everyone knows everyone.</p>
-				<p class="support">Server expenses are $430 (USD) monthly. Help keep us online through <a href="https://www.patreon.com/coxg" target="_blank">Patreon</a> or <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7NJGYSECLWZZ6&source=url" target="_blank">PayPal</a>. </p>
+				{{ site.data.aboutus.body | markdownify}}
+				<div class="support">
+					{{ site.data.supportus.body | markdownify}}
+				</div>
 			</div>
 		</div>
 	</section>
@@ -171,29 +162,12 @@
 		<div class="width-container">
 			<div class="policybox">
 				<h3 class="motto">Code of Conduct</h3>
-				<ol>
-					<li>If a player is bothering you, block that player and report to a GM or mod.</li>
-					<li>Do not try to circumvent another player's attempt to block you.</li>
-					<li>The in-game word filter is enabled by default. Leave it on if you do not wish to see profanity.</li>
-					<li>Do not try to circumvent the in-game word filter by purposefully misspelling words or through any other means.</li>
-					<li>Do not spam or be disruptive. You may be temporarily muted for it.</li>
-				</ol>
-				<p>If you would like to speak to an admin, you can post in the <a href="https://thunderspygaming.boards.net" target="_blank">forums</a>.</p>
-				<p>You can also message a GM or mod in our <a href="https://discord.gg/nDJgMeSCvt" target="_blank">Discord</a> for a faster and more discrete response.</p>
+				{{ site.data.codeofconduct.body | markdownify}}
 			</div>
 
 			<div class="policybox">
 				<h3 class="motto">Terms of Service</h3>
-				
-				<p>The providers ("we", "us", "our") of the service provided by this web site ("Service") are not responsible for any user-generated content and accounts. Content submitted express the views of their author only.</p>
-				<p>This Service is only available to users who are at least 18 years old. If you are younger than this, please do not register for this Service. If you register for this Service, you represent that you are this age or older.</p>
-				<p>All content you submit, upload, or otherwise make available to the Service ("Content") may be reviewed by staff members. All Content you submit or upload may be sent to third-party verification services (including, but not limited to, spam prevention services). Do not submit any Content that you consider to be private or confidential.</p>
-				<p>You agree to not use the Service to submit or link to any Content which violates any laws. You are entirely responsible for the content of, and any harm resulting from, that Content or your conduct.</p>
-				<p>We may remove or modify any Content submitted at any time, with or without cause, with or without notice. Requests for Content to be removed or modified will be undertaken only at our discretion. We may terminate your access to all or any part of the Service at any time, with or without cause, with or without notice.</p>
-				<p>You are granting us with a non-exclusive, permanent, irrevocable, unlimited license to use, publish, or re-publish your Content in connection with the Service. You retain copyright over the Content.</p>
-				<p>These terms may be changed at any time without notice.</p>
-				<p>If you do not agree with these terms, please do not register or use the Service. Use of the Service constitutes acceptance of these terms.</p>
-				<p><a href="https://www.law.cornell.edu/uscode/text/47/230" target="_blank">47 U.S.C. $ 230</a></p>
+				{{ site.data.termsofservice.body | markdownify}}
 			</div>
 		</div>
 
