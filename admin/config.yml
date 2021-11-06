@@ -10,6 +10,13 @@ collections:
   - name: "homepage"
     label: "Homepage Info"
     files:
+      - label: "Mottos"
+        name: "mottos"
+        file: "_data/mottos.yml"
+        fields: 
+          - {label: "Larger Motto", name: "largermotto", widget: "markdown"}
+          - {label: "Smaller Motto", name: "smallermotto", widget: "markdown"}
+
       - label: "How To Play"
         name: "howtoplay"
         file: "_data/howtoplay.yml"
