@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="./coxg.css">	
+	<link rel="icon" type="image/png" href="./img/coxgfv.png">
+
+	<!-- Primary Meta Tags -->
+	<title>Thunderspy Gaming - A City of Heroes Private Server</title>
+	<meta name="title" content="Thunderspy Gaming - A City of Heroes Private Server">
+	<meta name="description" content="Featuring massive character customization improvements, pet customization, new powersets and more, Thunderspy is the most advanced City of Heroes private server.">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://thunderspygaming.net">
+	<meta property="og:title" content="Thunderspy Gaming - A City of Heroes Private Server">
+	<meta property="og:description" content="Featuring massive character customization improvements, pet customization, new powersets and more, Thunderspy is the most advanced City of Heroes private server.">
+	<meta property="og:image" content="https://eccentric.monster/tspy/img/thundersplash.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://thunderspygaming.net">
+	<meta property="twitter:title" content="Thunderspy Gaming - A City of Heroes Private Server">
+	<meta property="twitter:description" content="Featuring massive character customization improvements, pet customization, new powersets and more, Thunderspy is the most advanced City of Heroes private server.">
+	<meta property="twitter:image" content="https://eccentric.monster/tspy/img/thundersplash.png">
+    
+    <script src="https://kit.fontawesome.com/ff46203259.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="loading starting-intro">    
+	<div id="socials">
+		<a href="https://discord.gg/nDJgMeSCvt" target="_blank" name="Discord"><i class="fab fa-discord"></i></a>
+		<a href="https://thunderspygaming.boards.net/" target="_blank" name="Forums"><i class="far fa-comments"></i></a>
+		<a href="https://twitter.com/Tspygaming_COH" target="_blank" name="Twitter"><i class="fab fa-twitter"></i></a>
+		<a href="https://www.patreon.com/coxg" target="_blank" class="supportlink" name="Support on Patreon"><i class="fab fa-patreon"></i></a>
+		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7NJGYSECLWZZ6&source=url" target="_blank" class="supportlink" name="Support with Paypal"><i class="fab fa-paypal"></i></a>
+	</div>
+
+	<section id="splash">
+		<div class="bg">
+			<div class="logo"></div>
+			<div class="logo flip"></div>
+
+			<div class="city"><div class="tower"></div></div>
+			<div class="city flip"><div class="tower"></div></div>
+
+			<div class="road">
+				<div class="roadlines"></div>
+			</div>
+		</div>
+
+		<h1 class="h1" t="THUNDERSPY">THUNDERSPY</h1>
+		<h2 class="h1 flip" t="THUNDERSPY">THUNDERSPY</h2>
+
+		<div class="ctas">
+			<span class="motto">The Most Advanced City Of Heroes Private Server</span>
+			<span class="cta-container">
+				<a href="#newstuff" class="cta">WHAT'S NEW?</a>
+				<a href="#play" class="cta playnow">PLAY NOW</a>
+			</span>
+			<span class="motto">It's Your Game</span>
+		</div>
+	</section>
+
+	<section id="newstuff" class="infosection">
+		<h2 class="motto">NEW &amp; IMPROVED CONTENT</h2>
+		<div class="width-container selection-container">
+			<div class="selection">
+				<div class="selector selected" highlights="customization">
+					Unparalleled Customization
+				</div>
+				<div class="selector" highlights="masterminds">
+					Minion + Pet Customization
+				</div>
+				<div class="selector" highlights="newpowersets">
+					New Powersets
+				</div>
+				<div class="selector" highlights="uppowersets">
+					Updated Powersets
+				</div>
+				<div class="selector" highlights="scaling">
+					Content Scaling
+				</div>
+			</div>
+
+			<div class="highlight-images">
+				<div class="image-container">
+					<div class="image" style="background-image: url(./img/aokk.gif)"></div>
+				</div>
+			</div>
+
+			<div class="selection-info">
+				<span class="selection-title">Unparalleled Customization</span>
+				<div class="selection-description">
+					<p style="margin-bottom:2em;font-family:monospace">(FIEND'S NOTE: I haven't made this part functional yet, but it'll swap images and text when you click the buttons)</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque ipsum, vulputate eu dapibus et, facilisis a nunc. Cras nibh elit, placerat ac nisi eget, porttitor suscipit quam. Sed sollicitudin felis ac iaculis dapibus. Sed purus erat, iaculis nec orci eu, lacinia finibus massa. Cras non quam in leo posuere fermentum. Etiam ornare neque quis mauris imperdiet ullamcorper. Cras nec maximus tortor.</p>
+					<p>Vivamus vel interdum lorem, at fringilla erat. Vestibulum in orci vitae enim efficitur ullamcorper vitae ac leo. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="play" class="infosection">
+		<div class="bg">
+			<div class="city"></div>
+		</div>
+
+		<h2 class="motto title">PLAY NOW</h2>
+		<div class="width-container play-container">
+			<div class="playpanel">
+				<h3 class="motto">How To play</h3>
+				<ol>
+					<li>Download and install the <a href="https://files.thunderspygaming.net/sweet-tea/installer.exe" target="_blank">Sweet Tea launcher</a>.</li>
+					<li>The Sweet Tea launcher should be available in your Start Menu.</li>
+					<li>If Thunderspy (/coxg/) server is not listed,
+						<ol>
+							<li>Go to the launcher's options menu</li>
+							<li>Add the link to this manifest: <a href="https://www.thunderspygaming.net/styles/freedom/manifest.xml">https://www.thunderspygaming.net/styles/freedom/manifest.xml</a></li>
+						</ol>
+					</li>
+					<li>If Sweet Tea doesn't work, try <a href="https://git.ourodev.com/community/sunrise-launcher/uploads/e549163a029e22fd43183c513c82d6f7/sunrise-launcher-portable.zip" target="_blank">Sunrise Launcher.</a></li>
+				</ol>
+			</div>
+
+			<div class="playpanel">
+				<h3 class="motto">Accounts</h3>
+				<div class="accountstuff">
+					<div class="accountsection">
+						<h4 class="selector">Create an Account</h4>
+						<form action="account.php" method="POST">
+							<input type="text" placeholder="user name" name="name">
+							<input type="text" placeholder="email (optional)" name="email">
+							<input type="password" placeholder="password" name="password">
+							<input type="password" placeholder="repeat password" name="repeat">
+							<input type="submit" name="create_account" value="Create">
+						</form>
+					</div>
+		
+					<div class="accountsection">
+						<h4 class="selector">Reset Password</h4>
+						<form action="account.php" method="POST">
+							<input type="text" placeholder="user name" name="name">
+							<input type="text" placeholder="email" name="email">
+							<input type="submit" name="reset_password" value="Reset">
+						</form>
+					</div>
+		
+					<div class="accountsection">
+						<h4 class="selector">Change Password</h4>
+						<form action="account.php" method="POST">
+							<input type="text" placeholder="user name" name="name">
+							<input type="password" placeholder="old password" name="oldpass">
+							<input type="password" placeholder="new password" name="newpass">
+							<input type="password" placeholder="repeat password" name="repeat">
+							<input type="submit" name="change_password" value="Change">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="playpanel about">
+				<h3 class="motto">About Us</h3>		
+				<p>Thunderspy is a City of Heroes private server that is constantly updated with new content and features. Among many new features are original and re-balanced powersets, asymmetric and original costume parts, extra auras, and more.</p>
+				<p>Despite the rapid improvements, the Thunderspy server maintains a small, friendly community where everyone knows everyone.</p>
+				<p class="support">Server expenses are $430 (USD) monthly. Help keep us online through <a href="https://www.patreon.com/coxg" target="_blank">Patreon</a> or <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7NJGYSECLWZZ6&source=url" target="_blank">PayPal</a>. </p>
+			</div>
+		</div>
+	</section>
+
+	<footer class="infosection">
+		<div class="width-container">
+			<div class="policybox">
+				<h3 class="motto">Code of Conduct</h3>
+				<ol>
+					<li>If a player is bothering you, block that player and report to a GM or mod.</li>
+					<li>Do not try to circumvent another player's attempt to block you.</li>
+					<li>The in-game word filter is enabled by default. Leave it on if you do not wish to see profanity.</li>
+					<li>Do not try to circumvent the in-game word filter by purposefully misspelling words or through any other means.</li>
+					<li>Do not spam or be disruptive. You may be temporarily muted for it.</li>
+				</ol>
+				<p>If you would like to speak to an admin, you can post in the <a href="https://thunderspygaming.boards.net" target="_blank">forums</a>.</p>
+				<p>You can also message a GM or mod in our <a href="https://discord.gg/nDJgMeSCvt" target="_blank">Discord</a> for a faster and more discrete response.</p>
+			</div>
+
+			<div class="policybox">
+				<h3 class="motto">Terms of Service</h3>
+				
+				<p>The providers ("we", "us", "our") of the service provided by this web site ("Service") are not responsible for any user-generated content and accounts. Content submitted express the views of their author only.</p>
+				<p>This Service is only available to users who are at least 18 years old. If you are younger than this, please do not register for this Service. If you register for this Service, you represent that you are this age or older.</p>
+				<p>All content you submit, upload, or otherwise make available to the Service ("Content") may be reviewed by staff members. All Content you submit or upload may be sent to third-party verification services (including, but not limited to, spam prevention services). Do not submit any Content that you consider to be private or confidential.</p>
+				<p>You agree to not use the Service to submit or link to any Content which violates any laws. You are entirely responsible for the content of, and any harm resulting from, that Content or your conduct.</p>
+				<p>We may remove or modify any Content submitted at any time, with or without cause, with or without notice. Requests for Content to be removed or modified will be undertaken only at our discretion. We may terminate your access to all or any part of the Service at any time, with or without cause, with or without notice.</p>
+				<p>You are granting us with a non-exclusive, permanent, irrevocable, unlimited license to use, publish, or re-publish your Content in connection with the Service. You retain copyright over the Content.</p>
+				<p>These terms may be changed at any time without notice.</p>
+				<p>If you do not agree with these terms, please do not register or use the Service. Use of the Service constitutes acceptance of these terms.</p>
+				<p><a href="https://www.law.cornell.edu/uscode/text/47/230" target="_blank">47 U.S.C. $ 230</a></p>
+			</div>
+		</div>
+
+		<div class="qachan">
+			<img src="./img/qachan.png" alt="QA Chan"> <span>PENDING QA-CHAN APPROVAL</span>
+		</div>
+	</footer>
+
+	<script>
+		function onLoaded(fn) {
+			document.addEventListener("DOMContentLoaded", fn)
+			if (document.readyState === "interactive" ||document.readyState === "complete" ) {fn()}
+		}
+
+		onLoaded(() => {
+			setTimeout(()=>{
+				document.querySelector('body').classList.remove('loading')
+			}, 200)
+
+			setTimeout(()=>{
+				document.querySelector('body').classList.remove('starting-intro')
+				document.querySelector('body').classList.add('intro')
+			}, 1800)
+
+			setTimeout(()=>{
+				document.querySelector('body').classList.remove('intro')
+			}, 4200)
+		})
+
+		let newStuffSelectors = document.querySelectorAll("#newstuff .selector")
+		for (let i = 0; i < newStuffSelectors.length; i++) {
+			const selector = newStuffSelectors[i];
+			selector.addEventListener('mousedown', function(){
+				let oldSelect = document.querySelector('#newstuff .selector.selected')
+				if(oldSelect) oldSelect.classList.remove('selected')
+				
+				selector.classList.add('selected')
+			})			
+		}
+
+		let accountSelectors = document.querySelectorAll(".accountstuff .selector")
+		for (let i = 0; i < accountSelectors.length; i++) {
+			const selector = accountSelectors[i];
+			selector.addEventListener('mousedown', function(){
+				let oldSelect = document.querySelector('.accountstuff .selector.selected')
+				if(oldSelect) {
+					oldSelect.classList.remove('selected')
+					oldSelect.nextElementSibling.classList.remove('active')
+				}
+
+				selector.classList.add('selected')
+				selector.nextElementSibling.classList.add('active')
+			})			
+		}
+
+	</script>
+</body>
+</html>
