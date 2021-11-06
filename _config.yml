@@ -5,24 +5,14 @@ description:
 url: "."
 theme: 
 
-collections:
-  media:
-    title: Media
-    output: false
-    
+collections:    
   highlights:
     title: Highlights
     output: false
 
 default:
-- scope:
-    path: ''
-    type: Media
-  values:
-    image: 
- 
 - scope
     path: ''
-    type: 'highlights'
+    type: highlights
   values:
     image:
