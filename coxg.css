@@ -714,11 +714,14 @@ h1::after, .h1::after {
     background: linear-gradient(0deg, rgba(26,12,46,1) 0%, rgba(66,10,47,1) 100%);
 }
   
-
 .play-container {
     justify-content: center;
     align-items: flex-start;
     min-height: 70vh;
+}
+
+.play-container a { /* for the URL */
+    word-break: break-word;
 }
 
 .playpanel {
