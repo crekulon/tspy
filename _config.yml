@@ -18,6 +18,11 @@ collections:
 defaults:
   -
     scope:
-      type: "patchnotes"
+      path: "/patchnotes"
     values:
       layout: "inner"
+  -
+    scope:
+      type: "patchnotes"
+    values:
+      layout: "patchnote"
