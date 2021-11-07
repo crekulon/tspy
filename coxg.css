@@ -1037,3 +1037,9 @@ footer.infosection {
     overflow-x: scroll;
     margin: auto;
 }
+
+@media only screen and (max-width: 550px) {
+    .patchbox > * {
+        font-size: calc(0.7em + 0.5vw);
+    }
+}
