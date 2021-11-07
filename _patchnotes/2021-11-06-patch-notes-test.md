@@ -1,5 +1,5 @@
 ---
-date: 2021/10/30
+date: 2021-10-30T05:00:00.000Z
 title: Bugs & Costumes
 subtitle: Costume Part Update
 icon: https://crekulon.github.io/tspy/img/aokk.gif
