@@ -154,6 +154,7 @@ body {
 #splash h1::after, #splash .h1::after {
     content: attr(t);
     position: absolute;
+    left: 0;
     transform: translate(-0.05em, -0.05em);
     color: #02e2f6;
     text-shadow: 0px 0px 0.075em #00eaffbf;
@@ -357,7 +358,7 @@ body {
     background-size: 1px 50px;
     background-repeat: repeat-y;
     background-position: center;
-    animation: ROAD 1s linear infinite;
+    /* animation: ROAD 1s linear infinite; road is closed for now*/
 }
 
 @keyframes ROAD {
