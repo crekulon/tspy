@@ -22,6 +22,11 @@ icon: https://crekulon.github.io/tspy/img/aokk.gif
 
 ![](https://crekulon.github.io/tspy/img/lamp.gif "lamppppppp!!!!!! yeesss")
 
-`there's a code section too....`
 
-`scep`
+
+```
+function onLoaded(fn) {
+    document.addEventListener("DOMContentLoaded", fn)
+    if (document.readyState === "interactive" ||document.readyState === "complete" ) {fn()}
+}
+```
