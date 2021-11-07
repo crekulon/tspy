@@ -5,6 +5,8 @@ backend:
   site_domain: nervous-einstein-3d330a.netlify.com
 
 media_folder: "img/uploads"
+site_url: https://crekulon.github.io/tspy/
+show_preview_links: false
 
 collections:
   - name: "patchnotes"
