@@ -139,9 +139,9 @@
 
 			<div class="playpanel about">
 				<h3 class="motto">About Us</h3>		
-				{{ site.data.aboutus.body | markdownify}}
+				{{ site.data.aboutus.main | markdownify}}
 				<div class="support">
-					{{ site.data.supportus.body | markdownify}}
+					{{ site.data.aboutus.support | markdownify}}
 				</div>
 			</div>
 		</div>
@@ -151,12 +151,12 @@
 		<div class="width-container">
 			<div class="policybox">
 				<h3 class="motto">Code of Conduct</h3>
-				{{ site.data.codeofconduct.body | markdownify}}
+				{{ site.data.policies.coc | markdownify}}
 			</div>
 
 			<div class="policybox">
 				<h3 class="motto">Terms of Service</h3>
-				{{ site.data.termsofservice.body | markdownify}}
+				{{ site.data.policies.tos | markdownify}}
 			</div>
 		</div>
 

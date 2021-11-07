@@ -46,25 +46,15 @@ collections:
         name: "aboutus"
         file: "_data/aboutus.yml"
         fields: 
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Body", name: "main", widget: "markdown"}
+          - {label: "Support Us", name: "support", widget: "markdown"}
           
-      - label: "Support Us"
-        name: "supportus"
-        file: "_data/supportus.yml"
+      - label: "Policies"
+        name: "policies"
+        file: "_data/policies.yml"
         fields: 
-          - {label: "Body", name: "body", widget: "markdown"}
-          
-      - label: "Code of Conduct"
-        name: "codeofconduct"
-        file: "_data/codeofconduct.yml"
-        fields: 
-          - {label: "Body", name: "body", widget: "markdown"}
-          
-      - label: "Terms of Service"
-        name: "termsofservice"
-        file: "_data/termsofservice.yml"
-        fields: 
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Code of Conduct", name: "coc", widget: "markdown"}
+          - {label: "Terms of Service", name: "tos", widget: "markdown"}
 
   - name: "highlights"
     label: "Homepage Highlights"
