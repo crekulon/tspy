@@ -166,6 +166,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.cta-container > div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.cta.smaller {
+    max-width: 30%;
+    width: 200px;
+    font-size: calc(0.6em + 0.6vw);
 }
 
 .cta, input[type="submit"] {
