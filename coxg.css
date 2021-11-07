@@ -1099,3 +1099,9 @@ footer.infosection {
 .inner .patch-container {
     padding-bottom: 5vh;
 }
+
+
+.patchnote .city::after, .patchnote .bg::after, .patchnote .bg::before {
+    height: 50vh;
+    top: 0;
+}
