@@ -8,8 +8,16 @@ media_folder: "img/uploads"
 
 collections:
   - name: "homepage"
-    label: "Homepage Info"
+    label: "Homepage & Metadata"
     files:
+      - label: "Metadata"
+        name: "meta"
+        file: "_data/meta.yml"
+        fields: 
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Social Sharing Image", name: "image", widget: "image"}
+          - {label: "Site Icon", name: "favicon", widget: "image"}
+
       - label: "Mottos"
         name: "mottos"
         file: "_data/mottos.yml"
