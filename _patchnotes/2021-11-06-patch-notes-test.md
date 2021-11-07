@@ -1,4 +1,5 @@
 ---
+date: 2021-11-07T04:25:40.996Z
 title: Patch Notes for October 30th, 2021
 subtitle: Costume Part Update
 icon: https://crekulon.github.io/tspy/img/aokk.gif
