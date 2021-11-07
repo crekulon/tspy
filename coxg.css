@@ -10,7 +10,8 @@ html {
 body {
     position: relative;
     background: #000000;
-    color: white
+    color: white;
+    min-height: 100vh;
 }
 
 img {
@@ -38,6 +39,69 @@ ol, ul {
     background-size: 60px !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
+}
+
+/* markdown typography */
+.md > * {
+    line-height: 1.25em;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 550px) {
+    .md > * {
+        font-size: calc(0.7em + 0.5vw);
+    }
+}
+
+.md h2, .md h3, .md h4, .md h5, .md h6 {
+    font-family: "Paragon City";
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+.md li { margin-bottom: 0.5em; }
+.md h2 { font-size: 2em; }
+.md h3 { font-size: 1.75em; }
+.md h4 { font-size: 1.5em; }
+.md h5 { font-size: 1.25em; }
+.md h6 { font-size: 1em; }
+.md em { font-style: italic; }
+.md strong { font-weight: 600; }
+.md img { margin: auto; display: block; }
+
+.md blockquote {
+    position: relative;
+    display: inline-block;
+    font-style: italic;
+    border-left: 5px solid;
+    padding-left: 1em;
+    padding: 10px 2em;
+}
+
+.md blockquote::after, .md blockquote::before {
+    content: '“';
+    position: absolute;
+    top: 0;
+    left: 0.25em;
+    font-size: calc(1em + 1vw);
+}
+
+.md blockquote::after {
+    content: '”';
+    right: 0.25em;
+    left: unset;
+}
+
+.md code {
+    font-family: monospace;
+    background: black;
+    display: block;
+    padding: 10px;
+    color: #02e2f6;
+    border: 1px solid;
+    max-width: 80vw;
+    overflow-x: scroll;
+    margin: auto;
 }
 
 /* fonts */
@@ -84,10 +148,6 @@ ol, ul {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
-
-body {
-    min-height: 100vh;
 }
 
 /* SPLASH */
@@ -1018,70 +1078,6 @@ footer.infosection {
     margin-top: 0.5em;
     color: #02e2f6;
     font-weight: 600;
-}
-
-.patchbody > * {
-    line-height: 1.25em;
-    margin-bottom: 1em;
-}
-
-/* patch typography */
-.patchbody h2, .patchbody h3, .patchbody h4, .patchbody h5, .patchbody h6 {
-    font-family: "Paragon City";
-    font-style: italic;
-    margin-bottom: 0.5em;
-}
-
-.patchbody li { margin-bottom: 0.5em; }
-.patchbody h2 { font-size: 2em; }
-.patchbody h3 { font-size: 1.75em; }
-.patchbody h4 { font-size: 1.5em; }
-.patchbody h5 { font-size: 1.25em; }
-.patchbody h6 { font-size: 1em; }
-.patchbody em { font-style: italic; }
-.patchbody strong { font-weight: 600; }
-.patchbody img { margin: auto; display: block; }
-
-
-.patchbody blockquote {
-    position: relative;
-    display: inline-block;
-    font-style: italic;
-    border-left: 5px solid;
-    padding-left: 1em;
-    padding: 10px 2em;
-}
-
-.patchbody blockquote::after, blockquote::before {
-    content: '“';
-    position: absolute;
-    top: 0;
-    left: 0.25em;
-    font-size: calc(1em + 1vw);
-}
-
-.patchbody blockquote::after {
-    content: '”';
-    right: 0.25em;
-    left: unset;
-}
-
-.patchbody code {
-    font-family: monospace;
-    background: black;
-    display: block;
-    padding: 10px;
-    color: #02e2f6;
-    border: 1px solid;
-    max-width: 80vw;
-    overflow-x: scroll;
-    margin: auto;
-}
-
-@media only screen and (max-width: 550px) {
-    .patchbox > * {
-        font-size: calc(0.7em + 0.5vw);
-    }
 }
 
 /* PATCH NOTES LISTING PAGES + INDIVIDUAL PAGES */
