@@ -1100,8 +1100,73 @@ footer.infosection {
     padding-bottom: 5vh;
 }
 
-
 .patchnote .city::after, .patchnote .bg::after, .patchnote .bg::before {
     height: 50vh;
     top: 0;
+}
+
+
+.patchnav {
+    max-width: 1250px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 5vh;
+    background: linear-gradient(0deg, rgba(26,12,46,0.9) 0%, rgba(66,10,47,0.9) 100%), url(https://tspydev.eccentric.monster/img/coxgrecolor.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    border: 6px double #0ff;
+    box-shadow: 0px 0px 10px #510095 inset, 0px 0px 5px #0ff;
+}
+
+.patchnav > h2 {
+    font-family: "Alien Encounters";
+}
+
+.patchgroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.patchgroup .motto {
+    padding: 0.5em 0;
+}
+
+.patchgroup a {
+    display: inline-block;
+    position: relative;
+    padding-left: 1.5em;
+    font-size: calc(0.6em + 0.35vw);
+    text-shadow: 1px 1px 3px #02e2f6, -1px -1px 3px #f21876;
+    font-family: "Paragon City";
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.patchgroup a::before {
+    content: "•";
+    position: absolute;
+    left: 0.5em;
+}
+
+.patchgroup a.currentpage {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.patchgroup a.currentpage::after {
+    content: "YOU ARE HERE";
+    position: absolute;
+    width: 100%;
+    white-space: pre;
+    text-align: center;
+    color: white;
+    font-family: VCR OSD Mono;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translateY(-110%);
+    opacity: 0.8;
 }
