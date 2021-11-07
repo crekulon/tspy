@@ -1,8 +1,9 @@
 title: Thunderspy Gaming
 timezone: UTC
-description: 
 url: "https://tspydev.eccentric.monster/"
 theme: 
+plugins:
+  - jekyll-feed
 
 collections:    
   highlights:
@@ -25,3 +26,8 @@ defaults:
       type: "patchnotes"
     values:
       layout: "patchnote"
+
+feed:
+  collections:
+    patchnotes:
+      path: "/patchnotes.xml"
