@@ -958,6 +958,7 @@ footer.infosection {
     font-family: Arial;
     line-height: 1.25em;
     border-radius: 10px;
+    font-size: calc(0.6em + 0.25vw);
 }
 
 .patchimg {
@@ -1104,7 +1105,6 @@ footer.infosection {
     height: 50vh;
     top: 0;
 }
-
 
 .patchnav {
     max-width: 1250px;
