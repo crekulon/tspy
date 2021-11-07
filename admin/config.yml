@@ -35,8 +35,8 @@ collections:
         name: "mottos"
         file: "_data/mottos.yml"
         fields: 
-          - {label: "Larger Motto", name: "largermotto", widget: "markdown"}
-          - {label: "Smaller Motto", name: "smallermotto", widget: "markdown"}
+          - {label: "Larger Motto", name: "largermotto", widget: "string"}
+          - {label: "Smaller Motto", name: "smallermotto", widget: "string"}
 
       - label: "How To Play"
         name: "howtoplay"
