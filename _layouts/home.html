@@ -70,7 +70,7 @@
 	<section id="patchnotes" class="infosection">
 		<h2 class="motto title">LATEST PATCH NOTES</h2>
 		<div class="width-container patch-container">
-			{% assign sortednotes = site.patchnotes | sort: 'date' %}
+			{% assign sortednotes = site.patchnotes | sort: 'date' | reverse %}
 			{% assign notes = sortednotes.first %}
 			{% include patchbox.html %}
 		</div>

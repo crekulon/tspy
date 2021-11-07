@@ -6,7 +6,7 @@ title: "Patch Notes"
     <h2 class="motto title">PATCH NOTES</h2>
     <div class="width-container patch-container">
 
-		{% assign sortednotes = site.patchnotes | sort: 'date' %}
+		{% assign sortednotes = site.patchnotes | sort: 'date' | reverse %}
         {% for notes in sortednotes %}
 			{% include patchbox.html %}
         {% endfor %}
