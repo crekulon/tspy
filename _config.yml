@@ -1,7 +1,8 @@
 title: Thunderspy Gaming
 timezone: UTC
 description: 
-url: "."
+#url: "http://localhost:4000/"
+url: "https://crekulon.github.io/tspy/"
 theme: 
 
 collections:    

@@ -1,13 +1,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <link rel="icon" type="image/png" href="{{ site.data.meta.favicon }}">
+<link rel="stylesheet" type="text/css" href='{{ "coxg.css" | prepend: site.url }}'>
 
 <!-- Primary Meta Tags -->
 {% if page.url == "/" %}
     <title>Thunderspy Gaming - A City of Heroes Private Server</title>
-    <link rel="stylesheet" type="text/css" href="./coxg.css">	
 {% elsif page.title %}
-    <title>{{ page.title }} - Thunderspy Gaming</title>
-    <link rel="stylesheet" type="text/css" href="../coxg.css">	
+    <title>{{ page.title }} - Thunderspy Gaming</title>	
 {% endif %}
 <meta name="title" content="Thunderspy Gaming - A City of Heroes Private Server">
 <meta name="description" content="{{ site.data.meta.description }}">
