@@ -70,21 +70,9 @@
 	<section id="patchnotes" class="infosection">
 		<h2 class="motto title">LATEST PATCH NOTES</h2>
 		<div class="width-container patch-container">
-
-			{% assign notes = site.patchnotes.first %}
-			<div class="patchbox">
-				<a href="{{ notes.url }}" class="patchtitle noglow">
-					<div class="patchimg" style="background-image:url({{ notes.icon }})"></div>
-					<h3>{{ notes.title }}</h3>
-					{% if notes.subtitle != "" %}<h4>{{ notes.subtitle }}</h4>{% endif %}
-				</a>
-
-				<div class="patchbody">
-					{{ notes.content | replace: "h5", "h6" | replace: "h4", "h5"| replace: "h3", "h4"| replace: "h2", "h3"| replace: "h1", "h2" }}
-					{% comment %} this probably seems like a really strange replace, I just don't want another H1 to mess up da SEO {% endcomment %}
-				</div>
-			</div>
-
+			{% assign sortednotes = site.patchnotes | sort: 'date' %}
+			{% assign notes = sortednotes.first %}
+			{% include patchbox.html %}
 		</div>
 		<a href="/patchnotes" class="cta">MORE PATCH NOTES</a>
 	</section>

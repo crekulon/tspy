@@ -921,6 +921,10 @@ footer.infosection {
     flex-basis: 100%;
 }
 
+.patchbox ~ .patchbox {
+    margin-top: 5vh;
+}
+
 .patchbox > * {
     padding: 20px;
     border: 2px outset #f50c76;
@@ -1043,3 +1047,13 @@ footer.infosection {
         font-size: calc(0.7em + 0.5vw);
     }
 }
+
+/* PATCH NOTES LISTING PAGES + INDIVIDUAL PAGES */
+#homelink img {
+    position: absolute;
+    top: 2.5vh;
+    left: 2.5vh;
+    max-height: 10vh;
+    z-index: 10;
+  }
+  
