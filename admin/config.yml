@@ -15,7 +15,7 @@ collections:
     create: true
     slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}-{{slug}}"
     fields: 
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Date", name: "date", widget: "datetime", hint: "Patch notes are sorted by their date"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image", default: "/img/qachan.png"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -27,9 +27,9 @@ collections:
         name: "meta"
         file: "_data/meta.yml"
         fields: 
-          - {label: "Description", name: "description", widget: "string"}
-          - {label: "Social Sharing Image", name: "image", widget: "image"}
-          - {label: "Site Icon", name: "favicon", widget: "image"}
+          - {label: "Description", name: "description", widget: "string", hint: "This is what links on discord/twitter/etc will show as preview text"}
+          - {label: "Social Sharing Image", name: "image", widget: "image", hint: "Ditto but this is the image that's shown with it"}
+          - {label: "Site Icon", name: "favicon", widget: "image", hint: "The little tab icon"}
 
       - label: "Mottos"
         name: "mottos"
@@ -49,7 +49,7 @@ collections:
         file: "_data/aboutus.yml"
         fields: 
           - {label: "Body", name: "main", widget: "markdown"}
-          - {label: "Support Us", name: "support", widget: "markdown"}
+          - {label: "Support Us", name: "support", widget: "markdown", hint: "This is shown beneath the regular 'about us' stuff in a highlighted box"}
           
       - label: "Policies"
         name: "policies"
@@ -64,7 +64,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: 
+      - {label: "Order", name: "order", widget: "number", default: 1, value_type: "int", hint: "You can use this number to change the order in which highlights appear on the homepage. Lower is closer to the top."}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Order", name: "order", widget: "number", default: 1, value_type: "int"}
