@@ -1,40 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="./coxg.css">	
-	<link rel="icon" type="image/png" href="{{ site.data.meta.favicon }}">
-
-	<!-- Primary Meta Tags -->
-	<title>Thunderspy Gaming - A City of Heroes Private Server</title>
-	<meta name="title" content="Thunderspy Gaming - A City of Heroes Private Server">
-	<meta name="description" content="{{ site.data.meta.description }}">
-
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://thunderspygaming.net">
-	<meta property="og:title" content="Thunderspy Gaming - A City of Heroes Private Server">
-	<meta property="og:description" content="{{ site.data.meta.description }}">
-	<meta property="og:image" content="https://eccentric.monster/tspy/img/thundersplash.png">
-
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://thunderspygaming.net">
-	<meta property="twitter:title" content="Thunderspy Gaming - A City of Heroes Private Server">
-	<meta property="twitter:description" content="{{ site.data.meta.description }}">
-	<meta property="twitter:image" content="https://eccentric.monster/tspy/img/thundersplash.png">
-    
-    <script src="https://kit.fontawesome.com/ff46203259.js" crossorigin="anonymous"></script>
+	{% include meta.html %}
 </head>
 
 <body class="loading starting-intro">    
-	<div id="socials">
-		<a href="https://discord.gg/nDJgMeSCvt" target="_blank" name="Discord"><i class="fab fa-discord"></i></a>
-		<a href="https://thunderspygaming.boards.net/" target="_blank" name="Forums"><i class="far fa-comments"></i></a>
-		<a href="https://twitter.com/Tspygaming_COH" target="_blank" name="Twitter"><i class="fab fa-twitter"></i></a>
-		<a href="https://www.patreon.com/coxg" target="_blank" class="supportlink" name="Support on Patreon"><i class="fab fa-patreon"></i></a>
-		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7NJGYSECLWZZ6&source=url" target="_blank" class="supportlink" name="Support with Paypal"><i class="fab fa-paypal"></i></a>
-	</div>
+	{% include socials.html %}
 
 	<section id="splash">
 		<div class="bg">
@@ -96,6 +67,28 @@
 		</div>
 	</section>
 
+	<section id="patchnotes" class="infosection">
+		<h2 class="motto">LATEST PATCH NOTES</h2>
+		<span class="motto">(this part is under construction)</span>
+		<div class="width-container patch-container">
+
+			{% assign notes = site.patchnotes.first %}
+			<div class="patchbox">
+				<a href="{{ notes.url }}" class="patchtitle noglow">
+					<div class="patchimg" style="background-image:url({{ notes.icon }})"></div>
+					<h3>{{ notes.title }}</h3>
+					{% if notes.subtitle != "" %}<h4>{{ notes.subtitle }}</h4>{% endif %}
+				</a>
+
+				<div class="patchbody">
+					{{ notes.content }}
+				</div>
+			</div>
+
+		</div>
+		<a href="/patchnotes" class="cta">MORE PATCH NOTES</a>
+	</section>
+
 	<section id="play" class="infosection">
 		<div class="bg">
 			<div class="city"></div>
@@ -154,7 +147,7 @@
 		</div>
 	</section>
 
-	<footer class="infosection">
+	<footer class="infosection" id="policies">
 		<div class="width-container">
 			<div class="policybox">
 				<h3 class="motto">Code of Conduct</h3>

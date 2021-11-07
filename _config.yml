@@ -1,5 +1,4 @@
 title: Thunderspy Gaming
-email: your-email@example.com
 timezone: UTC
 description: 
 url: "."
@@ -9,3 +8,15 @@ collections:
   highlights:
     title: Highlights
     output: false
+
+  patchnotes:
+    title: Patch Notes
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  -
+    scope:
+      type: "patchnotes"
+    values:
+      layout: "inner"

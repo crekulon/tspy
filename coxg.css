@@ -18,7 +18,7 @@ a {
     color: #00ffff;
 }
 
-a:not(#socials a):not(.cta) {
+a:not(#socials a):not(.cta):not(.noglow) {
     text-shadow: 3px 3px 0px #ff33aa, 0px 0px 10px #00ffff, 0px 0px 10px #00ffff, 0px 0px 30px #00ffff;
 }
 
@@ -405,7 +405,7 @@ h1::after, .h1::after {
     }
 
     .ctas {
-        height: 45vh;
+        height: 40vh;
     }
 
     .cta-container {
@@ -635,7 +635,7 @@ h1::after, .h1::after {
 .selection-info .selection-description::after, .selection-info .selection-description::before {
     content: "";
     position: absolute;
-    top: -45px;
+    top: -40px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -643,6 +643,7 @@ h1::after, .h1::after {
     border-radius: 25px;
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255,147,200,1) 60%, rgba(194,20,105,1) 100%);
 }
+
 .selection-info .selection-description::before {
     z-index: -1;
     border-radius: 20px;
@@ -703,6 +704,10 @@ h1::after, .h1::after {
     background-position: bottom right;
 }
 
+#play {
+    padding-top: 10vh;
+}
+
 #play::after {
     content: "";
     position: absolute;
@@ -711,7 +716,7 @@ h1::after, .h1::after {
     width: 100%;
     height: 10vh;
     z-index: -1;
-    background: linear-gradient(0deg, rgba(26,12,46,1) 0%, rgba(66,10,47,1) 100%);
+    background: linear-gradient(0deg, rgba(26,12,46,1) 0%, #000000 100%);
 }
   
 .play-container {
@@ -889,4 +894,84 @@ footer.infosection {
   
 #socials a:hover::after {
     opacity: 1;
+}
+
+/* PATCH NOTES */
+#patchnotes.infosection {
+    min-height: unset;
+    padding-top: 10vh;
+}
+
+#patchnotes.infosection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: -1;
+    background: linear-gradient(0deg, rgba(26,12,46,0) 0%, rgba(66,10,47,1) 100%);
+}
+
+.patchbox {
+    flex-basis: 100%;
+    margin: 20px;
+}
+
+.patchbox > * {
+    padding: 20px;
+    border: 2px outset #f50c76;
+    background: #120008b0;
+    font-family: Arial;
+    line-height: 1.25em;
+    border-radius: 10px;
+}
+
+.patchimg {
+    width: 60px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 600px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.patchimg::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    padding-top: 100%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.patchbox .patchtitle {
+    display: block;
+    position: relative;
+    padding: 30px 30px 30px 80px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: -2px;
+}
+
+.patchtitle h3 {
+    font-family: "Paragon City";
+    font-style: italic;
+    color: white;
+    font-size: 0.8em;
+}
+
+.patchtitle h4 {
+    margin-top: 0.5em;
+    color: #02e2f6;
+    font-weight: 600;
 }

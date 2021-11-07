@@ -7,6 +7,17 @@ backend:
 media_folder: "img/uploads"
 
 collections:
+  - name: "patchnotes"
+    label: "Patch Notes"
+    folder: "_patchnotes"
+    create: true
+    slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}-{{slug}}"
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "homepage"
     label: "Homepage & Metadata"
     files:
