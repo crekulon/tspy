@@ -30,7 +30,7 @@ a:not(#socials a):not(.cta):not(.noglow) {
 
 ol, ul {
     display: block;
-    padding-left: 1em;
+    padding-left: 2em;
 }
 
 .gallery > *, .highlight-images .image-container, .lazy { /* this has to be important because of the in-html assignment of images, plus other variables */
@@ -53,7 +53,7 @@ ol, ul {
     }
 }
 
-.md h2, .md h3, .md h4, .md h5, .md h6 {
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
     font-family: "Paragon City";
     font-style: italic;
     margin-bottom: 0.5em;
@@ -1222,9 +1222,9 @@ footer.infosection {
     padding: 20px;
     border: 2px outset #f50c76;
     background: #120008b0;
+    border-radius: 10px;
     font-family: Arial;
     line-height: 1.25em;
-    border-radius: 10px;
     font-size: calc(0.6em + 0.25vw);
 }
 
@@ -1304,7 +1304,7 @@ footer.infosection {
     padding-bottom: 5vh;
 }
 
-.patchnote .city::after, .patchnote .bg::after, .patchnote .bg::before {
+.raisedcity .city::after, .raisedcity .bg::after, .raisedcity .bg::before {
     height: 50vh;
     top: 0;
 }
@@ -1377,4 +1377,82 @@ footer.infosection {
     pointer-events: none;
     transform: translateY(-50%);
     opacity: 0.8;
+}
+
+/* GUIDES */
+.guide-container {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-top: 20vh;
+    margin-top: 0;
+}
+
+.guidebox {
+    width: 100%;
+    background: #140e2a;
+    padding: 20px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border: 2px inset #0ff;
+    box-shadow: 0px 0px 10px #510095 inset, 0px 0px 5px #0ff;
+}
+
+.guidebox h1.motto {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.guidebox > * {
+    font-family: Arial;
+    line-height: 1.25em;
+    font-size: calc(0.6em + 0.25vw);
+}
+
+.guidenav, .guidecategory {
+    display: flex;
+    flex-direction: column;
+}
+
+.guidenav {
+    background: #140e2a;
+    padding: 20px;
+    border: 2px inset #0ff;
+    box-shadow: 0px 0px 10px #510095 inset, 0px 0px 5px #0ff;
+    border-left: 0;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -2px;
+}
+
+.guidecategory {
+    margin-bottom: 1em;
+}
+
+.guidecategory > span {
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 0.25em;
+    padding-bottom: 0.5em;
+    position: relative;
+    font-family: VCR OSD Mono;
+    text-shadow: 1px 1px 3px #02e2f6, -1px -1px 3px #f21876;
+}
+
+.guidecategory > a {
+    padding-left: 1em;
+    padding: 0.5em 0.5em 0.5em 1em;
+    border-left: 4px ridge;
+    font-family: "Alien Encounters";
+    font-size: 0.8em;
+}
+.guidecategory > a ~ a {
+    margin-top: 0.5em;
+}
+
+.guidecategory > a:hover, .guidecategory > a.currentguide {
+    color: #ff0084;
+    text-shadow: 0px 0px 20px #ff0084;
 }

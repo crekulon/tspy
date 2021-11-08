@@ -1,0 +1,12 @@
+{% assign guidesbycat = site.guides | group_by: "category" %}
+<div class="guidenav">
+    {% for category in guidesbycat %}
+        <div class="guidecategory">
+            <span>{{ category.name }}</span>
+            {% assign sortedguides = category.items | sort: 'order' %}
+            {% for guide in sortedguides %}
+                <a class="noglow {% if page.url == guide.url or page.url == "/guides.html" and guide.title == "Installation" %}currentguide{% endif %}" href="{{ guide.url }}">{{ guide.title }}</a>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
