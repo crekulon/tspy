@@ -33,7 +33,7 @@ ol, ul {
     padding-left: 1em;
 }
 
-.lazy { /* this has to be important because of the in-html assignment of images, plus other variables */
+.gallery > *, .highlight-images .image-container, .lazy { /* this has to be important because of the in-html assignment of images, plus other variables */
     background-color: black !important;
     background-image: url(/img/qaspin.gif) !important;   
     background-size: 60px !important;
@@ -902,7 +902,188 @@ input[type="submit"] {
     border: 4px double #ff00ab;
 }
 
-/* FOOTER */
+
+/* MEDIA */
+body.open-vid, body.open-img {
+    overflow: hidden !important;
+}
+
+.media-display {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1aeb;
+    z-index: 20;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.open-vid .media-display, .open-img .media-display {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.video-container {
+    display: none;
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.open-vid .video-container {
+    display: block;
+}
+
+.media-close {
+    font-family: VCR OSD Mono;
+    position: absolute;
+    top: -2em;
+    right: -2em;
+    font-size: calc(1vw + 1vh);
+    color: black;
+    background: white;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    line-height: 1em;
+    cursor: pointer;
+}
+
+.media-close::after {
+    content: "x";
+    line-height: 0.1em;
+    margin-top: -.15em;
+}
+
+@media only screen and (max-width: 1100px) {
+    .media-close {
+        font-size: 2em;
+        right: 2em;
+    }
+}
+
+.media-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.videos, .video-listing, .highlighted-video {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videos {
+    flex-direction: column;
+}
+
+.video-listing > * {
+    flex-basis: 25%;
+    max-width: 40vw;
+    padding: 10px;
+}
+
+.highlighted-video > * {
+    width: 100%;
+    padding: 10px;
+}
+
+.vid-opener {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: 6px double #0ff;
+    box-shadow: 0px 0px 10px #510095 inset, 0px 0px 5px #0ff;
+    text-shadow: 2px 2px 0px #871f5c, -1px -1px 0px #006e6e, 0px 0px 4px white;
+}
+
+.vid-opener::after {
+    content: "\25BA";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 0px #ff33aa7a, 0px 0px 10px #00ffff7a, 0px 0px 5px #00ffff7a;
+    color: #00ffff;
+    background: black;
+    border-radius: 100%;
+    font-size: 20px;
+    width: 25px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-wrapper iframe, .video-wrapper .vid-opener {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .video-listing > * {
+        flex-basis: 50%;
+        max-width: unset;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gallery > * {
+    flex-basis: calc(25% - 20px);
+    margin: 10px;
+}
+
+.image-opener {
+    cursor: pointer;
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-container {
+    display: none;
+    max-width: 90vw;
+    margin: auto;
+    max-height: 80vh;
+    position: relative;
+}
+
+.open-img .gallery-container {
+    display: block;
+}
+
+.gallery-image {
+    object-fit: contain;
+    position: relative;
+}
+
+/* POLICIES */
 .policybox {
     flex-basis: 300px;
     flex-grow: 1;

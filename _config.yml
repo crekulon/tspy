@@ -10,6 +10,14 @@ collections:
     title: Highlights
     output: false
 
+  galleryvideos:
+    title: Gallery Videos
+    output: false
+
+  galleryimages:
+    title: Gallery Images
+    output: false
+
   patchnotes:
     title: Patch Notes
     output: true

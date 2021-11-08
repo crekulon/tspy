@@ -68,3 +68,21 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+      
+  - name: "galleryvideos"
+    label: "Gallery Videos"
+    folder: "_galleryvideos"
+    create: true
+    slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}-{{slug}}"
+    fields: 
+      - {label: "Title", name: "title", widget: "string", hint: "This isn't used on the front-end, it's just for internal reference."}
+      - {label: "Video ID", name: "id", widget: "string", hint: "Get the youtube ID from the URL and put it here. For example, that'd be ''Aqb-qH7mwrE'' from ''https://www.youtube.com/watch?v=Aqb-qH7mwrE''. It's everything after the ?v=!"}
+      
+  - name: "galleryimages"
+    label: "Gallery Images"
+    folder: "_galleryimages"
+    create: true
+    slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}-{{slug}}"
+    fields: 
+      - {label: "Title", name: "title", widget: "string", hint: "This isn't used on the front-end, it's just for internal reference."}
+      - {label: "Image", name: "image", widget: "image"}
