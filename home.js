@@ -1,22 +1,24 @@
-function onLoaded(fn) {
-    document.addEventListener("DOMContentLoaded", fn)
-    if (document.readyState === "interactive" ||document.readyState === "complete" ) {fn()}
+if(document.body.classList.contains("homepage")) {
+    function onLoaded(fn) {
+        document.addEventListener("DOMContentLoaded", fn)
+        if (document.readyState === "interactive" ||document.readyState === "complete" ) {fn()}
+    }
+
+    onLoaded(() => {
+        setTimeout(()=>{
+            document.querySelector('body').classList.remove('loading')
+        }, 200)
+
+        setTimeout(()=>{
+            document.querySelector('body').classList.remove('starting-intro')
+            document.querySelector('body').classList.add('intro')
+        }, 1800)
+
+        setTimeout(()=>{
+            document.querySelector('body').classList.remove('intro')
+        }, 4200)
+    })
 }
-
-onLoaded(() => {
-    setTimeout(()=>{
-        document.querySelector('body').classList.remove('loading')
-    }, 200)
-
-    setTimeout(()=>{
-        document.querySelector('body').classList.remove('starting-intro')
-        document.querySelector('body').classList.add('intro')
-    }, 1800)
-
-    setTimeout(()=>{
-        document.querySelector('body').classList.remove('intro')
-    }, 4200)
-})
 
 //when people click the highlight selector, swap the image and text being shown by toggling the highlighted class
 document.querySelectorAll("#newstuff .selector").forEach(selector => {
