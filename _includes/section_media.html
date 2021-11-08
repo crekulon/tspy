@@ -1,31 +1,39 @@
-<section id="media" class="infosection">
-    <h2 class="motto title">Videos</h2>
+{% assign ordered_videos = site.galleryvideos | sort:"order" %}
+{% assign ordered_images = site.galleryimages | sort:"order" %}
 
+<section id="media" class="infosection">
+    
+{% if ordered_images.size > 0 %}
+    <h2 class="motto title">Videos</h2>
     <div class="width-container">
+        {% assign ordered_videos = site.galleryvideos | sort:"order" %}
+
         <div class="videos">
             <div class="highlighted-video">
-                <div><div class="video-wrapper"><span class="vid-opener" data-vid="Aqb-qH7mwrE"></span></div></div>
+                <div><div class="video-wrapper"><span class="vid-opener" data-vid="{{ ordered_videos.first.content | strip_html | strip }}"></span></div></div>
             </div>
+            {% if ordered_videos.size > 1 %}
             <div class="video-listing">
-                <div><div class="video-wrapper"><span class="vid-opener" data-vid="Aqb-qH7mwrE"></span></div></div>
-                <div><div class="video-wrapper"><span class="vid-opener" data-vid="Aqb-qH7mwrE"></span></div></div>
-                <div><div class="video-wrapper"><span class="vid-opener" data-vid="Aqb-qH7mwrE"></span></div></div>
-                <div><div class="video-wrapper"><span class="vid-opener" data-vid="Aqb-qH7mwrE"></span></div></div>
+                {% for video in ordered_videos %}
+                <div><div class="video-wrapper"><span class="vid-opener" data-vid="{{ video.content | strip_html | strip }}"></span></div></div>
+                {% endfor %}
             </div>
+            {% endif %}
         </div>
     </div>
+{% endif %}
 
+{% if ordered_images.size > 0 %}
     <h2 class="motto title">Gallery</h2>
-
     <div class="width-container">
         <div class="gallery">
-            <div><div class="image-opener lazy" style="background-image:url(https://tspydev.eccentric.monster/img/aokk.gif)"></div></div>
-            <div><div class="image-opener lazy" style="background-image:url(http://localhost:4000/img/coxgrecolor.jpg)"></div></div>
-            <div><div class="image-opener lazy" style="background-image:url(http://localhost:4000/img/coxgrecolor.jpg)"></div></div>
-            <div><div class="image-opener lazy" style="background-image:url(http://localhost:4000/img/coxgrecolor.jpg)"></div></div>
+            {% for img in ordered_images %}
+            <div><div class="image-opener lazy" style="background-image:url({{ img.image }})"></div></div>
+            {% endfor %}
         </div>
     </div>
 </section>
+{% endif %}
             
 <div class="media-display">
   <div class="media-bg"></div>

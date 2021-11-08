@@ -1051,6 +1051,7 @@ body.open-vid, body.open-img {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 }
 
