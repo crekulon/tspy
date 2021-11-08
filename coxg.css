@@ -35,8 +35,8 @@ ol, ul {
 
 .gallery > *, .highlight-images .image-container, .lazy { /* this has to be important because of the in-html assignment of images, plus other variables */
     background-color: black !important;
-    background-image: url(/img/qaspin.gif) !important;   
-    background-size: 60px !important;
+    background-image: url(/img/qaspin.gif), url(/img/loadstatic.gif) !important;
+    background-size: 60px, cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
 }
