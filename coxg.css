@@ -1288,7 +1288,7 @@ footer.infosection {
 }
 
 .inner {
-    padding-bottom: calc(2.5em + 1vw);
+    padding-bottom: calc(3.5em + 1.5vw);
 }
   
 .inner #socials {
