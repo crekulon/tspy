@@ -1084,6 +1084,8 @@ body.open-vid, body.open-img {
 .gallery-image {
     object-fit: contain;
     position: relative;
+    max-height: 80vh;
+    display: block;
 }
 
 @media only screen and (max-width: 600px) {
