@@ -25,7 +25,7 @@ a {
 }
 
 a:not(#socials a):not(.cta):not(.noglow) {
-    text-shadow: 3px 3px 0px #ff33aa, 0px 0px 10px #00ffff, 0px 0px 10px #00ffff, 0px 0px 30px #00ffff;
+    text-shadow: 3px 3px 0px #ff33aa7a, 0px 0px 10px #00ffff7a, 0px 0px 5px #00ffff7a;
 }
 
 ol, ul {
