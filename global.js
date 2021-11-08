@@ -1,4 +1,4 @@
-/* courtesy of https://codepen.io/imagekit_io/pen/RBXVrW */
+/* lazy-loading, courtesy of https://codepen.io/imagekit_io/pen/RBXVrW */
 document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages;    
 
@@ -46,4 +46,36 @@ document.addEventListener("DOMContentLoaded", function() {
         window.addEventListener("resize", lazyload);
         window.addEventListener("orientationChange", lazyload);
     }
+})
+
+//video overlay + opener for media, used across homepage + notes and guides
+document.querySelectorAll('.vid-opener').forEach(e => {
+    e.style.backgroundImage = `url(https://i.ytimg.com/vi/${e.getAttribute('data-vid')}/maxresdefault.jpg)`
+
+    e.addEventListener('click', function(){
+        document.body.classList.add('open-vid')
+        document.querySelector('.video-container iframe').src = `https://www.youtube.com/embed/${e.getAttribute('data-vid')}`
+    })
+})
+
+document.querySelectorAll('.image-opener').forEach(e => {
+    e.addEventListener('click', function(){
+        document.body.classList.add('open-img')
+        document.querySelector('.gallery-container .gallery-image').src = e.style.backgroundImage.replace('url(', '').replace(')', '').replaceAll('"', '')
+    })
+})
+
+document.querySelectorAll('.md p img').forEach(e => {
+    e.addEventListener('click', function(){
+        document.body.classList.add('open-img')
+        document.querySelector('.gallery-container .gallery-image').src = e.src
+    })
+})
+
+document.querySelectorAll('.media-bg, .media-close').forEach(e => {
+    e.addEventListener('click', ()=> {
+        document.body.classList.remove('open-vid')
+        document.body.classList.remove('open-img')
+        document.querySelector('.video-container iframe').src = ""
+    })
 })

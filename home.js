@@ -37,6 +37,7 @@ document.querySelectorAll("#newstuff .selector").forEach(selector => {
     })			
 })
 
+//account selectors grow/shrink their contents on click, only one can be selected at a time
 document.querySelectorAll(".accountstuff .selector").forEach(selector => {
     selector.addEventListener('click', function(){
         let oldSelect = document.querySelector('.accountstuff .selector.selected')
@@ -48,29 +49,4 @@ document.querySelectorAll(".accountstuff .selector").forEach(selector => {
         selector.classList.add('selected')
         selector.nextElementSibling.classList.add('active')
     })			
-})
-
-//video overlay + opener for media
-document.querySelectorAll('.vid-opener').forEach(e => {
-    e.style.backgroundImage = `url(https://i.ytimg.com/vi/${e.getAttribute('data-vid')}/maxresdefault.jpg)`
-
-    e.addEventListener('click', function(){
-        document.body.classList.add('open-vid')
-        document.querySelector('.video-container iframe').src = `https://www.youtube.com/embed/${e.getAttribute('data-vid')}`
-    })
-})
-
-document.querySelectorAll('.image-opener').forEach(e => {
-    e.addEventListener('click', function(){
-        document.body.classList.add('open-img')
-        document.querySelector('.gallery-container .gallery-image').src = e.style.backgroundImage.replace('url(', '').replace(')', '').replaceAll('"', '')
-    })
-})
-
-document.querySelectorAll('.media-bg, .media-close').forEach(e => {
-    e.addEventListener('click', ()=> {
-        document.body.classList.remove('open-vid')
-        document.body.classList.remove('open-img')
-        document.querySelector('.video-container iframe').src = ""
-    })
 })

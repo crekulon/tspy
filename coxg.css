@@ -68,7 +68,7 @@ ol, ul {
 .md h6 { font-size: 1em; }
 .md em { font-style: italic; }
 .md strong { font-weight: 600; }
-.md img { margin: auto; display: block; }
+.md img { margin: auto; display: block; max-width: 600px; cursor: pointer;}
 
 .md blockquote {
     position: relative;
