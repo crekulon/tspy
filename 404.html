@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <style>
+            body, html {
+                overflow: hidden;
+                background: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                width: 100vw;
+            }
+        </style>
+    </head>
+    <body>
+        <video src="/img/404.mp4" id="dance"></video>
+
+        <script>
+            document.body.addEventListener('click', ()=>{ document.getElementById("dance").play() })
+        </script>
+    </body>
+</html>
