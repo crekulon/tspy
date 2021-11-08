@@ -1071,7 +1071,7 @@ body.open-vid, body.open-img {
 }
 
 .gallery > * {
-    flex-basis: calc(25% - 20px);
+    flex-basis: calc(20% - 20px);
     margin: 10px;
 }
 
@@ -1105,6 +1105,11 @@ body.open-vid, body.open-img {
     .video-listing > * {
         flex-basis: 50%;
         max-width: unset;
+    }
+
+    .gallery > * {
+        flex-basis: calc(25% - 20px);
+        margin: 10px;
     }
     
     #media > .width-container {
