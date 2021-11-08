@@ -264,6 +264,7 @@ ol, ul {
 .cta {
     max-width: 40%;
     width: 300px;
+    border: 1px solid transparent;
 }
 
 .cta.playnow {
