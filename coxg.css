@@ -61,10 +61,10 @@ ol, ul {
 }
 
 .md li { margin-bottom: 0.5em; }
-.md h2 { font-size: 2em; }
-.md h3 { font-size: 1.75em; }
-.md h4 { font-size: 1.5em; }
-.md h5 { font-size: 1.25em; }
+.md h2 { font-size: calc(1em + 1vw); }
+.md h3 { font-size: calc(1em + 0.75vw); }
+.md h4 { font-size: calc(1em + 0.5vw); }
+.md h5 { font-size: calc(1em + 0.25vw); }
 .md h6 { font-size: 1em; }
 .md em { font-style: italic; }
 .md strong { font-weight: 600; }
@@ -596,6 +596,12 @@ ol, ul {
     flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 600px) {
+    .width-container {
+        padding: calc(5px + 1vw);
+    }
+}
+
 /* WHAT'S NEW */
 #newstuff {
     text-shadow: 2px 2px 0px #871f5c, -1px -1px 0px #006e6e, 0px 0px 4px white;
@@ -900,6 +906,13 @@ input[type="submit"] {
     border: 4px double #ff00ab;
 }
 
+@media only screen and (max-width: 600px) {
+    .playpanel {
+        padding: calc(5px + 1vw);
+        margin: 1vw;
+    }
+}
+
 
 /* MEDIA */
 #media.infosection::after {
@@ -1093,10 +1106,6 @@ body.open-vid, body.open-img {
         flex-basis: 50%;
         max-width: unset;
     }
-
-    .gallery > * {
-      flex-basis: calc(50% - 20px);
-    }
     
     #media > .width-container {
       margin: 10px;
@@ -1104,6 +1113,10 @@ body.open-vid, body.open-img {
 }
 
 /* POLICIES */
+#policies {
+    padding-bottom: 5vh;
+}
+
 .policybox {
     flex-basis: 300px;
     flex-grow: 1;
@@ -1317,6 +1330,7 @@ footer.infosection {
 
 .patchbox {
     flex-basis: 100%;
+    max-width: 100%;
 }
 
 .patchbox ~ .patchbox {
@@ -1372,11 +1386,12 @@ footer.infosection {
     font-family: "Paragon City";
     font-style: italic;
     color: white;
-    font-size: 1.5em;
+    font-size: calc(1em + 0.5vw);
     line-height: 1.5em;
 }
 
 .patchtitle h4 {
+    font-size: calc(0.6em + 0.25vw);
     margin-top: 0.5em;
     color: #02e2f6;
     font-weight: 600;
@@ -1423,6 +1438,15 @@ footer.infosection {
 
 .innernav a:hover, .innernav a.currentsection {
     opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .innernav a {
+        width: 25%;
+        font-size: 4vw;
+        padding: 0.5em;
+        text-align: center;
+    }  
 }
 
 .inner .city {
