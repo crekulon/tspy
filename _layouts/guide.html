@@ -6,7 +6,11 @@
 
 <body class="inner raisedcity">
 	{% if page.url == "/guides.html" %} 
-		{% assign guide = site.guides | find: "title", "Installation" %}
+		{% for find in site.guides %}
+			{% if find.title == "Installation" %}
+				{% assign guide = find %}
+			{% endif %}
+		{% endfor %}
 	{% else %}
 		{% assign guide = page %}
 	{% endif %}
