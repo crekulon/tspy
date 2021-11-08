@@ -68,7 +68,14 @@ ol, ul {
 .md h6 { font-size: 1em; }
 .md em { font-style: italic; }
 .md strong { font-weight: 600; }
-.md img { margin: auto; display: block; max-width: 600px; cursor: pointer;}
+
+.md img {
+    margin: auto; 
+    display: block; 
+    max-width: 100%; 
+    width: 600px; 
+    cursor: pointer;
+}
 
 .md blockquote {
     position: relative;
@@ -1541,11 +1548,25 @@ footer.infosection {
     opacity: 0.8;
 }
 
+@media only screen and (max-width: 600px) {
+    .patchnav {
+        margin-top: 5vh;
+    }
+}
+
 /* GUIDES */
+#guides {
+    padding-top: 10vh;    
+}
+
+#guides > h2.motto {
+    margin: 10px;
+    padding: 10px;
+}
+
 .guide-container {
     flex-wrap: nowrap;
     align-items: flex-start;
-    padding-top: 20vh;
     margin-top: 0;
 }
 
