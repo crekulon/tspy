@@ -1,5 +1,5 @@
 {% assign ordered_videos = site.galleryvideos | sort:"order" %}
-{% assign ordered_images = site.galleryimages | sort:"order" %}
+{% assign ordered_images = site.galleryimages | sort:"order" | reverse %}
 
 <section id="media" class="infosection">
     
@@ -14,7 +14,7 @@
             </div>
             {% if ordered_videos.size > 1 %}
             <div class="video-listing">
-                {% for video in ordered_videos %}
+                {% for video in ordered_videos offset:1 %}
                 <div><div class="video-wrapper"><span class="vid-opener" data-vid="{{ video.content | strip_html | strip }}"></span></div></div>
                 {% endfor %}
             </div>
