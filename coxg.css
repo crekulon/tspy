@@ -1627,16 +1627,14 @@ footer.infosection {
     padding-left: 1em;
     padding: 0.5em 0.5em 0.5em 1em;
     border-left: 4px ridge;
-    font-family: "Alien Encounters";
     font-size: 0.8em;
 }
 .guidecategory > a ~ a {
     margin-top: 0.5em;
 }
 
-.guidecategory > a:hover, .guidecategory > a.currentguide {
-    color: #ff0084;
-    text-shadow: 0px 0px 20px #ff0084;
+.guidecategory > a:hover, .guidecategory > a.selected {
+    border-left-color: #ff0084;
 }
 
 @media only screen and (max-width: 800px) {

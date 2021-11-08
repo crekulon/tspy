@@ -5,7 +5,7 @@
             <span>{{ category.name }}</span>
             {% assign sortedguides = category.items | sort: 'order' %}
             {% for guide in sortedguides %}
-                <a class="noglow {% if page.url == guide.url or page.url == "/guides.html" and guide.title == "Installation" %}currentguide{% endif %}" href="{{ guide.url }}">{{ guide.title }}</a>
+                <a class="noglow selector {% if page.url == guide.url or page.url == "/guides.html" and guide.title == "Installation" %}selected{% endif %}" href="{{ guide.url }}">{{ guide.title }}</a>
             {% endfor %}
         </div>
     {% endfor %}
