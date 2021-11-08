@@ -20,6 +20,16 @@ collections:
       - {label: "Icon", name: "icon", widget: "image", default: "/img/qachan.png"}
       - {label: "Body", name: "body", widget: "markdown"}
 
+  - name: "guides"
+    label: "Guides"
+    folder: "_guides"
+    create: true
+    slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}-{{slug}}"
+    fields: 
+      - {label: "Category", name: "category", widget: "string", hint: "Guides need a category to be 'under'. You can leave this as 'General', name one already being used, or even name a new one completely.", default: "General"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "homepage"
     label: "Homepage & Metadata"
     files:

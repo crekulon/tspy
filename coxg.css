@@ -231,17 +231,12 @@ ol, ul {
     flex-direction: column;
 }
 
-.cta-container {
+.cta-container, .cta-container > div {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.cta-container > div {
-    display: flex;
-    width: 100%;
-    justify-content: center;
 }
 
 .cta.smaller {
@@ -275,8 +270,9 @@ ol, ul {
     box-shadow: 0px 0px 10px #02e2f6;
 }
 
-.cta:hover {
+.cta:hover, .cta.guidelink {
     color: #ff0084;
+    border: 1px solid #ff0084;
     text-shadow: 0px 0px 20px #ff0084;
 }
 

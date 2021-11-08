@@ -23,6 +23,11 @@ collections:
     output: true
     permalink: /:collection/:name
 
+  guides:
+    title: Guides
+    output: true
+    permalink: /:collection/:name
+
 defaults:
   -
     scope:
@@ -34,6 +39,16 @@ defaults:
       type: "patchnotes"
     values:
       layout: "patchnote"
+  -
+    scope:
+      path: "/guides"
+    values:
+      layout: "inner"
+  -
+    scope:
+      type: "guides"
+    values:
+      layout: "guide"
 
 feed:
   collections:
