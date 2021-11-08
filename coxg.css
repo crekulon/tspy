@@ -527,6 +527,17 @@ ol, ul {
     }
 }
 
+@media only screen and (max-width: 350px) {
+    #splash h1, #splash .h1 {
+        bottom: calc(46vh - 0.17em);
+    }
+    
+    .road {
+        height: 45vh;
+        z-index: 5;
+    }
+}
+
 /* intro anim */
 #splash .ctas {
     transition: all 3s ease-in-out;
