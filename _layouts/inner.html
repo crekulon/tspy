@@ -9,7 +9,9 @@
 	{% include innernav.html %}
 	{{ content }}
 
-	{% include cityfooter.html %}
+	{% unless page.url contains "/account" %}
+		{% include cityfooter.html %}
+	{% endunless %}
     {% include scripts.html %}
 </body>
 </html>
