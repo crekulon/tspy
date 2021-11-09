@@ -15,6 +15,8 @@ Additionally, check out the [Invention guide](/guides/invention) to see how the 
 
 ![](/img/uploads/seasonal.jpg)
 
+*Note: you can also get 'Season 1' ATOs from the repeatable Super Pack option in Paragon Rewards. You CANNOT get Season 2 ATOs from them, nor can you convert S1 ATOs into S2s.*
+
 ###### Salvage and purple/pvp IO recipes
 
 ![](/img/uploads/market.jpg)
