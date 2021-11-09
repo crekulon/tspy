@@ -23,7 +23,7 @@
             {% for highlight in ordered_highlights %}
                 <div class="highlight-section highlight-{{ highlight.title | slugify }} {% if forloop.index == 1 %} highlighted {% endif %}">
                     <span class="selection-title">{{ highlight.title }}</span>
-                    <div class="selection-description">
+                    <div class="selection-description md">
                         {{ highlight.content | markdownify }}
                     </div>
                 </div>
