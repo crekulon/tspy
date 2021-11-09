@@ -1675,3 +1675,8 @@ footer.infosection {
         border-top-right-radius: 20px;
     }
 }
+
+/* GUIDE-SPECIFIC STYLING */
+.guidebody.gearing-up h6 {
+    text-align: center;
+}

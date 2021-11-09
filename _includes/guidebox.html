@@ -1,5 +1,5 @@
 <div class="guidebox">
-    <div class="guidebody md">
+    <div class="guidebody md {{ guide.title | slugify }}">
         <h1 class="motto">{{ guide.title }}</h1>
         {{ guide.content | replace: "h5", "h6" | replace: "h4", "h5"| replace: "h3", "h4"| replace: "h2", "h3"| replace: "h1", "h2" | replace: "<img ", "<img loading='lazy' "}} {% comment %} > to fix syntax highlighting {% endcomment %}
         {% comment %} this probably seems like a really strange replace, I just don't want another H1 to mess up da SEO {% endcomment %}
