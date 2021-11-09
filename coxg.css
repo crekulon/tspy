@@ -72,10 +72,11 @@ ol, ul {
 .md img {
     margin: auto; 
     display: block; 
-    max-width: 100%; 
-    width: 600px; 
     cursor: pointer;
     margin-bottom: 5vh;
+    max-width: 100%; 
+    width: auto;
+    max-height: 30vh;
 }
 
 .md blockquote {
