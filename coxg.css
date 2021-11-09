@@ -1610,6 +1610,10 @@ footer.infosection {
     flex-direction: column;
 }
 
+.guidecategory.getting-started {
+    order: -1;
+}
+
 .guidenav {
     background: #140e2a;
     padding: 20px;

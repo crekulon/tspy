@@ -1,7 +1,7 @@
 {% assign guidesbycat = site.guides | group_by: "category" %}
 <div class="guidenav">
     {% for category in guidesbycat %}
-        <div class="guidecategory">
+        <div class="guidecategory {{ category.name | slugify }}">
             <span>{{ category.name }}</span>
             {% assign sortedguides = category.items | sort: 'order' %}
             {% for guide in sortedguides %}
