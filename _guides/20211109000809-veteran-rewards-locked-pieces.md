@@ -15,7 +15,7 @@ You're given enough tokens to fill out the entire VIP benefits tree. To reach it
 
 ![](/img/uploads/paragonrewards.png)
 
-
+The 'Super Packs' you can get from the very top right VIP reward can be a powerful boon, granting a number of merit rewards and AT-origin enhancements.
 
 *Paraphrased from notjoe's "[The ThunderSpy 101 Primer collection AKA Teach me Trickshot!](https://thunderspygaming.boards.net/thread/71/thunderspy-primer-collection-teach-trickshot)"*
 
