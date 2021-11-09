@@ -3,7 +3,7 @@ category: Getting Started
 order: 1
 title: Veteran Rewards & Locked Pieces
 ---
-###### Locked Powers & Pieces
+###### "Purchasing" Parts
 
 When you first start on Thunderspy, you'll see some costumes and powers locked with a shopping cart next to them. You can simply click the shopping cart and immediately unlock those items, it's just some leftover code.
 
