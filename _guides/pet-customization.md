@@ -3,7 +3,7 @@ category: Core Changes
 order: 1
 title: Pet Customization
 ---
-On Thunderspy, any pet can be customized - Mastermind minion, Controller/Dominator pet, veteran vanity pet, etc. If it can be named, it can be given a custom costume!
+On Thunderspy, any pet can be customized - Mastermind minion, Controller/Dominator pet, veteran vanity pet, etc. If it can be named, it can be given a custom costume! Certain non-humanoid pets (Robots, Beasts) will have broken animations, but anything that uses the human skeleton will animate as expected.
 
 To customize a pet, rename it, then right click it and select 'Edit Costume'. Make something you're happy with, then simply hit 'Next'. And you're all set!
 
