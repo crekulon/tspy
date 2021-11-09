@@ -1685,6 +1685,18 @@ footer.infosection {
     text-align: center;
 }
 
+.guidebody.npc-parts h6 {
+    text-align: center;
+}
+
+.guidebody.npc-parts ul {
+    display: inline-block;
+}
+
+.guidebody.npc-parts {
+    text-align: center;
+}
+
 /* SCANLINES - from https://codepen.io/meduzen/pen/zxbwRV */
 .scanlines {
     position: relative;
