@@ -628,10 +628,13 @@ ol, ul {
 
 /* WHAT'S NEW */
 #newstuff {
-    text-shadow: 2px 2px 0px #871f5c, -1px -1px 0px #006e6e, 0px 0px 4px white;
     background: url(./img/coxgrecolor.jpg);
     background-size: cover;
     background-position: center;
+}
+
+#newstuff .selection-title, #newstuff .selection {
+    text-shadow: 2px 2px 0px #871f5c, -1px -1px 0px #006e6e, 0px 0px 4px white;
 }
 
 .selection {
