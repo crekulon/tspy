@@ -7,7 +7,6 @@ If you're coming from another server, you should also see the [Enhancements guid
 
 Additionally, check out the [Invention guide](/guides/invention) to see how the crafting process was streamlined.
 
-<center>
 ###### Obtaining Invention Origin Enhancements
 
 ![](/img/uploads/ios.jpg)
@@ -23,7 +22,6 @@ Additionally, check out the [Invention guide](/guides/invention) to see how the 
 ###### Other Helpful Stuff
 
 ![](/img/uploads/otherstuff.jpg)
-</center>
 
 *Shamelessly stolen and broken up From notjoe's "[The ThunderSpy 101 Primer collection AKA Teach me Trickshot!](https://thunderspygaming.boards.net/thread/71/thunderspy-primer-collection-teach-trickshot)"*
 
