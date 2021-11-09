@@ -24,7 +24,7 @@ collections:
     label: "Guides"
     folder: "_guides"
     create: true
-    slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}-{{slug}}"
+    slug: "{{slug}}"
     fields: 
       - {label: "Category", name: "category", widget: "string", hint: "Guides need a category to be 'under'. You can leave this as 'General', name one already being used, or even name a new one completely.", default: "General"}
       - {label: "Order", name: "order", widget: "number", default: 1, value_type: "int", hint: "You can use this number to change the order that the guide shows up in its category. Lower is closer to the top. You don't have to set this if you don't care."}
