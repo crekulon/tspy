@@ -1,8 +1,14 @@
 ---
+order: 1
 title: Unparalleled Customization
 image: https://crekulon.github.io/tspy/img/aokk.gif
-order: 1
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque ipsum, vulputate eu dapibus et, facilisis a nunc. Cras nibh elit, placerat ac nisi eget, porttitor suscipit quam. Sed sollicitudin felis ac iaculis dapibus. Sed purus erat, iaculis nec orci eu, lacinia finibus massa. Cras non quam in leo posuere fermentum. Etiam ornare neque quis mauris imperdiet ullamcorper. Cras nec maximus tortor.
+Thunderspy boasts the most updated character creator out of any private server. New and updated body and face sliders allow you to make more unique character shapes than ever before, while the color palette has been expanded to any hue imaginable.
 
-Vivamus vel interdum lorem, at fringilla erat. Vestibulum in orci vitae enim efficitur ullamcorper vitae ac leo.
+Some other notable additions include:
+
+* New and original heads, shoulders, gloves, legs, textures, and even a new 'Outerwear' slot for certain female torsos that feature totally new hoodie and shirt options.
+* More chest and head detail slots - two detail 1, two detail 2, two chest details.
+* 'Invisible' textures, allowing you to make a character with no head, arms, or without a body at all.
+* New NPC parts unlocked through gameplay - Rikti and Rikti Monkey heads, Behemoth heads.
+* Freakshow scythe/hammer/claw arms and jagged metal shoulder pieces, even the Stunner backpack for males!
