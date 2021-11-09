@@ -1,5 +1,5 @@
 ---
-category: Notable Changes
+category: Core Changes
 order: 1
 title: Power Pools
 ---
