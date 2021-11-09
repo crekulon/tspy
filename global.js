@@ -60,15 +60,24 @@ document.querySelectorAll('.vid-opener').forEach(e => {
 
 document.querySelectorAll('.image-opener').forEach(e => {
     e.addEventListener('click', function(){
-        document.body.classList.add('open-img')
-        document.querySelector('.gallery-container .gallery-image').src = e.style.backgroundImage.replace('url(', '').replace(')', '').replaceAll('"', '')
+        let imageURL = e.style.backgroundImage.replace('url(', '').replace(')', '').replaceAll('"', '')
+        if(window.innerWidth > 700) {
+            document.body.classList.add('open-img')
+            document.querySelector('.gallery-container .gallery-image').src = imageURL
+        } else {
+            window.open(imageURL, "_blank")
+        }
     })
 })
 
 document.querySelectorAll('.md p img').forEach(e => {
     e.addEventListener('click', function(){
-        document.body.classList.add('open-img')
-        document.querySelector('.gallery-container .gallery-image').src = e.src
+        if(window.innerWidth > 700) {
+            document.body.classList.add('open-img')
+            document.querySelector('.gallery-container .gallery-image').src = e.src
+        } else {
+            window.open(e.src, "_blank")
+        }
     })
 })
 
@@ -77,5 +86,11 @@ document.querySelectorAll('.media-bg, .media-close').forEach(e => {
         document.body.classList.remove('open-vid')
         document.body.classList.remove('open-img')
         document.querySelector('.video-container iframe').src = ""
+    })
+})
+
+document.querySelectorAll('.gallery-image').forEach(e => {
+    e.addEventListener('click', ()=> {
+        window.open(e.src, '_blank');
     })
 })

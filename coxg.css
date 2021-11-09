@@ -1119,6 +1119,7 @@ body.open-vid, body.open-img {
 }
 
 .gallery-image {
+    cursor: zoom-in;
     object-fit: contain;
     position: relative;
     max-height: 80vh;
