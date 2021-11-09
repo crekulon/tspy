@@ -14,7 +14,7 @@
         <div class="highlight-images">
             {% for highlight in ordered_highlights %}
                 <div class="image-container highlight-section highlight-{{ highlight.title | slugify }} {% if forloop.index == 1 %} highlighted {% endif %}">
-                    <div class="image lazy" style="background-image: url({{ highlight.image }})"></div>
+                    <div class="image lazy scanlines" style="background-image: url({{ highlight.image }})"></div>
                 </div>
             {% endfor %}
         </div>
