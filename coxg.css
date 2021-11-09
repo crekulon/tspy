@@ -75,6 +75,7 @@ ol, ul {
     max-width: 100%; 
     width: 600px; 
     cursor: pointer;
+    margin-bottom: 5vh;
 }
 
 .md blockquote {
