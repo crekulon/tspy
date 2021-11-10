@@ -1,7 +1,7 @@
 ---
 order: 5
 title: Basebuilding & Apartments
-image: /img/uploads/basesss.gif
+image: /img/uploads/bases2.gif
 ---
 Each character has its own personal base, called **Apartments**. Like bases, they can be given a code and accessed freely by anyone who has it. No more making a whole supergroup for one character's base!
 
