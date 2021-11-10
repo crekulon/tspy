@@ -732,6 +732,9 @@ ol, ul {
     box-shadow: 0px 0px 10px inset black;
 }
   
+.highlight-level-scaling .image {
+    background-size: auto 100%;
+}
 
 .selection-info {
     width: 100%;
