@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 8
 title: Level Scaling
 image: /img/uploads/scaling.gif
 ---
