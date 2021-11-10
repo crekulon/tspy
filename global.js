@@ -94,3 +94,10 @@ document.querySelectorAll('.gallery-image').forEach(e => {
         window.open(e.src, '_blank');
     })
 })
+
+//collapse toggles - used only on guides as of writing but may have other applications eventually
+document.querySelectorAll('.collapsetoggle').forEach(e => {
+    e.addEventListener('click', ()=>{
+        e.parentElement.classList.toggle('collapsed')
+    })
+})

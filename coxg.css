@@ -1666,6 +1666,16 @@ footer.infosection {
     border-left-color: #ff0084;
 }
 
+.guidenav .collapsetoggle {
+    display: none;
+    position: absolute;
+    right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #0ff;
+    text-shadow: 3px 3px 0px #ff33aa7a, 0px 0px 10px #00ffff7a, 0px 0px 5px #00ffff7a;
+}
+
 @media only screen and (max-width: 800px) {
     .guidenav {
         border-top-left-radius: 10px;
@@ -1673,7 +1683,34 @@ footer.infosection {
         order: -1;
         width: 100%;
         box-shadow: 0px 0px 10px #510095 inset, 0px 0px 5px #0ff;
+        padding-right: 5em;
+        margin-bottom: 1em;
+        position: relative;
     }
+
+    .guidenav .collapsetoggle {
+        display: block;
+    }
+
+    .collapsed .collapsetoggle .fa-caret-square-up {
+        display: none;
+    }
+
+    .guidenav:not(.collapsed) .collapsetoggle .fa-caret-square-down {
+        display: none;
+    }
+
+    .guidenav.collapsed .guidecategory > span, .guidenav.collapsed .selector:not(.selected) {
+        display: none;
+    }
+    
+    .guidenav.collapsed .guidecategory {
+        margin-bottom: 0;
+    }
+    
+    .guidenav.collapsed .guidecategory > .selector.selected {
+        margin: 0;
+    }  
     
     .guide-container {
         flex-wrap: wrap;

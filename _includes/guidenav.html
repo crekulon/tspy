@@ -1,5 +1,9 @@
 {% assign guidesbycat = site.guides | group_by: "category" %}
-<div class="guidenav">
+<div class="guidenav collapsed">
+    <div class="collapsetoggle">
+        <i class="far fa-caret-square-up"></i>
+        <i class="far fa-caret-square-down"></i>
+    </div>
     {% for category in guidesbycat %}
         <div class="guidecategory {{ category.name | slugify }}">
             <span>{{ category.name }}</span>
