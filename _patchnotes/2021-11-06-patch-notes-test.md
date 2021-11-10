@@ -2,7 +2,7 @@
 date: 2021-10-30T20:23:26.922Z
 title: Bugs & Costumes
 subtitle: Costume Part Update
-icon: https://crekulon.github.io/tspy/img/aokk.gif
+icon: /img/qachan.png
 ---
 # Bug Fixes
 
@@ -18,16 +18,3 @@ icon: https://crekulon.github.io/tspy/img/aokk.gif
 3. Wailer head for male and huge only right now
 4. The wealth aura and money backpack can be unlocked by earning 10 million influence on one character
 5. Shimapan in bottoms with skin for females only
-
-> Fuck it, put a quote in
-
-![](https://crekulon.github.io/tspy/img/lamp.gif "lamppppppp!!!!!! yeesss")
-
-
-
-```
-function onLoaded(fn) {
-    document.addEventListener("DOMContentLoaded", fn)
-    if (document.readyState === "interactive" ||document.readyState === "complete" ) {fn()}
-}
-```
