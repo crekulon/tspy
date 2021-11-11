@@ -7,6 +7,8 @@
     {% assign untranslatedtitle = false %}
     {% unless include.article[langtitle].size %}
         {% assign untranslatedtitle = true %}
+    {% elsif include.article[langtitle].size == 0 %}
+        {% assign untranslatedcontent = true %}
     {% endunless %}
 
     {% comment %} default to english for untranslated material {% endcomment %}

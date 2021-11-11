@@ -5,7 +5,10 @@
     {% comment %} detect untranslated sections {% endcomment %}
     {% comment %} this is untranslatedcontent because we'll check this value back in the main content to suggest help translating with it {% endcomment %}
     {% assign untranslatedcontent = false %}
+
     {% unless include.article[langcontent].size %}
+        {% assign untranslatedcontent = true %}
+    {% elsif include.article[langcontent].size == 0 %}
         {% assign untranslatedcontent = true %}
     {% endunless %}
 

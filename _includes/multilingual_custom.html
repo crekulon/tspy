@@ -12,6 +12,8 @@
     {% assign untranslatedcontent = false %}
     {% unless include.article[localkey].size %}
         {% assign untranslatedcontent = true %}
+    {% elsif include.article[localkey].size == 0 %}
+        {% assign untranslatedcontent = true %}
     {% endunless %}
 
     {% comment %} default to english for untranslated material {% endcomment %}
