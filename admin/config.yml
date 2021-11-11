@@ -4,6 +4,7 @@ backend:
   branch: main
   site_domain: nervous-einstein-3d330a.netlify.com
   open_authoring: true
+  publish_mode: editorial_workflow
 
 media_folder: "img/uploads"
 site_url: https://tspydev.eccentric.monster/
