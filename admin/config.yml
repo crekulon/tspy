@@ -3,6 +3,7 @@ backend:
   repo: crekulon/tspy
   branch: main
   site_domain: nervous-einstein-3d330a.netlify.com
+  open_authoring: true
 
 media_folder: "img/uploads"
 site_url: https://tspydev.eccentric.monster/
