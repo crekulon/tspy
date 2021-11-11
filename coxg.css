@@ -523,18 +523,29 @@ ol, ul {
         height: 40vh;
     }
 
-    .cta-container {
-        flex-direction: column;
-    }
-
     .cta {
         max-width: 95%;
         font-size: 5vw;
     }
 }
 
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+    .cta-container > .cta {
+        width: 40%;
+        flex-grow: 1;
+    }
+
+    .cta-container {
+        flex-direction: row;
+    }
+}
+
 /* to improve the splash screen on super small screens */
 @media only screen and (max-width: 400px) and (max-height: 700px) {
+    .cta-container {
+        flex-direction: column;
+    }
+
     #splash h1, #splash .h1 {
         bottom: calc(46vh - 0.17em);
     }
@@ -1817,3 +1828,22 @@ html:lang(es) .patchgroup a.currentpage::after {
 html:lang(jp) .patchgroup a.currentpage::after {
     content: "読書";
 }
+
+#lang {
+    position: absolute;
+    bottom: 0.5em;
+    right: 1.5vw;
+    z-index: -1;
+}
+
+#lang > select {
+    border: 1px outset #f3a;
+    border-radius: 10px;
+    background: #0ff;
+    color: #1a0c2e;
+    font-size: 10px;
+    display: block;
+    margin: 0;
+    box-shadow: 0px 0px 10px #f3a;
+}
+  
