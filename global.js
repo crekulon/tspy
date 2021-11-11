@@ -105,19 +105,22 @@ document.querySelectorAll('.collapsetoggle').forEach(e => {
 //language swaps - default to english for now
 let language = localStorage.getItem('language')
 let languageEl = document.querySelector('#lang select')
+
+function updateLanguage(lang) {
+    document.documentElement.lang = lang
+    localStorage.setItem('language', lang)
+    languageEl.value = lang
+}
+
 if(language) {
-    document.documentElement.lang = language
-    languageEl.value = language
+    updateLanguage(language)
 } else {
-    localStorage.setItem('language', 'en')
-    document.documentElement.lang = 'en'
-    languageEl.value = "en"
+    updateLanguage('en')
 }
 
 document.querySelectorAll('#lang select').forEach(e => {
     e.addEventListener('change', ()=>{
         let lang = e.value
-        document.documentElement.lang = lang
-        localStorage.setItem('language', lang)
+        updateLanguage(lang)
     })
 })
