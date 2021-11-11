@@ -6,7 +6,7 @@
         <div class="selection">
             {% for highlight in ordered_highlights %}
                 <div class="selector {% if forloop.index == 1 %} selected {% endif %}" highlights="{{ highlight.title | slugify }}">
-                    {{ highlight.title}}
+                    {% include multilingual_title.html article=highlight %}
                 </div>
             {% endfor %}
         </div>
@@ -22,9 +22,9 @@
         <div class="selection-info">
             {% for highlight in ordered_highlights %}
                 <div class="highlight-section highlight-{{ highlight.title | slugify }} {% if forloop.index == 1 %} highlighted {% endif %}">
-                    <span class="selection-title">{{ highlight.title }}</span>
+                    <span class="selection-title">{% include multilingual_title.html article=highlight %}</span>
                     <div class="selection-description md">
-                        {{ highlight.content | markdownify }}
+                        {% include multilingual_content.html article=highlight %}
                     </div>
                 </div>
             {% endfor %}

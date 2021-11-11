@@ -7,7 +7,7 @@
     <div class="width-container play-container">
         <div class="playpanel md">
             <h3 class="motto">How To play</h3>
-            {{ site.data.howtoplay.body | markdownify}}
+            {% include multilingual_custom.html key="body" article=site.data.howtoplay md=true %}
 
             <p style="margin-top: 1em;">For further information on gameplay and other changes, check out our guides!</p>
             <span class="cta-container">
@@ -55,9 +55,9 @@
 
         <div class="playpanel about md">
             <h3 class="motto">About Us</h3>		
-            {{ site.data.aboutus.main | markdownify}}
+            {% include multilingual_custom.html key="main" article=site.data.aboutus md=true %}
             <div class="support">
-                {{ site.data.aboutus.support | markdownify }}
+                {% include multilingual_custom.html key="support" article=site.data.aboutus md=true %}
             </div>
         </div>
     </div>

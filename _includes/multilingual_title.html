@@ -1,0 +1,16 @@
+{% for language in site.languages %}
+    {% assign langtitle = "title_" | append: language %}
+    {% if language == "en" %} {% assign langtitle = "title" %} {% endif %}
+
+    {% comment %} detect untranslated sections {% endcomment %}
+    {% comment %} this is untranslatedtitle because we'll check this value back in the main content to suggest help translating with it {% endcomment %}
+    {% assign untranslatedtitle = false %}
+    {% unless include.article[langtitle].size %}
+        {% assign untranslatedtitle = true %}
+    {% endunless %}
+
+    {% comment %} default to english for untranslated material {% endcomment %}
+    {% assign title = include.article[langtitle] | default: include.article.title %}
+
+    <span class="langcontent {% if untranslatedtitle %}untranslated{% endif %}" lang="{{ language }}">{{ title }}</span>
+{% endfor %}

@@ -7,7 +7,7 @@
             {% assign patchgroupname = yearmonth.name | split: "_" %}
             <span class="motto">{{ patchgroupname[1] }}</span>
             {% for note in yearmonth.items %}
-                <a class="noglow {% if page.url == note.url %}currentpage{% endif %}" href="{{ note.url }}">{{ note.title }}</a>
+                <a class="noglow {% if page.url == note.url %}currentpage{% endif %}" href="{{ note.url }}">{% include multilingual_title.html article=note %}</a>
             {% endfor %}
         </div>
     {% endfor %}

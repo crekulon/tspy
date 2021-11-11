@@ -1559,6 +1559,7 @@ footer.infosection {
 }
 
 .patchgroup a.currentpage::after {
+    text-transform: uppercase;
     content: "YOU ARE HERE";
     position: absolute;
     width: 100%;
@@ -1781,4 +1782,37 @@ footer.infosection {
     0% {
         background-position: 0 50%;
     }
+}
+
+
+
+
+
+
+/***********************************/
+/* language controls */
+/* spans are inline, divs are block */
+/* not using display:contents cuz it's fucked up on safari */
+html span[lang], html div[lang] {
+    display: none;
+}
+
+html:lang(en) span[lang="en"], html:lang(fr) span[lang="fr"], html:lang(es) span[lang="es"], html:lang(jp) span[lang="jp"] {
+    display: inline;
+}
+
+html:lang(en) div[lang="en"], html:lang(fr) div[lang="fr"], html:lang(es) div[lang="es"], html:lang(jp) div[lang="jp"] {
+    display: block;
+}
+
+html:lang(fr) .patchgroup a.currentpage::after {
+    content: "Vous êtes ici";
+}
+
+html:lang(es) .patchgroup a.currentpage::after {
+    content: "Usted está aquí";
+}
+
+html:lang(jp) .patchgroup a.currentpage::after {
+    content: "読書";
 }

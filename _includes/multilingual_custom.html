@@ -1,0 +1,21 @@
+{% comment %} 
+    this requires that you pass an "article" and "key"
+    the article (i.e. "mottos") should be a jekyll/liquid object, and the key should be something you're getting the localization for (i.e. "largermotto")
+ {% endcomment %}
+
+{% for language in site.languages %}
+    {% assign langaffix = "_" | append: language %}
+    {% if language == "en" %} {% assign langaffix = "" %} {% endif %}
+    {% assign localkey = include.key | append: langaffix %}
+
+    {% comment %} detect untranslated content {% endcomment %}
+    {% assign untranslatedcontent = false %}
+    {% unless include.article[localkey].size %}
+        {% assign untranslatedcontent = true %}
+    {% endunless %}
+
+    {% comment %} default to english for untranslated material {% endcomment %}
+    {% assign custom = include.article[localkey] | default: include.article[include.key] %}
+
+    <span class="langcontent {% if untranslatedcontent %}untranslated{% endif %}" lang="{{ language }}">{% if include.md == false %}{{ custom }}{% else %}{{ custom | markdownify }}{% endif %}</span>
+{% endfor %}

@@ -24,7 +24,9 @@
 		<h2 class="h1 flip" t="THUNDERSPY">THUNDERSPY</h2>
 
 		<div class="ctas">
-			<span class="motto">{{ site.data.mottos.largermotto }}</span>
+			<span class="motto">
+				{% include multilingual_custom.html key="largermotto" article=site.data.mottos md=false %}
+			</span>
 			<span class="cta-container">
 				<a href="#newstuff" class="cta">WHAT'S NEW?</a>
 				<a href="#play" class="cta playnow">PLAY NOW</a>
@@ -35,7 +37,9 @@
 					<a href="/guides" class="cta smaller guidelink">GUIDES</a>
 				</div>
 			</span>
-			<span class="motto">{{ site.data.mottos.smallermotto }}</span>
+			<span class="motto">
+				{% include multilingual_custom.html key="smallermotto" article=site.data.mottos md=false %}
+			</span>
 		</div>
 	</section>
 

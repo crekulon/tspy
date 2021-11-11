@@ -3,6 +3,7 @@ date: 2021-10-30T20:23:26.922Z
 title: Bugs & Costumes
 subtitle: Costume Part Update
 icon: /img/qachan.png
+content_fr: ""
 ---
 # Bug Fixes
 

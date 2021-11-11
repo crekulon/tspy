@@ -2,12 +2,12 @@
     <div class="width-container">
         <div class="policybox">
             <h3 class="motto">Code of Conduct</h3>
-            {{ site.data.policies.coc | markdownify}}
+            {% include multilingual_custom.html key="coc" article=site.data.policies md=true %}
         </div>
 
         <div class="policybox">
             <h3 class="motto">Terms of Service</h3>
-            {{ site.data.policies.tos | markdownify}}
+            {% include multilingual_custom.html key="tos" article=site.data.policies md=true %}
         </div>
     </div>
 

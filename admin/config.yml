@@ -21,6 +21,12 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image", default: "/img/qachan.png"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "(FRENCH) Title", name: "title_fr", widget: "string"}
+      - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown"}
+      - {label: "(SPANISH) Title", name: "title_es", widget: "string"}
+      - {label: "(SPANISH) Body", name: "content_es", widget: "markdown"}
+      - {label: "(JAPANESE) Title", name: "title_jp", widget: "string"}
+      - {label: "(JAPANESE) Body", name: "content_jp", widget: "markdown"}
 
   - name: "guides"
     label: "Guides"
@@ -32,6 +38,12 @@ collections:
       - {label: "Order", name: "order", widget: "number", default: 1, value_type: "int", hint: "You can use this number to change the order that the guide shows up in its category. Lower is closer to the top. You don't have to set this if you don't care."}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "(FRENCH) Title", name: "title_fr", widget: "string"}
+      - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown"}
+      - {label: "(SPANISH) Title", name: "title_es", widget: "string"}
+      - {label: "(SPANISH) Body", name: "content_es", widget: "markdown"}
+      - {label: "(JAPANESE) Title", name: "title_jp", widget: "string"}
+      - {label: "(JAPANESE) Body", name: "content_jp", widget: "markdown"}
 
   - name: "homepage"
     label: "Homepage & Metadata"
@@ -50,12 +62,21 @@ collections:
         fields: 
           - {label: "Larger Motto", name: "largermotto", widget: "string"}
           - {label: "Smaller Motto", name: "smallermotto", widget: "string"}
+          - {label: "(FRENCH) Larger Motto", name: "largermotto_fr", widget: "string"}
+          - {label: "(FRENCH) Smaller Motto", name: "smallermotto_fr", widget: "string"}
+          - {label: "(SPANISH) Larger Motto", name: "largermotto_es", widget: "string"}
+          - {label: "(SPANISH) Smaller Motto", name: "smallermotto_es", widget: "string"}
+          - {label: "(JAPANESE) Larger Motto", name: "largermotto_jp", widget: "string"}
+          - {label: "(JAPANESE) Smaller Motto", name: "smallermotto_jp", widget: "string"}
 
       - label: "How To Play"
         name: "howtoplay"
         file: "_data/howtoplay.yml"
         fields: 
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "(FRENCH) Body", name: "body_fr", widget: "markdown"}
+          - {label: "(SPANISH) Body", name: "body_es", widget: "markdown"}
+          - {label: "(JAPANESE) Body", name: "body_jp", widget: "markdown"}
           
       - label: "About Us"
         name: "aboutus"
@@ -63,6 +84,12 @@ collections:
         fields: 
           - {label: "Body", name: "main", widget: "markdown"}
           - {label: "Support Us", name: "support", widget: "markdown", hint: "This is shown beneath the regular 'about us' stuff in a highlighted box"}
+          - {label: "(FRENCH) Body", name: "main_fr", widget: "markdown"}
+          - {label: "(FRENCH) Support Us", name: "support_fr", widget: "markdown"}
+          - {label: "(SPANISH) Body", name: "main_es", widget: "markdown"}
+          - {label: "(SPANISH) Support Us", name: "support_es", widget: "markdown"}
+          - {label: "(JAPANESE) Body", name: "main_jp", widget: "markdown"}
+          - {label: "(JAPANESE) Support Us", name: "main_jp", widget: "markdown"}
           
       - label: "Policies"
         name: "policies"
@@ -70,6 +97,12 @@ collections:
         fields: 
           - {label: "Code of Conduct", name: "coc", widget: "markdown"}
           - {label: "Terms of Service", name: "tos", widget: "markdown"}
+          - {label: "(FRENCH) Code of Conduct", name: "coc_fr", widget: "markdown"}
+          - {label: "(FRENCH) Terms of Service", name: "tos_fr", widget: "markdown"}
+          - {label: "(SPANISH) Code of Conduct", name: "coc_es", widget: "markdown"}
+          - {label: "(SPANISH) Terms of Service", name: "tos_es", widget: "markdown"}
+          - {label: "(JAPANESE) Code of Conduct", name: "coc_jp", widget: "markdown"}
+          - {label: "(JAPANESE) Terms of Service", name: "tos_jp", widget: "markdown"}
 
   - name: "highlights"
     label: "Homepage Highlights"
@@ -81,6 +114,12 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "(FRENCH) Title", name: "title_fr", widget: "string"}
+      - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown"}
+      - {label: "(SPANISH) Title", name: "title_es", widget: "string"}
+      - {label: "(SPANISH) Body", name: "content_es", widget: "markdown"}
+      - {label: "(JAPANESE) Title", name: "title_jp", widget: "string"}
+      - {label: "(JAPANESE) Body", name: "content_jp", widget: "markdown"}
       
   - name: "galleryvideos"
     label: "Gallery Videos"
