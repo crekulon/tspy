@@ -21,12 +21,12 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image", default: "/img/qachan.png"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "(FRENCH) Title", name: "title_fr", widget: "string"}
-      - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown"}
-      - {label: "(SPANISH) Title", name: "title_es", widget: "string"}
-      - {label: "(SPANISH) Body", name: "content_es", widget: "markdown"}
-      - {label: "(JAPANESE) Title", name: "title_jp", widget: "string"}
-      - {label: "(JAPANESE) Body", name: "content_jp", widget: "markdown"}
+      - {label: "(FRENCH) Title", name: "title_fr", widget: "string", required: false}
+      - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown", required: false}
+      - {label: "(SPANISH) Title", name: "title_es", widget: "string", required: false}
+      - {label: "(SPANISH) Body", name: "content_es", widget: "markdown", required: false}
+      - {label: "(JAPANESE) Title", name: "title_jp", widget: "string", required: false}
+      - {label: "(JAPANESE) Body", name: "content_jp", widget: "markdown", required: false}
 
   - name: "guides"
     label: "Guides"
@@ -38,15 +38,15 @@ collections:
       - {label: "Order", name: "order", widget: "number", default: 1, value_type: "int", hint: "You can use this number to change the order that the guide shows up in its category. Lower is closer to the top. You don't have to set this if you don't care."}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "(FRENCH) Category", name: "category_fr", widget: "string", hint: "Only the category at the top is used for sorting, this is just used to translate it. Technically only the 'first' in the order for a given category needs this to be set, but if you want to be safe, just always set it."}
-      - {label: "(FRENCH) Title", name: "title_fr", widget: "string"}
-      - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown"}
-      - {label: "(SPANISH) Category", name: "category_es", widget: "string", hint: "Only the category at the top is used for sorting, this is just used to translate it. Technically only the 'first' in the order for a given category needs this to be set, but if you want to be safe, just always set it."}
-      - {label: "(SPANISH) Title", name: "title_es", widget: "string"}
-      - {label: "(SPANISH) Body", name: "content_es", widget: "markdown"}
-      - {label: "(JAPANESE) Category", name: "category_jp", widget: "string", hint: "Only the category at the top is used for sorting, this is just used to translate it. Technically only the 'first' in the order for a given category needs this to be set, but if you want to be safe, just always set it."}
-      - {label: "(JAPANESE) Title", name: "title_jp", widget: "string"}
-      - {label: "(JAPANESE) Body", name: "content_jp", widget: "markdown"}
+      - {label: "(FRENCH) Category", name: "category_fr", widget: "string", hint: "Only the category at the top is used for sorting, this is just used to translate it. Technically only the 'first' in the order for a given category needs this to be set, but if you want to be safe, just always set it.", required: false}
+      - {label: "(FRENCH) Title", name: "title_fr", widget: "string", required: false}
+      - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown", required: false}
+      - {label: "(SPANISH) Category", name: "category_es", widget: "string", hint: "Only the category at the top is used for sorting, this is just used to translate it. Technically only the 'first' in the order for a given category needs this to be set, but if you want to be safe, just always set it.", required: false}
+      - {label: "(SPANISH) Title", name: "title_es", widget: "string", required: false}
+      - {label: "(SPANISH) Body", name: "content_es", widget: "markdown", required: false}
+      - {label: "(JAPANESE) Category", name: "category_jp", widget: "string", hint: "Only the category at the top is used for sorting, this is just used to translate it. Technically only the 'first' in the order for a given category needs this to be set, but if you want to be safe, just always set it.", required: false}
+      - {label: "(JAPANESE) Title", name: "title_jp", widget: "string", required: false}
+      - {label: "(JAPANESE) Body", name: "content_jp", widget: "markdown", required: false}
 
   - name: "homepage"
     label: "Homepage & Metadata"
@@ -65,21 +65,21 @@ collections:
         fields: 
           - {label: "Larger Motto", name: "largermotto", widget: "string"}
           - {label: "Smaller Motto", name: "smallermotto", widget: "string"}
-          - {label: "(FRENCH) Larger Motto", name: "largermotto_fr", widget: "string"}
-          - {label: "(FRENCH) Smaller Motto", name: "smallermotto_fr", widget: "string"}
-          - {label: "(SPANISH) Larger Motto", name: "largermotto_es", widget: "string"}
-          - {label: "(SPANISH) Smaller Motto", name: "smallermotto_es", widget: "string"}
-          - {label: "(JAPANESE) Larger Motto", name: "largermotto_jp", widget: "string"}
-          - {label: "(JAPANESE) Smaller Motto", name: "smallermotto_jp", widget: "string"}
+          - {label: "(FRENCH) Larger Motto", name: "largermotto_fr", widget: "string", required: false}
+          - {label: "(FRENCH) Smaller Motto", name: "smallermotto_fr", widget: "string", required: false}
+          - {label: "(SPANISH) Larger Motto", name: "largermotto_es", widget: "string", required: false}
+          - {label: "(SPANISH) Smaller Motto", name: "smallermotto_es", widget: "string", required: false}
+          - {label: "(JAPANESE) Larger Motto", name: "largermotto_jp", widget: "string", required: false}
+          - {label: "(JAPANESE) Smaller Motto", name: "smallermotto_jp", widget: "string", required: false}
 
       - label: "How To Play"
         name: "howtoplay"
         file: "_data/howtoplay.yml"
         fields: 
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "(FRENCH) Body", name: "body_fr", widget: "markdown"}
-          - {label: "(SPANISH) Body", name: "body_es", widget: "markdown"}
-          - {label: "(JAPANESE) Body", name: "body_jp", widget: "markdown"}
+          - {label: "(FRENCH) Body", name: "body_fr", widget: "markdown", required: false}
+          - {label: "(SPANISH) Body", name: "body_es", widget: "markdown", required: false}
+          - {label: "(JAPANESE) Body", name: "body_jp", widget: "markdown", required: false}
           
       - label: "About Us"
         name: "aboutus"
@@ -87,12 +87,12 @@ collections:
         fields: 
           - {label: "Body", name: "main", widget: "markdown"}
           - {label: "Support Us", name: "support", widget: "markdown", hint: "This is shown beneath the regular 'about us' stuff in a highlighted box"}
-          - {label: "(FRENCH) Body", name: "main_fr", widget: "markdown"}
-          - {label: "(FRENCH) Support Us", name: "support_fr", widget: "markdown"}
-          - {label: "(SPANISH) Body", name: "main_es", widget: "markdown"}
-          - {label: "(SPANISH) Support Us", name: "support_es", widget: "markdown"}
-          - {label: "(JAPANESE) Body", name: "main_jp", widget: "markdown"}
-          - {label: "(JAPANESE) Support Us", name: "support_jp", widget: "markdown"}
+          - {label: "(FRENCH) Body", name: "main_fr", widget: "markdown", required: false}
+          - {label: "(FRENCH) Support Us", name: "support_fr", widget: "markdown", required: false}
+          - {label: "(SPANISH) Body", name: "main_es", widget: "markdown", required: false}
+          - {label: "(SPANISH) Support Us", name: "support_es", widget: "markdown", required: false}
+          - {label: "(JAPANESE) Body", name: "main_jp", widget: "markdown", required: false}
+          - {label: "(JAPANESE) Support Us", name: "support_jp", widget: "markdown", required: false}
           
       - label: "Policies"
         name: "policies"
@@ -100,129 +100,129 @@ collections:
         fields: 
           - {label: "Code of Conduct", name: "coc", widget: "markdown"}
           - {label: "Terms of Service", name: "tos", widget: "markdown"}
-          - {label: "(FRENCH) Code of Conduct", name: "coc_fr", widget: "markdown"}
-          - {label: "(FRENCH) Terms of Service", name: "tos_fr", widget: "markdown"}
-          - {label: "(SPANISH) Code of Conduct", name: "coc_es", widget: "markdown"}
-          - {label: "(SPANISH) Terms of Service", name: "tos_es", widget: "markdown"}
-          - {label: "(JAPANESE) Code of Conduct", name: "coc_jp", widget: "markdown"}
-          - {label: "(JAPANESE) Terms of Service", name: "tos_jp", widget: "markdown"}
+          - {label: "(FRENCH) Code of Conduct", name: "coc_fr", widget: "markdown", required: false}
+          - {label: "(FRENCH) Terms of Service", name: "tos_fr", widget: "markdown", required: false}
+          - {label: "(SPANISH) Code of Conduct", name: "coc_es", widget: "markdown", required: false}
+          - {label: "(SPANISH) Terms of Service", name: "tos_es", widget: "markdown", required: false}
+          - {label: "(JAPANESE) Code of Conduct", name: "coc_jp", widget: "markdown", required: false}
+          - {label: "(JAPANESE) Terms of Service", name: "tos_jp", widget: "markdown", required: false}
       
       - name: "localization"
         label: "Header & Button Localization"
         file: "_data/localization.yml"
         fields:     
-          - {label: "socials_discord", name: "socials_discord", widget: "string", default: "Discord"}
-          - {label: "socials_twitter", name: "socials_twitter", widget: "string", default: "Twitter"}
-          - {label: "socials_patreon", name: "socials_patreon", widget: "string", default: "Support on Patreon"}
-          - {label: "socials_paypal", name: "socials_paypal", widget: "string", default: "Support with Paypal"}
-          - {label: "btn_patchnotes", name: "btn_patchnotes", widget: "string", default: "Patch Notes"}
-          - {label: "btn_forums", name: "btn_forums", widget: "string", default: "Forums"}
-          - {label: "btn_guides", name: "btn_guides", widget: "string", default: "Guides"}
-          - {label: "splash_whatsnew", name: "splash_whatsnew", widget: "string", default: "What's new?"}
-          - {label: "splash_playnow", name: "splash_playnow", widget: "string", default: "Play Now"}
-          - {label: "hometitle_newstuff", name: "hometitle_newstuff", widget: "string", default: "New & Improved Content"}
-          - {label: "hometitle_newstuff_moreinfo", name: "hometitle_newstuff_moreinfo", widget: "string", default: "For More Info"}
-          - {label: "hometitle_media", name: "hometitle_media", widget: "string", default: "Media"}
-          - {label: "hometitle_media_screenshots", name: "hometitle_media_screenshots", widget: "string", default: "Screenshots"}
-          - {label: "hometitle_playnow", name: "hometitle_playnow", widget: "string", default: "Play Now"}
-          - {label: "hometitle_playnow_howto", name: "hometitle_playnow_howto", widget: "string", default: "How To Play"}
-          - {label: "hometitle_playnow_guides", name: "hometitle_playnow_guides", widget: "string", default: "For further information on gameplay and other changes, check out our guides!"}
-          - {label: "hometitle_accounts", name: "hometitle_accounts", widget: "string", default: "Accounts"}
-          - {label: "hometitle_accounts_create", name: "hometitle_accounts_create", widget: "string", default: "Create an Account"}
-          - {label: "hometitle_accounts_reset", name: "hometitle_accounts_reset", widget: "string", default: "Reset Password"}
-          - {label: "hometitle_accounts_change", name: "hometitle_accounts_change", widget: "string", default: "Change Password"}
-          - {label: "hometitle_aboutus", name: "hometitle_aboutus", widget: "string", default: "About Us"}
-          - {label: "hometitle_patchnotes", name: "hometitle_patchnotes", widget: "string", default: "Latest Patch Notes"}
-          - {label: "hometitle_patchnotes_more", name: "hometitle_patchnotes_more", widget: "string", default: "More Patch Notes"}
-          - {label: "hometitle_policies_coc", name: "hometitle_policies_coc", widget: "string", default: "Code of Conduct"}
-          - {label: "hometitle_policies_tos", name: "hometitle_policies_tos", widget: "string", default: "Terms of Service"}
-          - {label: "inner_nav_home", name: "inner_nav_home", widget: "string", default: "Home"}
-          - {label: "patchnotes_title", name: "patchnotes_title", widget: "string", default: "Patch History"}
-          - {label: "patchnotes_back", name: "patchnotes_back", widget: "string", default: "Back to Patch Notes Archive"}
-          - {label: "socials_discord (FRENCH)", name: "socials_discord_fr", widget: "string"}
-          - {label: "socials_twitter (FRENCH)", name: "socials_twitter_fr", widget: "string"}
-          - {label: "socials_patreon (FRENCH)", name: "socials_patreon_fr", widget: "string"}
-          - {label: "socials_paypal (FRENCH)", name: "socials_paypal_fr", widget: "string"}
-          - {label: "btn_patchnotes (FRENCH)", name: "btn_patchnotes_fr", widget: "string"}
-          - {label: "btn_forums (FRENCH)", name: "btn_forums_fr", widget: "string"}
-          - {label: "btn_guides (FRENCH)", name: "btn_guides_fr", widget: "string"}
-          - {label: "splash_whatsnew (FRENCH)", name: "splash_whatsnew_fr", widget: "string"}
-          - {label: "splash_playnow (FRENCH)", name: "splash_playnow_fr", widget: "string"}
-          - {label: "hometitle_newstuff (FRENCH)", name: "hometitle_newstuff_fr", widget: "string"}
-          - {label: "hometitle_newstuff_moreinfo (FRENCH)", name: "hometitle_newstuff_moreinfo_fr", widget: "string"}
-          - {label: "hometitle_media (FRENCH)", name: "hometitle_media_fr", widget: "string"}
-          - {label: "hometitle_media_screenshots (FRENCH)", name: "hometitle_media_screenshots_fr", widget: "string"}
-          - {label: "hometitle_playnow (FRENCH)", name: "hometitle_playnow_fr", widget: "string"}
-          - {label: "hometitle_playnow_howto (FRENCH)", name: "hometitle_playnow_howto_fr", widget: "string"}
-          - {label: "hometitle_playnow_guides (FRENCH)", name: "hometitle_playnow_guides_fr", widget: "string"}
-          - {label: "hometitle_accounts (FRENCH)", name: "hometitle_accounts_fr", widget: "string"}
-          - {label: "hometitle_accounts_create (FRENCH)", name: "hometitle_accounts_create_fr", widget: "string"}
-          - {label: "hometitle_accounts_reset (FRENCH)", name: "hometitle_accounts_reset_fr", widget: "string"}
-          - {label: "hometitle_accounts_change (FRENCH)", name: "hometitle_accounts_change_fr", widget: "string"}
-          - {label: "hometitle_aboutus (FRENCH)", name: "hometitle_aboutus_fr", widget: "string"}
-          - {label: "hometitle_patchnotes (FRENCH)", name: "hometitle_patchnotes_fr", widget: "string"}
-          - {label: "hometitle_patchnotes_more (FRENCH)", name: "hometitle_patchnotes_more_fr", widget: "string"}
-          - {label: "hometitle_policies_coc (FRENCH)", name: "hometitle_policies_coc_fr", widget: "string"}
-          - {label: "hometitle_policies_tos (FRENCH)", name: "hometitle_policies_tos_fr", widget: "string"}
-          - {label: "inner_nav_home (FRENCH)", name: "inner_nav_home_fr", widget: "string"}
-          - {label: "patchnotes_title (FRENCH)", name: "patchnotes_title_fr", widget: "string"}
-          - {label: "patchnotes_back (FRENCH)", name: "patchnotes_back_fr", widget: "string"}
-          - {label: "socials_discord (SPANISH)", name: "socials_discord_es", widget: "string"}
-          - {label: "socials_twitter (SPANISH)", name: "socials_twitter_es", widget: "string"}
-          - {label: "socials_patreon (SPANISH)", name: "socials_patreon_es", widget: "string"}
-          - {label: "socials_paypal (SPANISH)", name: "socials_paypal_es", widget: "string"}
-          - {label: "btn_patchnotes (SPANISH)", name: "btn_patchnotes_es", widget: "string"}
-          - {label: "btn_forums (SPANISH)", name: "btn_forums_es", widget: "string"}
-          - {label: "btn_guides (SPANISH)", name: "btn_guides_es", widget: "string"}
-          - {label: "splash_whatsnew (SPANISH)", name: "splash_whatsnew_es", widget: "string"}
-          - {label: "splash_playnow (SPANISH)", name: "splash_playnow_es", widget: "string"}
-          - {label: "hometitle_newstuff (SPANISH)", name: "hometitle_newstuff_es", widget: "string"}
-          - {label: "hometitle_newstuff_moreinfo (SPANISH)", name: "hometitle_newstuff_moreinfo_es", widget: "string"}
-          - {label: "hometitle_media (SPANISH)", name: "hometitle_media_es", widget: "string"}
-          - {label: "hometitle_media_screenshots (SPANISH)", name: "hometitle_media_screenshots_es", widget: "string"}
-          - {label: "hometitle_playnow (SPANISH)", name: "hometitle_playnow_es", widget: "string"}
-          - {label: "hometitle_playnow_howto (SPANISH)", name: "hometitle_playnow_howto_es", widget: "string"}
-          - {label: "hometitle_playnow_guides (SPANISH)", name: "hometitle_playnow_guides_es", widget: "string"}
-          - {label: "hometitle_accounts (SPANISH)", name: "hometitle_accounts_es", widget: "string"}
-          - {label: "hometitle_accounts_create (SPANISH)", name: "hometitle_accounts_create_es", widget: "string"}
-          - {label: "hometitle_accounts_reset (SPANISH)", name: "hometitle_accounts_reset_es", widget: "string"}
-          - {label: "hometitle_accounts_change (SPANISH)", name: "hometitle_accounts_change_es", widget: "string"}
-          - {label: "hometitle_aboutus (SPANISH)", name: "hometitle_aboutus_es", widget: "string"}
-          - {label: "hometitle_patchnotes (SPANISH)", name: "hometitle_patchnotes_es", widget: "string"}
-          - {label: "hometitle_patchnotes_more (SPANISH)", name: "hometitle_patchnotes_more_es", widget: "string"}
-          - {label: "hometitle_policies_coc (SPANISH)", name: "hometitle_policies_coc_es", widget: "string"}
-          - {label: "hometitle_policies_tos (SPANISH)", name: "hometitle_policies_tos_es", widget: "string"}
-          - {label: "inner_nav_home (SPANISH)", name: "inner_nav_home_es", widget: "string"}
-          - {label: "patchnotes_title (SPANISH)", name: "patchnotes_title_es", widget: "string"}
-          - {label: "patchnotes_back (SPANISH)", name: "patchnotes_back_es", widget: "string"}
-          - {label: "socials_discord (JAPANESE)", name: "socials_discord_jp", widget: "string"}
-          - {label: "socials_twitter (JAPANESE)", name: "socials_twitter_jp", widget: "string"}
-          - {label: "socials_patreon (JAPANESE)", name: "socials_patreon_jp", widget: "string"}
-          - {label: "socials_paypal (JAPANESE)", name: "socials_paypal_jp", widget: "string"}
-          - {label: "btn_patchnotes (JAPANESE)", name: "btn_patchnotes_jp", widget: "string"}
-          - {label: "btn_forums (JAPANESE)", name: "btn_forums_jp", widget: "string"}
-          - {label: "btn_guides (JAPANESE)", name: "btn_guides_jp", widget: "string"}
-          - {label: "splash_whatsnew (JAPANESE)", name: "splash_whatsnew_jp", widget: "string"}
-          - {label: "splash_playnow (JAPANESE)", name: "splash_playnow_jp", widget: "string"}
-          - {label: "hometitle_newstuff (JAPANESE)", name: "hometitle_newstuff_jp", widget: "string"}
-          - {label: "hometitle_newstuff_moreinfo (JAPANESE)", name: "hometitle_newstuff_moreinfo_jp", widget: "string"}
-          - {label: "hometitle_media (JAPANESE)", name: "hometitle_media_jp", widget: "string"}
-          - {label: "hometitle_media_screenshots (JAPANESE)", name: "hometitle_media_screenshots_jp", widget: "string"}
-          - {label: "hometitle_playnow (JAPANESE)", name: "hometitle_playnow_jp", widget: "string"}
-          - {label: "hometitle_playnow_howto (JAPANESE)", name: "hometitle_playnow_howto_jp", widget: "string"}
-          - {label: "hometitle_playnow_guides (JAPANESE)", name: "hometitle_playnow_guides_jp", widget: "string"}
-          - {label: "hometitle_accounts (JAPANESE)", name: "hometitle_accounts_jp", widget: "string"}
-          - {label: "hometitle_accounts_create (JAPANESE)", name: "hometitle_accounts_create_jp", widget: "string"}
-          - {label: "hometitle_accounts_reset (JAPANESE)", name: "hometitle_accounts_reset_jp", widget: "string"}
-          - {label: "hometitle_accounts_change (JAPANESE)", name: "hometitle_accounts_change_jp", widget: "string"}
-          - {label: "hometitle_aboutus (JAPANESE)", name: "hometitle_aboutus_jp", widget: "string"}
-          - {label: "hometitle_patchnotes (JAPANESE)", name: "hometitle_patchnotes_jp", widget: "string"}
-          - {label: "hometitle_patchnotes_more (JAPANESE)", name: "hometitle_patchnotes_more_jp", widget: "string"}
-          - {label: "hometitle_policies_coc (JAPANESE)", name: "hometitle_policies_coc_jp", widget: "string"}
-          - {label: "hometitle_policies_tos (JAPANESE)", name: "hometitle_policies_tos_jp", widget: "string"}
-          - {label: "inner_nav_home (JAPANESE)", name: "inner_nav_home_jp", widget: "string"}
-          - {label: "patchnotes_title (JAPANESE)", name: "patchnotes_title_jp", widget: "string"}
-          - {label: "patchnotes_back (JAPANESE)", name: "patchnotes_back_jp", widget: "string"}
+          - {label: "socials_discord", name: "socials_discord", widget: "string", default: "Discord", required: false}
+          - {label: "socials_twitter", name: "socials_twitter", widget: "string", default: "Twitter", required: false}
+          - {label: "socials_patreon", name: "socials_patreon", widget: "string", default: "Support on Patreon", required: false}
+          - {label: "socials_paypal", name: "socials_paypal", widget: "string", default: "Support with Paypal", required: false}
+          - {label: "btn_patchnotes", name: "btn_patchnotes", widget: "string", default: "Patch Notes", required: false}
+          - {label: "btn_forums", name: "btn_forums", widget: "string", default: "Forums", required: false}
+          - {label: "btn_guides", name: "btn_guides", widget: "string", default: "Guides", required: false}
+          - {label: "splash_whatsnew", name: "splash_whatsnew", widget: "string", default: "What's new?", required: false}
+          - {label: "splash_playnow", name: "splash_playnow", widget: "string", default: "Play Now", required: false}
+          - {label: "hometitle_newstuff", name: "hometitle_newstuff", widget: "string", default: "New & Improved Content", required: false}
+          - {label: "hometitle_newstuff_moreinfo", name: "hometitle_newstuff_moreinfo", widget: "string", default: "For More Info", required: false}
+          - {label: "hometitle_media", name: "hometitle_media", widget: "string", default: "Media", required: false}
+          - {label: "hometitle_media_screenshots", name: "hometitle_media_screenshots", widget: "string", default: "Screenshots", required: false}
+          - {label: "hometitle_playnow", name: "hometitle_playnow", widget: "string", default: "Play Now", required: false}
+          - {label: "hometitle_playnow_howto", name: "hometitle_playnow_howto", widget: "string", default: "How To Play", required: false}
+          - {label: "hometitle_playnow_guides", name: "hometitle_playnow_guides", widget: "string", default: "For further information on gameplay and other changes, check out our guides!", required: false}
+          - {label: "hometitle_accounts", name: "hometitle_accounts", widget: "string", default: "Accounts", required: false}
+          - {label: "hometitle_accounts_create", name: "hometitle_accounts_create", widget: "string", default: "Create an Account", required: false}
+          - {label: "hometitle_accounts_reset", name: "hometitle_accounts_reset", widget: "string", default: "Reset Password", required: false}
+          - {label: "hometitle_accounts_change", name: "hometitle_accounts_change", widget: "string", default: "Change Password", required: false}
+          - {label: "hometitle_aboutus", name: "hometitle_aboutus", widget: "string", default: "About Us", required: false}
+          - {label: "hometitle_patchnotes", name: "hometitle_patchnotes", widget: "string", default: "Latest Patch Notes", required: false}
+          - {label: "hometitle_patchnotes_more", name: "hometitle_patchnotes_more", widget: "string", default: "More Patch Notes", required: false}
+          - {label: "hometitle_policies_coc", name: "hometitle_policies_coc", widget: "string", default: "Code of Conduct", required: false}
+          - {label: "hometitle_policies_tos", name: "hometitle_policies_tos", widget: "string", default: "Terms of Service", required: false}
+          - {label: "inner_nav_home", name: "inner_nav_home", widget: "string", default: "Home", required: false}
+          - {label: "patchnotes_title", name: "patchnotes_title", widget: "string", default: "Patch History", required: false}
+          - {label: "patchnotes_back", name: "patchnotes_back", widget: "string", default: "Back to Patch Notes Archive", required: false}
+          - {label: "socials_discord (FRENCH)", name: "socials_discord_fr", widget: "string", required: false}
+          - {label: "socials_twitter (FRENCH)", name: "socials_twitter_fr", widget: "string", required: false}
+          - {label: "socials_patreon (FRENCH)", name: "socials_patreon_fr", widget: "string", required: false}
+          - {label: "socials_paypal (FRENCH)", name: "socials_paypal_fr", widget: "string", required: false}
+          - {label: "btn_patchnotes (FRENCH)", name: "btn_patchnotes_fr", widget: "string", required: false}
+          - {label: "btn_forums (FRENCH)", name: "btn_forums_fr", widget: "string", required: false}
+          - {label: "btn_guides (FRENCH)", name: "btn_guides_fr", widget: "string", required: false}
+          - {label: "splash_whatsnew (FRENCH)", name: "splash_whatsnew_fr", widget: "string", required: false}
+          - {label: "splash_playnow (FRENCH)", name: "splash_playnow_fr", widget: "string", required: false}
+          - {label: "hometitle_newstuff (FRENCH)", name: "hometitle_newstuff_fr", widget: "string", required: false}
+          - {label: "hometitle_newstuff_moreinfo (FRENCH)", name: "hometitle_newstuff_moreinfo_fr", widget: "string", required: false}
+          - {label: "hometitle_media (FRENCH)", name: "hometitle_media_fr", widget: "string", required: false}
+          - {label: "hometitle_media_screenshots (FRENCH)", name: "hometitle_media_screenshots_fr", widget: "string", required: false}
+          - {label: "hometitle_playnow (FRENCH)", name: "hometitle_playnow_fr", widget: "string", required: false}
+          - {label: "hometitle_playnow_howto (FRENCH)", name: "hometitle_playnow_howto_fr", widget: "string", required: false}
+          - {label: "hometitle_playnow_guides (FRENCH)", name: "hometitle_playnow_guides_fr", widget: "string", required: false}
+          - {label: "hometitle_accounts (FRENCH)", name: "hometitle_accounts_fr", widget: "string", required: false}
+          - {label: "hometitle_accounts_create (FRENCH)", name: "hometitle_accounts_create_fr", widget: "string", required: false}
+          - {label: "hometitle_accounts_reset (FRENCH)", name: "hometitle_accounts_reset_fr", widget: "string", required: false}
+          - {label: "hometitle_accounts_change (FRENCH)", name: "hometitle_accounts_change_fr", widget: "string", required: false}
+          - {label: "hometitle_aboutus (FRENCH)", name: "hometitle_aboutus_fr", widget: "string", required: false}
+          - {label: "hometitle_patchnotes (FRENCH)", name: "hometitle_patchnotes_fr", widget: "string", required: false}
+          - {label: "hometitle_patchnotes_more (FRENCH)", name: "hometitle_patchnotes_more_fr", widget: "string", required: false}
+          - {label: "hometitle_policies_coc (FRENCH)", name: "hometitle_policies_coc_fr", widget: "string", required: false}
+          - {label: "hometitle_policies_tos (FRENCH)", name: "hometitle_policies_tos_fr", widget: "string", required: false}
+          - {label: "inner_nav_home (FRENCH)", name: "inner_nav_home_fr", widget: "string", required: false}
+          - {label: "patchnotes_title (FRENCH)", name: "patchnotes_title_fr", widget: "string", required: false}
+          - {label: "patchnotes_back (FRENCH)", name: "patchnotes_back_fr", widget: "string", required: false}
+          - {label: "socials_discord (SPANISH)", name: "socials_discord_es", widget: "string", required: false}
+          - {label: "socials_twitter (SPANISH)", name: "socials_twitter_es", widget: "string", required: false}
+          - {label: "socials_patreon (SPANISH)", name: "socials_patreon_es", widget: "string", required: false}
+          - {label: "socials_paypal (SPANISH)", name: "socials_paypal_es", widget: "string", required: false}
+          - {label: "btn_patchnotes (SPANISH)", name: "btn_patchnotes_es", widget: "string", required: false}
+          - {label: "btn_forums (SPANISH)", name: "btn_forums_es", widget: "string", required: false}
+          - {label: "btn_guides (SPANISH)", name: "btn_guides_es", widget: "string", required: false}
+          - {label: "splash_whatsnew (SPANISH)", name: "splash_whatsnew_es", widget: "string", required: false}
+          - {label: "splash_playnow (SPANISH)", name: "splash_playnow_es", widget: "string", required: false}
+          - {label: "hometitle_newstuff (SPANISH)", name: "hometitle_newstuff_es", widget: "string", required: false}
+          - {label: "hometitle_newstuff_moreinfo (SPANISH)", name: "hometitle_newstuff_moreinfo_es", widget: "string", required: false}
+          - {label: "hometitle_media (SPANISH)", name: "hometitle_media_es", widget: "string", required: false}
+          - {label: "hometitle_media_screenshots (SPANISH)", name: "hometitle_media_screenshots_es", widget: "string", required: false}
+          - {label: "hometitle_playnow (SPANISH)", name: "hometitle_playnow_es", widget: "string", required: false}
+          - {label: "hometitle_playnow_howto (SPANISH)", name: "hometitle_playnow_howto_es", widget: "string", required: false}
+          - {label: "hometitle_playnow_guides (SPANISH)", name: "hometitle_playnow_guides_es", widget: "string", required: false}
+          - {label: "hometitle_accounts (SPANISH)", name: "hometitle_accounts_es", widget: "string", required: false}
+          - {label: "hometitle_accounts_create (SPANISH)", name: "hometitle_accounts_create_es", widget: "string", required: false}
+          - {label: "hometitle_accounts_reset (SPANISH)", name: "hometitle_accounts_reset_es", widget: "string", required: false}
+          - {label: "hometitle_accounts_change (SPANISH)", name: "hometitle_accounts_change_es", widget: "string", required: false}
+          - {label: "hometitle_aboutus (SPANISH)", name: "hometitle_aboutus_es", widget: "string", required: false}
+          - {label: "hometitle_patchnotes (SPANISH)", name: "hometitle_patchnotes_es", widget: "string", required: false}
+          - {label: "hometitle_patchnotes_more (SPANISH)", name: "hometitle_patchnotes_more_es", widget: "string", required: false}
+          - {label: "hometitle_policies_coc (SPANISH)", name: "hometitle_policies_coc_es", widget: "string", required: false}
+          - {label: "hometitle_policies_tos (SPANISH)", name: "hometitle_policies_tos_es", widget: "string", required: false}
+          - {label: "inner_nav_home (SPANISH)", name: "inner_nav_home_es", widget: "string", required: false}
+          - {label: "patchnotes_title (SPANISH)", name: "patchnotes_title_es", widget: "string", required: false}
+          - {label: "patchnotes_back (SPANISH)", name: "patchnotes_back_es", widget: "string", required: false}
+          - {label: "socials_discord (JAPANESE)", name: "socials_discord_jp", widget: "string", required: false}
+          - {label: "socials_twitter (JAPANESE)", name: "socials_twitter_jp", widget: "string", required: false}
+          - {label: "socials_patreon (JAPANESE)", name: "socials_patreon_jp", widget: "string", required: false}
+          - {label: "socials_paypal (JAPANESE)", name: "socials_paypal_jp", widget: "string", required: false}
+          - {label: "btn_patchnotes (JAPANESE)", name: "btn_patchnotes_jp", widget: "string", required: false}
+          - {label: "btn_forums (JAPANESE)", name: "btn_forums_jp", widget: "string", required: false}
+          - {label: "btn_guides (JAPANESE)", name: "btn_guides_jp", widget: "string", required: false}
+          - {label: "splash_whatsnew (JAPANESE)", name: "splash_whatsnew_jp", widget: "string", required: false}
+          - {label: "splash_playnow (JAPANESE)", name: "splash_playnow_jp", widget: "string", required: false}
+          - {label: "hometitle_newstuff (JAPANESE)", name: "hometitle_newstuff_jp", widget: "string", required: false}
+          - {label: "hometitle_newstuff_moreinfo (JAPANESE)", name: "hometitle_newstuff_moreinfo_jp", widget: "string", required: false}
+          - {label: "hometitle_media (JAPANESE)", name: "hometitle_media_jp", widget: "string", required: false}
+          - {label: "hometitle_media_screenshots (JAPANESE)", name: "hometitle_media_screenshots_jp", widget: "string", required: false}
+          - {label: "hometitle_playnow (JAPANESE)", name: "hometitle_playnow_jp", widget: "string", required: false}
+          - {label: "hometitle_playnow_howto (JAPANESE)", name: "hometitle_playnow_howto_jp", widget: "string", required: false}
+          - {label: "hometitle_playnow_guides (JAPANESE)", name: "hometitle_playnow_guides_jp", widget: "string", required: false}
+          - {label: "hometitle_accounts (JAPANESE)", name: "hometitle_accounts_jp", widget: "string", required: false}
+          - {label: "hometitle_accounts_create (JAPANESE)", name: "hometitle_accounts_create_jp", widget: "string", required: false}
+          - {label: "hometitle_accounts_reset (JAPANESE)", name: "hometitle_accounts_reset_jp", widget: "string", required: false}
+          - {label: "hometitle_accounts_change (JAPANESE)", name: "hometitle_accounts_change_jp", widget: "string", required: false}
+          - {label: "hometitle_aboutus (JAPANESE)", name: "hometitle_aboutus_jp", widget: "string", required: false}
+          - {label: "hometitle_patchnotes (JAPANESE)", name: "hometitle_patchnotes_jp", widget: "string", required: false}
+          - {label: "hometitle_patchnotes_more (JAPANESE)", name: "hometitle_patchnotes_more_jp", widget: "string", required: false}
+          - {label: "hometitle_policies_coc (JAPANESE)", name: "hometitle_policies_coc_jp", widget: "string", required: false}
+          - {label: "hometitle_policies_tos (JAPANESE)", name: "hometitle_policies_tos_jp", widget: "string", required: false}
+          - {label: "inner_nav_home (JAPANESE)", name: "inner_nav_home_jp", widget: "string", required: false}
+          - {label: "patchnotes_title (JAPANESE)", name: "patchnotes_title_jp", widget: "string", required: false}
+          - {label: "patchnotes_back (JAPANESE)", name: "patchnotes_back_jp", widget: "string", required: false}
           
   - name: "highlights"
     label: "Homepage Highlights"
