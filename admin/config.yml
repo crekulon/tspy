@@ -38,10 +38,13 @@ collections:
       - {label: "Order", name: "order", widget: "number", default: 1, value_type: "int", hint: "You can use this number to change the order that the guide shows up in its category. Lower is closer to the top. You don't have to set this if you don't care."}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "(FRENCH) Category", name: "category_fr", widget: "string", hint: "Only the category at the top is used for sorting, this is just used to translate it. Technically only the 'first' in the order for a given category needs this to be set, but if you want to be safe, just always set it."}
       - {label: "(FRENCH) Title", name: "title_fr", widget: "string"}
       - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown"}
+      - {label: "(SPANISH) Category", name: "category_es", widget: "string", hint: "Only the category at the top is used for sorting, this is just used to translate it. Technically only the 'first' in the order for a given category needs this to be set, but if you want to be safe, just always set it."}
       - {label: "(SPANISH) Title", name: "title_es", widget: "string"}
       - {label: "(SPANISH) Body", name: "content_es", widget: "markdown"}
+      - {label: "(JAPANESE) Category", name: "category_jp", widget: "string", hint: "Only the category at the top is used for sorting, this is just used to translate it. Technically only the 'first' in the order for a given category needs this to be set, but if you want to be safe, just always set it."}
       - {label: "(JAPANESE) Title", name: "title_jp", widget: "string"}
       - {label: "(JAPANESE) Body", name: "content_jp", widget: "markdown"}
 
@@ -89,7 +92,7 @@ collections:
           - {label: "(SPANISH) Body", name: "main_es", widget: "markdown"}
           - {label: "(SPANISH) Support Us", name: "support_es", widget: "markdown"}
           - {label: "(JAPANESE) Body", name: "main_jp", widget: "markdown"}
-          - {label: "(JAPANESE) Support Us", name: "main_jp", widget: "markdown"}
+          - {label: "(JAPANESE) Support Us", name: "support_jp", widget: "markdown"}
           
       - label: "Policies"
         name: "policies"

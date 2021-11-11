@@ -6,7 +6,7 @@
     </div>
     {% for category in guidesbycat %}
         <div class="guidecategory {{ category.name | slugify }}">
-            <span>{{ category.name }}</span>
+            <span>{% include multilingual_custom.html key="category" article=category.items.first md=false %}</span>
             {% assign sortedguides = category.items | sort: 'order' %}
             {% for guide in sortedguides %}
                 <a class="noglow selector {% if page.url == guide.url or page.url == "/guides.html" and guide.title == "Installation" %}selected{% endif %}" href="{{ guide.url }}">{% include multilingual_title.html article=guide %}</a>
