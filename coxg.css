@@ -1846,4 +1846,29 @@ html:lang(jp) .patchgroup a.currentpage::after {
     margin: 0;
     box-shadow: 0px 0px 10px #f3a;
 }
-  
+
+/* temporarily highlight untranslated content */
+.langcontent.untranslated {
+    border-bottom: 2px dotted #ff00cb;
+}
+
+html:lang(en) span[lang="en"], html:lang(fr) span[lang="fr"], html:lang(es) span[lang="es"], html:lang(jp) span[lang="jp"] {
+    display: inline-block;
+}
+
+.untranslated {
+    position: relative;
+}
+
+.helptranslate {
+    position: absolute;
+    bottom: -2.25em;
+    right: -2em;
+    z-index: 10;
+    opacity: 0.75;
+    width: auto;
+}
+
+.helptranslate:hover {
+    opacity: 1;
+}

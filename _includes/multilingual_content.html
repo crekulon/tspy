@@ -5,7 +5,6 @@
     {% comment %} detect untranslated sections {% endcomment %}
     {% comment %} this is untranslatedcontent because we'll check this value back in the main content to suggest help translating with it {% endcomment %}
     {% assign untranslatedcontent = false %}
-
     {% unless include.article[langcontent].size %}
         {% assign untranslatedcontent = true %}
     {% elsif include.article[langcontent].size == 0 %}
@@ -15,6 +14,15 @@
     {% comment %} default to english for untranslated material {% endcomment %}
     {% assign content = include.article[langcontent] | default: include.article.content %}
 
-    <div class="langcontent {% if untranslatedcontent %}untranslated{% endif %}" lang="{{ language }}">{{ content | replace: "h5", "h6" | replace: "h4", "h5"| replace: "h3", "h4"| replace: "h2", "h3"| replace: "h1", "h2" | replace: "<img ", "<img loading='lazy' "}} {% comment %} > syntax highlighting fix {% endcomment %}</div>
     {% comment %} this probably seems like a really strange replace, I just don't want another H1 to mess up da SEO {% endcomment %}
+    <div class="langcontent {% if untranslatedcontent %}untranslated{% endif %}" lang="{{ language }}">
+        {{ content | replace: "h5", "h6" | replace: "h4", "h5"| replace: "h3", "h4"| replace: "h2", "h3"| replace: "h1", "h2" | replace: "<img ", "<img loading='lazy' "}} {% comment %} > syntax highlighting fix {% endcomment %}
+        
+        {% if untranslatedcontent %}
+            {% comment %} adds a tiny heads up about helping translate {% endcomment %}
+            {% assign helpkey = "helpus_" | append: language %}
+            <a class="helptranslate cta playnow" href="/guides/website-localization">{{ site.data.localization[helpkey] }}</a>
+        {% endif %}
+    </div>
+    
 {% endfor %}

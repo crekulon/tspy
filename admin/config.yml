@@ -139,6 +139,7 @@ collections:
           - {label: "inner_nav_home", name: "inner_nav_home", widget: "string", default: "Home", required: false}
           - {label: "patchnotes_title", name: "patchnotes_title", widget: "string", default: "Patch History", required: false}
           - {label: "patchnotes_back", name: "patchnotes_back", widget: "string", default: "Back to Patch Notes Archive", required: false}
+          - {label: "Help us translate! (FRENCH)", name: "helpus_fr", widget: "string", required: false}
           - {label: "socials_discord (FRENCH)", name: "socials_discord_fr", widget: "string", required: false}
           - {label: "socials_twitter (FRENCH)", name: "socials_twitter_fr", widget: "string", required: false}
           - {label: "socials_patreon (FRENCH)", name: "socials_patreon_fr", widget: "string", required: false}
@@ -167,6 +168,7 @@ collections:
           - {label: "inner_nav_home (FRENCH)", name: "inner_nav_home_fr", widget: "string", required: false}
           - {label: "patchnotes_title (FRENCH)", name: "patchnotes_title_fr", widget: "string", required: false}
           - {label: "patchnotes_back (FRENCH)", name: "patchnotes_back_fr", widget: "string", required: false}
+          - {label: "Help us translate! (SPANISH)", name: "helpus_es", widget: "string", required: false}
           - {label: "socials_discord (SPANISH)", name: "socials_discord_es", widget: "string", required: false}
           - {label: "socials_twitter (SPANISH)", name: "socials_twitter_es", widget: "string", required: false}
           - {label: "socials_patreon (SPANISH)", name: "socials_patreon_es", widget: "string", required: false}
@@ -195,6 +197,7 @@ collections:
           - {label: "inner_nav_home (SPANISH)", name: "inner_nav_home_es", widget: "string", required: false}
           - {label: "patchnotes_title (SPANISH)", name: "patchnotes_title_es", widget: "string", required: false}
           - {label: "patchnotes_back (SPANISH)", name: "patchnotes_back_es", widget: "string", required: false}
+          - {label: "Help us translate! (JAPANESE)", name: "helpus_jp", widget: "string", required: false}
           - {label: "socials_discord (JAPANESE)", name: "socials_discord_jp", widget: "string", required: false}
           - {label: "socials_twitter (JAPANESE)", name: "socials_twitter_jp", widget: "string", required: false}
           - {label: "socials_patreon (JAPANESE)", name: "socials_patreon_jp", widget: "string", required: false}
