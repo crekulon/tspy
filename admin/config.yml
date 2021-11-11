@@ -126,6 +126,7 @@ collections:
           - {label: "hometitle_media_screenshots", name: "hometitle_media_screenshots", widget: "string", default: "Screenshots"}
           - {label: "hometitle_playnow", name: "hometitle_playnow", widget: "string", default: "Play Now"}
           - {label: "hometitle_playnow_howto", name: "hometitle_playnow_howto", widget: "string", default: "How To Play"}
+          - {label: "hometitle_playnow_guides", name: "hometitle_playnow_guides", widget: "string", default: "For further information on gameplay and other changes, check out our guides!"}
           - {label: "hometitle_accounts", name: "hometitle_accounts", widget: "string", default: "Accounts"}
           - {label: "hometitle_accounts_create", name: "hometitle_accounts_create", widget: "string", default: "Create an Account"}
           - {label: "hometitle_accounts_reset", name: "hometitle_accounts_reset", widget: "string", default: "Reset Password"}
@@ -153,6 +154,7 @@ collections:
           - {label: "hometitle_media_screenshots (FRENCH)", name: "hometitle_media_screenshots_fr", widget: "string"}
           - {label: "hometitle_playnow (FRENCH)", name: "hometitle_playnow_fr", widget: "string"}
           - {label: "hometitle_playnow_howto (FRENCH)", name: "hometitle_playnow_howto_fr", widget: "string"}
+          - {label: "hometitle_playnow_guides (FRENCH)", name: "hometitle_playnow_guides_fr", widget: "string"}
           - {label: "hometitle_accounts (FRENCH)", name: "hometitle_accounts_fr", widget: "string"}
           - {label: "hometitle_accounts_create (FRENCH)", name: "hometitle_accounts_create_fr", widget: "string"}
           - {label: "hometitle_accounts_reset (FRENCH)", name: "hometitle_accounts_reset_fr", widget: "string"}
@@ -180,6 +182,7 @@ collections:
           - {label: "hometitle_media_screenshots (SPANISH)", name: "hometitle_media_screenshots_es", widget: "string"}
           - {label: "hometitle_playnow (SPANISH)", name: "hometitle_playnow_es", widget: "string"}
           - {label: "hometitle_playnow_howto (SPANISH)", name: "hometitle_playnow_howto_es", widget: "string"}
+          - {label: "hometitle_playnow_guides (SPANISH)", name: "hometitle_playnow_guides_es", widget: "string"}
           - {label: "hometitle_accounts (SPANISH)", name: "hometitle_accounts_es", widget: "string"}
           - {label: "hometitle_accounts_create (SPANISH)", name: "hometitle_accounts_create_es", widget: "string"}
           - {label: "hometitle_accounts_reset (SPANISH)", name: "hometitle_accounts_reset_es", widget: "string"}
@@ -207,6 +210,7 @@ collections:
           - {label: "hometitle_media_screenshots (JAPANESE)", name: "hometitle_media_screenshots_jp", widget: "string"}
           - {label: "hometitle_playnow (JAPANESE)", name: "hometitle_playnow_jp", widget: "string"}
           - {label: "hometitle_playnow_howto (JAPANESE)", name: "hometitle_playnow_howto_jp", widget: "string"}
+          - {label: "hometitle_playnow_guides (JAPANESE)", name: "hometitle_playnow_guides_jp", widget: "string"}
           - {label: "hometitle_accounts (JAPANESE)", name: "hometitle_accounts_jp", widget: "string"}
           - {label: "hometitle_accounts_create (JAPANESE)", name: "hometitle_accounts_create_jp", widget: "string"}
           - {label: "hometitle_accounts_reset (JAPANESE)", name: "hometitle_accounts_reset_jp", widget: "string"}

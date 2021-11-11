@@ -13,6 +13,7 @@ hometitle_media: "Media"
 hometitle_media_screenshots: "Screenshots"
 hometitle_playnow: "Play Now"
 hometitle_playnow_howto: "How To Play"
+hometitle_playnow_guides: "For further information on gameplay and other changes, check out our guides!"
 hometitle_accounts: "Accounts"
 hometitle_accounts_create: "Create an Account"
 hometitle_accounts_reset: "Reset Password"
@@ -40,6 +41,7 @@ hometitle_media_fr:
 hometitle_media_screenshots_fr:
 hometitle_playnow_fr:
 hometitle_playnow_howto_fr:
+hometitle_playnow_guides_fr:
 hometitle_accounts_fr:
 hometitle_accounts_create_fr:
 hometitle_accounts_reset_fr:
@@ -67,6 +69,7 @@ hometitle_media_es:
 hometitle_media_screenshots_es:
 hometitle_playnow_es:
 hometitle_playnow_howto_es:
+hometitle_playnow_guides_es:
 hometitle_accounts_es:
 hometitle_accounts_create_es:
 hometitle_accounts_reset_es:
@@ -94,6 +97,7 @@ hometitle_media_jp:
 hometitle_media_screenshots_jp:
 hometitle_playnow_jp:
 hometitle_playnow_howto_jp:
+hometitle_playnow_guides_jp:
 hometitle_accounts_jp:
 hometitle_accounts_create_jp:
 hometitle_accounts_reset_jp:
