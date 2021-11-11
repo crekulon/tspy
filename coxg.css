@@ -42,14 +42,14 @@ ol, ul {
 }
 
 /* markdown typography */
-.md > * {
+.md > h1, .md > h2, .md > h3, .md > .langcontent > * {
     line-height: 1.25em;
     margin-bottom: 1em;
     font-size: calc(0.6em + 0.25vw);
 }
 
 @media only screen and (max-width: 550px) {
-    .md > * {
+    .md > h1, .md > h2, .md > h3, .md > .langcontent > * {
         font-size: calc(0.7em + 0.5vw);
     }
 }
