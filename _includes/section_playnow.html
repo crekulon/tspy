@@ -3,25 +3,25 @@
         <div class="city"></div>
     </div>
 
-    <h2 class="motto title">PLAY NOW</h2>
+    <h2 class="motto title">{% include multilingual_custom.html key="hometitle_playnow" article=site.data.localization md=false %}</h2>
     <div class="width-container play-container">
         <div class="playpanel md">
-            <h3 class="motto">How To play</h3>
+            <h3 class="motto">{% include multilingual_custom.html key="hometitle_playnow_howto" article=site.data.localization md=false %}</h3>
             {% include multilingual_custom.html key="body" article=site.data.howtoplay md=true %}
 
-            <p style="margin-top: 1em;">For further information on gameplay and other changes, check out our guides!</p>
+            <p style="margin-top: 1em;">{% include multilingual_custom.html key="hometitle_playnow_guides" article=site.data.localization md=false %}</p>
             <span class="cta-container">
                 <div>
-                    <a href="/guides" class="cta smaller guidelink">GUIDES</a>
+                    <a href="/guides" class="cta smaller guidelink">{% include multilingual_custom.html key="btn_guides" article=site.data.localization md=false %}</a>
                 </div>
             </span>
         </div>
 
         <div class="playpanel">
-            <h3 class="motto">Accounts</h3>
+            <h3 class="motto">{% include multilingual_custom.html key="hometitle_accounts" article=site.data.localization md=false %}</h3>
             <div class="accountstuff">
                 <div class="accountsection">
-                    <h4 class="selector">Create an Account</h4>
+                    <h4 class="selector">{% include multilingual_custom.html key="hometitle_accounts_create" article=site.data.localization md=false %}</h4>
                     <form action="account.php" method="POST">
                         <input type="text" placeholder="user name" name="name">
                         <input type="text" placeholder="email (optional)" name="email">
@@ -32,7 +32,7 @@
                 </div>
     
                 <div class="accountsection">
-                    <h4 class="selector">Reset Password</h4>
+                    <h4 class="selector">{% include multilingual_custom.html key="hometitle_accounts_reset" article=site.data.localization md=false %}</h4>
                     <form action="account.php" method="POST">
                         <input type="text" placeholder="user name" name="name">
                         <input type="text" placeholder="email" name="email">
@@ -41,7 +41,7 @@
                 </div>
     
                 <div class="accountsection">
-                    <h4 class="selector">Change Password</h4>
+                    <h4 class="selector">{% include multilingual_custom.html key="hometitle_accounts_change" article=site.data.localization md=false %}</h4>
                     <form action="account.php" method="POST">
                         <input type="text" placeholder="user name" name="name">
                         <input type="password" placeholder="old password" name="oldpass">
@@ -54,7 +54,7 @@
         </div>
 
         <div class="playpanel about md">
-            <h3 class="motto">About Us</h3>		
+            <h3 class="motto">{% include multilingual_custom.html key="hometitle_aboutus" article=site.data.localization md=false %}</h3>		
             {% include multilingual_custom.html key="main" article=site.data.aboutus md=true %}
             <div class="support">
                 {% include multilingual_custom.html key="support" article=site.data.aboutus md=true %}

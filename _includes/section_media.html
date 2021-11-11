@@ -4,7 +4,7 @@
 <section id="media" class="infosection">
     
 {% if ordered_images.size > 0 %}
-    <h2 class="motto title">Media</h2>
+    <h2 class="motto title">{% include multilingual_custom.html key="hometitle_media" article=site.data.localization md=false %}</h2>
     <div class="width-container">
         {% assign ordered_videos = site.galleryvideos | sort:"order" %}
 

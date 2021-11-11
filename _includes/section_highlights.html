@@ -1,5 +1,5 @@
 <section id="newstuff" class="infosection">
-    <h2 class="motto title">NEW &amp; IMPROVED CONTENT</h2>
+    <h2 class="motto title">{% include multilingual_custom.html key="hometitle_newstuff" article=site.data.localization md=false %}</h2>
     <div class="width-container selection-container">
         {% assign ordered_highlights = site.highlights | sort:"order" %}
 
@@ -32,7 +32,7 @@
     </div>
 
     <span class="cta-container">
-        <h2 class="motto">FOR MORE INFO</h2>
+        <h2 class="motto">{% include multilingual_custom.html key="hometitle_newstuff_moreinfo" article=site.data.localization md=false %}</h2>
         <div>
             <a href="/guides" class="cta smaller guidelink">GUIDES</a>
             <a href="/patchnotes" class="cta smaller">PATCH NOTES</a>

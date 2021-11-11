@@ -317,7 +317,7 @@ ol, ul {
     margin: 2vh 10px;
 }
 
-.motto.title > span {
+.motto.title > span:not(.langcontent) {
     display: block;
     font-size: 0.5em;
 }
@@ -1471,6 +1471,7 @@ footer.infosection {
     font-size: calc(1em + 1vw);
     opacity: 0.5;
     transition: opacity 400ms ease-in-out;
+    text-transform: uppercase;
 }
 
 .innernav a:hover, .innernav a.currentsection {

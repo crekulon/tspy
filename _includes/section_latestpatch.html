@@ -1,9 +1,9 @@
 <section id="patchnotes" class="infosection">
-    <h2 class="motto title">LATEST PATCH NOTES</h2>
+    <h2 class="motto title">{% include multilingual_custom.html key="hometitle_patchnotes" article=site.data.localization md=false %}</h2>
     <div class="width-container patch-container">
         {% assign sortednotes = site.patchnotes | sort: 'date' | reverse %}
         {% assign notes = sortednotes.first %}
         {% include patchbox.html %}
     </div>
-    <a href="/patchnotes" class="cta">MORE PATCH NOTES</a>
+    <a href="/patchnotes" class="cta">{% include multilingual_custom.html key="hometitle_patchnotes_more" article=site.data.localization md=false %}</a>
 </section>
