@@ -516,7 +516,7 @@ ol, ul {
     }
 
     .city.flip, .logo.flip, .h1.flip {
-    transform: translateY(0vh) rotate(180deg);
+        transform: translateY(0vh) rotate(180deg);
     }
 
     .ctas {
@@ -608,7 +608,7 @@ ol, ul {
     transform: translateY(20vh);
 }
 
-.starting-intro #splash .city:not(.city.flip), .starting-intro .road {
+.loading #splash .city:not(.city.flip), .starting-intro #splash .city:not(.city.flip), .starting-intro .road {
     transform: translateY(80vh);
 }
 
