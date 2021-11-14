@@ -4,20 +4,29 @@ if(document.body.classList.contains("homepage")) {
         if (document.readyState === "interactive" ||document.readyState === "complete" ) {fn()}
     }
 
-    onLoaded(() => {
-        setTimeout(()=>{
+    if(!window.sessionStorage.getItem("seensplash")) {
+        onLoaded(() => {
+            setTimeout(()=>{
+                document.querySelector('body').classList.remove('loading')
+            }, 200)
+
+            setTimeout(()=>{
+                document.querySelector('body').classList.remove('starting-intro')
+                document.querySelector('body').classList.add('intro')
+            }, 1800)
+
+            setTimeout(()=>{
+                document.querySelector('body').classList.remove('intro')
+            }, 4200)
+
+            window.sessionStorage.setItem("seensplash", true)
+        })
+    } else {
+        onLoaded(() => {
             document.querySelector('body').classList.remove('loading')
-        }, 200)
-
-        setTimeout(()=>{
             document.querySelector('body').classList.remove('starting-intro')
-            document.querySelector('body').classList.add('intro')
-        }, 1800)
-
-        setTimeout(()=>{
-            document.querySelector('body').classList.remove('intro')
-        }, 4200)
-    })
+        })
+    }
 }
 
 //when people click the highlight selector, swap the image and text being shown by toggling the highlighted class
