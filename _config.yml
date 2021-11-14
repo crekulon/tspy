@@ -4,7 +4,6 @@ url: "https://tspydev.eccentric.monster/"
 theme: 
 plugins:
   - jekyll-feed
-  - jekyll-redirect-from
   
 languages: ["en", "fr", "es", "jp"]
 
