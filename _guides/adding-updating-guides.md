@@ -1,7 +1,7 @@
 ---
 category: Content Contribution
 order: 0
-title: Adding/Updating Guides
+title: Adding/Updating Site Content
 ---
 Want to help us refine our guides and site content more? It's really easy!
 
