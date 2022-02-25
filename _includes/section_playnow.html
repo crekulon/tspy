@@ -22,7 +22,7 @@
             <div class="accountstuff">
                 <div class="accountsection">
                     <h4 class="selector">{% include multilingual_custom.html key="hometitle_accounts_create" article=site.data.localization md=false %}</h4>
-                    <form action="account.php" method="POST">
+					<form action="{{ site.data.api.account.create_account }}" method="POST">
                         <input type="text" placeholder="user name" name="name">
                         <input type="text" placeholder="email (optional)" name="email">
                         <input type="password" placeholder="password" name="password">
@@ -33,7 +33,7 @@
     
                 <div class="accountsection">
                     <h4 class="selector">{% include multilingual_custom.html key="hometitle_accounts_reset" article=site.data.localization md=false %}</h4>
-                    <form action="account.php" method="POST">
+                    <form action="{{ site.data.api.account.reset_password }}" method="POST">
                         <input type="text" placeholder="user name" name="name">
                         <input type="text" placeholder="email" name="email">
                         <input type="submit" name="reset_password" value="Reset">
@@ -42,7 +42,7 @@
     
                 <div class="accountsection">
                     <h4 class="selector">{% include multilingual_custom.html key="hometitle_accounts_change" article=site.data.localization md=false %}</h4>
-                    <form action="account.php" method="POST">
+                    <form action="{{ site.data.api.account.change_password }}" method="POST">
                         <input type="text" placeholder="user name" name="name">
                         <input type="password" placeholder="old password" name="oldpass">
                         <input type="password" placeholder="new password" name="newpass">
