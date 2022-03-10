@@ -1,0 +1,7 @@
+---
+layout: null
+---
+{% assign siteurl = site.url | replace: ".com/", ".com" %}{% for page in site.pages %}{{siteurl}}{{ page.url }}
+{% endfor %}{% for patchnotes in site.patchnotes %}{{siteurl}}{{ patchnotes.url }}
+{% endfor %}{% for guide in site.guides %}{{siteurl}}{{ guide.url }}
+{% endfor %}
