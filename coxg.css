@@ -33,6 +33,10 @@ ol, ul {
     padding-left: 2em;
 }
 
+ul ul, ul ol, ol ul, ol ol {
+    margin: 1em 0;
+}
+
 .gallery > *, .highlight-images .image-container, .lazy { /* this has to be important because of the in-html assignment of images, plus other variables */
     background-color: black !important;
     background-image: url(/img/qaspin.gif), url(/img/loadstatic.gif) !important;
