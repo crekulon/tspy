@@ -1380,16 +1380,32 @@ footer.infosection {
     padding-top: 10vh;
 }
 
-.patchbox {
+.inner #news.infosection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: -1;
+    background: linear-gradient(0deg, rgba(26,12,46,0) 0%, rgba(66,10,47,1) 100%);
+}
+
+#news.infosection {
+    min-height: unset;
+    padding-top: 10vh;
+}
+
+.blogbox {
     flex-basis: 100%;
     max-width: 100%;
 }
 
-.patchbox ~ .patchbox {
+.blogbox ~ .blogbox {
     margin-top: 5vh;
 }
 
-.patchbox > * {
+.blogbox > * {
     padding: 20px;
     border: 2px outset #f50c76;
     background: #120008b0;
@@ -1398,7 +1414,7 @@ footer.infosection {
     line-height: 1.25em;
 }
 
-.patchimg {
+.blogimg {
     width: 60px;
     height: 100%;
     background-size: contain;
@@ -1409,7 +1425,7 @@ footer.infosection {
     left: 10px;
 }
 
-.patchimg::after {
+.blogimg::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -1425,7 +1441,7 @@ footer.infosection {
     background-size: cover;
 }
 
-.patchbox .patchtitle {
+.blogbox .blogtitle {
     display: block;
     position: relative;
     padding: 30px 30px 30px 80px;
@@ -1434,7 +1450,7 @@ footer.infosection {
     margin-bottom: -2px;
 }
 
-.patchtitle h3 {
+.blogtitle h3 {
     font-family: "Paragon City";
     font-style: italic;
     color: white;
@@ -1442,7 +1458,7 @@ footer.infosection {
     line-height: 1.5em;
 }
 
-.patchtitle h4 {
+.blogtitle h4 {
     font-size: calc(0.6em + 0.25vw);
     margin-top: 0.5em;
     color: #02e2f6;
@@ -1510,7 +1526,7 @@ footer.infosection {
     background-position: bottom right;
 }
 
-.inner .patch-container {
+.inner .blog-container {
     padding-bottom: 5vh;
 }
 
@@ -1519,7 +1535,7 @@ footer.infosection {
     top: 0;
 }
 
-.patchnav {
+.blognav {
     max-width: 1250px;
     width: 100%;
     padding: 20px;
@@ -1533,25 +1549,25 @@ footer.infosection {
     font-size: 0.8em;
 }
 
-.patchbox ~ .patchnav {
+.blogbox ~ .blognav {
     margin-top: 5vh;
 }
 
-.patchnav > h2 {
+.blognav > h2 {
     font-family: "Alien Encounters";
 }
 
-.patchgroup {
+.bloggroup {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.patchgroup .motto {
+.bloggroup .motto {
     padding: 0.5em 0;
 }
 
-.patchgroup a {
+.bloggroup a {
     display: inline-block;
     position: relative;
     padding: 0.75em 0.5em 0.75em 1.5em;
@@ -1563,18 +1579,18 @@ footer.infosection {
     font-style: italic;
 }
 
-.patchgroup a::before {
+.bloggroup a::before {
     content: "•";
     position: absolute;
     left: 0.5em;
 }
 
-.patchgroup a.currentpage {
+.bloggroup a.currentpage {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.patchgroup a.currentpage::after {
+.bloggroup a.currentpage::after {
     text-transform: uppercase;
     content: "YOU ARE HERE";
     position: absolute;
@@ -1591,7 +1607,7 @@ footer.infosection {
 }
 
 @media only screen and (max-width: 600px) {
-    .patchnav {
+    .blognav {
         margin-top: 5vh;
     }
 }
@@ -1821,15 +1837,15 @@ html:lang(en) div[lang="en"], html:lang(fr) div[lang="fr"], html:lang(es) div[la
     display: block;
 }
 
-html:lang(fr) .patchgroup a.currentpage::after {
+html:lang(fr) .bloggroup a.currentpage::after {
     content: "Vous êtes ici";
 }
 
-html:lang(es) .patchgroup a.currentpage::after {
+html:lang(es) .bloggroup a.currentpage::after {
     content: "Usted está aquí";
 }
 
-html:lang(jp) .patchgroup a.currentpage::after {
+html:lang(jp) .bloggroup a.currentpage::after {
     content: "読書";
 }
 

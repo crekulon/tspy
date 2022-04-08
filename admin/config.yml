@@ -28,6 +28,23 @@ collections:
       - {label: "(JAPANESE) Title", name: "title_jp", widget: "string", required: false}
       - {label: "(JAPANESE) Body", name: "content_jp", widget: "markdown", required: false}
 
+  - name: "news"
+    label: "News"
+    folder: "_news"
+    create: true
+    slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}-{{slug}}"
+    fields: 
+      - {label: "Date", name: "date", widget: "datetime", hint: "News are sorted by their date"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "image", default: "/img/qachan.png"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "(FRENCH) Title", name: "title_fr", widget: "string", required: false}
+      - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown", required: false}
+      - {label: "(SPANISH) Title", name: "title_es", widget: "string", required: false}
+      - {label: "(SPANISH) Body", name: "content_es", widget: "markdown", required: false}
+      - {label: "(JAPANESE) Title", name: "title_jp", widget: "string", required: false}
+      - {label: "(JAPANESE) Body", name: "content_jp", widget: "markdown", required: false}
+
   - name: "guides"
     label: "Guides"
     folder: "_guides"
@@ -116,6 +133,7 @@ collections:
           - {label: "socials_patreon", name: "socials_patreon", widget: "string", default: "Support on Patreon", required: false}
           - {label: "socials_paypal", name: "socials_paypal", widget: "string", default: "Support with Paypal", required: false}
           - {label: "btn_patchnotes", name: "btn_patchnotes", widget: "string", default: "Patch Notes", required: false}
+          - {label: "btn_news", name: "btn_news", widget: "string", default: "Patch Notes", required: false}
           - {label: "btn_forums", name: "btn_forums", widget: "string", default: "Forums", required: false}
           - {label: "btn_guides", name: "btn_guides", widget: "string", default: "Guides", required: false}
           - {label: "splash_whatsnew", name: "splash_whatsnew", widget: "string", default: "What's new?", required: false}
@@ -134,17 +152,22 @@ collections:
           - {label: "hometitle_aboutus", name: "hometitle_aboutus", widget: "string", default: "About Us", required: false}
           - {label: "hometitle_patchnotes", name: "hometitle_patchnotes", widget: "string", default: "Latest Patch Notes", required: false}
           - {label: "hometitle_patchnotes_more", name: "hometitle_patchnotes_more", widget: "string", default: "More Patch Notes", required: false}
+          - {label: "hometitle_news", name: "hometitle_news", widget: "string", default: "Latest Patch Notes", required: false}
+          - {label: "hometitle_news_more", name: "hometitle_news_more", widget: "string", default: "More Patch Notes", required: false}
           - {label: "hometitle_policies_coc", name: "hometitle_policies_coc", widget: "string", default: "Code of Conduct", required: false}
           - {label: "hometitle_policies_tos", name: "hometitle_policies_tos", widget: "string", default: "Terms of Service", required: false}
           - {label: "inner_nav_home", name: "inner_nav_home", widget: "string", default: "Home", required: false}
           - {label: "patchnotes_title", name: "patchnotes_title", widget: "string", default: "Patch History", required: false}
           - {label: "patchnotes_back", name: "patchnotes_back", widget: "string", default: "Back to Patch Notes Archive", required: false}
+          - {label: "news_title", name: "news_title", widget: "string", default: "Patch History", required: false}
+          - {label: "news_back", name: "news_back", widget: "string", default: "Back to Patch Notes Archive", required: false}
           - {label: "Help us translate! (FRENCH)", name: "helpus_fr", widget: "string", required: false}
           - {label: "socials_discord (FRENCH)", name: "socials_discord_fr", widget: "string", required: false}
           - {label: "socials_twitter (FRENCH)", name: "socials_twitter_fr", widget: "string", required: false}
           - {label: "socials_patreon (FRENCH)", name: "socials_patreon_fr", widget: "string", required: false}
           - {label: "socials_paypal (FRENCH)", name: "socials_paypal_fr", widget: "string", required: false}
           - {label: "btn_patchnotes (FRENCH)", name: "btn_patchnotes_fr", widget: "string", required: false}
+          - {label: "btn_news (FRENCH)", name: "btn_news_fr", widget: "string", required: false}
           - {label: "btn_forums (FRENCH)", name: "btn_forums_fr", widget: "string", required: false}
           - {label: "btn_guides (FRENCH)", name: "btn_guides_fr", widget: "string", required: false}
           - {label: "splash_whatsnew (FRENCH)", name: "splash_whatsnew_fr", widget: "string", required: false}
@@ -163,17 +186,22 @@ collections:
           - {label: "hometitle_aboutus (FRENCH)", name: "hometitle_aboutus_fr", widget: "string", required: false}
           - {label: "hometitle_patchnotes (FRENCH)", name: "hometitle_patchnotes_fr", widget: "string", required: false}
           - {label: "hometitle_patchnotes_more (FRENCH)", name: "hometitle_patchnotes_more_fr", widget: "string", required: false}
+          - {label: "hometitle_news (FRENCH)", name: "hometitle_news_fr", widget: "string", required: false}
+          - {label: "hometitle_news_more (FRENCH)", name: "hometitle_news_more_fr", widget: "string", required: false}
           - {label: "hometitle_policies_coc (FRENCH)", name: "hometitle_policies_coc_fr", widget: "string", required: false}
           - {label: "hometitle_policies_tos (FRENCH)", name: "hometitle_policies_tos_fr", widget: "string", required: false}
           - {label: "inner_nav_home (FRENCH)", name: "inner_nav_home_fr", widget: "string", required: false}
           - {label: "patchnotes_title (FRENCH)", name: "patchnotes_title_fr", widget: "string", required: false}
           - {label: "patchnotes_back (FRENCH)", name: "patchnotes_back_fr", widget: "string", required: false}
+          - {label: "news_title (FRENCH)", name: "news_title_fr", widget: "string", required: false}
+          - {label: "news_back (FRENCH)", name: "news_back_fr", widget: "string", required: false}
           - {label: "Help us translate! (SPANISH)", name: "helpus_es", widget: "string", required: false}
           - {label: "socials_discord (SPANISH)", name: "socials_discord_es", widget: "string", required: false}
           - {label: "socials_twitter (SPANISH)", name: "socials_twitter_es", widget: "string", required: false}
           - {label: "socials_patreon (SPANISH)", name: "socials_patreon_es", widget: "string", required: false}
           - {label: "socials_paypal (SPANISH)", name: "socials_paypal_es", widget: "string", required: false}
           - {label: "btn_patchnotes (SPANISH)", name: "btn_patchnotes_es", widget: "string", required: false}
+          - {label: "btn_news (SPANISH)", name: "btn_news_es", widget: "string", required: false}
           - {label: "btn_forums (SPANISH)", name: "btn_forums_es", widget: "string", required: false}
           - {label: "btn_guides (SPANISH)", name: "btn_guides_es", widget: "string", required: false}
           - {label: "splash_whatsnew (SPANISH)", name: "splash_whatsnew_es", widget: "string", required: false}
@@ -192,17 +220,22 @@ collections:
           - {label: "hometitle_aboutus (SPANISH)", name: "hometitle_aboutus_es", widget: "string", required: false}
           - {label: "hometitle_patchnotes (SPANISH)", name: "hometitle_patchnotes_es", widget: "string", required: false}
           - {label: "hometitle_patchnotes_more (SPANISH)", name: "hometitle_patchnotes_more_es", widget: "string", required: false}
+          - {label: "hometitle_news (SPANISH)", name: "hometitle_news_es", widget: "string", required: false}
+          - {label: "hometitle_news_more (SPANISH)", name: "hometitle_news_more_es", widget: "string", required: false}
           - {label: "hometitle_policies_coc (SPANISH)", name: "hometitle_policies_coc_es", widget: "string", required: false}
           - {label: "hometitle_policies_tos (SPANISH)", name: "hometitle_policies_tos_es", widget: "string", required: false}
           - {label: "inner_nav_home (SPANISH)", name: "inner_nav_home_es", widget: "string", required: false}
           - {label: "patchnotes_title (SPANISH)", name: "patchnotes_title_es", widget: "string", required: false}
           - {label: "patchnotes_back (SPANISH)", name: "patchnotes_back_es", widget: "string", required: false}
+          - {label: "news_title (SPANISH)", name: "news_title_es", widget: "string", required: false}
+          - {label: "news_back (SPANISH)", name: "news_back_es", widget: "string", required: false}
           - {label: "Help us translate! (JAPANESE)", name: "helpus_jp", widget: "string", required: false}
           - {label: "socials_discord (JAPANESE)", name: "socials_discord_jp", widget: "string", required: false}
           - {label: "socials_twitter (JAPANESE)", name: "socials_twitter_jp", widget: "string", required: false}
           - {label: "socials_patreon (JAPANESE)", name: "socials_patreon_jp", widget: "string", required: false}
           - {label: "socials_paypal (JAPANESE)", name: "socials_paypal_jp", widget: "string", required: false}
           - {label: "btn_patchnotes (JAPANESE)", name: "btn_patchnotes_jp", widget: "string", required: false}
+          - {label: "btn_news (JAPANESE)", name: "btn_news_jp", widget: "string", required: false}
           - {label: "btn_forums (JAPANESE)", name: "btn_forums_jp", widget: "string", required: false}
           - {label: "btn_guides (JAPANESE)", name: "btn_guides_jp", widget: "string", required: false}
           - {label: "splash_whatsnew (JAPANESE)", name: "splash_whatsnew_jp", widget: "string", required: false}
@@ -221,11 +254,15 @@ collections:
           - {label: "hometitle_aboutus (JAPANESE)", name: "hometitle_aboutus_jp", widget: "string", required: false}
           - {label: "hometitle_patchnotes (JAPANESE)", name: "hometitle_patchnotes_jp", widget: "string", required: false}
           - {label: "hometitle_patchnotes_more (JAPANESE)", name: "hometitle_patchnotes_more_jp", widget: "string", required: false}
+          - {label: "hometitle_news (JAPANESE)", name: "hometitle_news_jp", widget: "string", required: false}
+          - {label: "hometitle_news_more (JAPANESE)", name: "hometitle_news_more_jp", widget: "string", required: false}
           - {label: "hometitle_policies_coc (JAPANESE)", name: "hometitle_policies_coc_jp", widget: "string", required: false}
           - {label: "hometitle_policies_tos (JAPANESE)", name: "hometitle_policies_tos_jp", widget: "string", required: false}
           - {label: "inner_nav_home (JAPANESE)", name: "inner_nav_home_jp", widget: "string", required: false}
           - {label: "patchnotes_title (JAPANESE)", name: "patchnotes_title_jp", widget: "string", required: false}
           - {label: "patchnotes_back (JAPANESE)", name: "patchnotes_back_jp", widget: "string", required: false}
+          - {label: "news_title (JAPANESE)", name: "news_title_jp", widget: "string", required: false}
+          - {label: "news_back (JAPANESE)", name: "news_back_jp", widget: "string", required: false}
           
   - name: "highlights"
     label: "Homepage Highlights"

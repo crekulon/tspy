@@ -8,16 +8,16 @@
 	{% include socials.html %}
 	{% include innernav.html %}
 
-    <section id="patchnotes" class="infosection">
+    <section id="news" class="infosection">
         <div class="width-container blog-container">
-            <a href="/patchnotes" class="noglow">
-                <h2 class="motto title"><span><- {% include multilingual_custom.html key="patchnotes_back" article=site.data.localization md=false %}</span></h2>
+            <a href="/news" class="noglow">
+                <h2 class="motto title"><span><- {% include multilingual_custom.html key="news_back" article=site.data.localization md=false %}</span></h2>
             </a>
 
             {% assign notes = page %}
             {% include blogbox.html %}
 
-            {% include patchnav.html %}
+            {% include newsnav.html %}
         </div>
     </section>
 
