@@ -544,6 +544,16 @@ ul ul, ul ol, ol ul, ol ol {
     }
 }
 
+@media only screen and (max-width: 400px) and (min-height: 700px) {
+	.bg {
+	  top: -5vh;
+	}
+
+	#splash h1, #splash .h1 {
+	  bottom: calc(40vh - 0.17em);
+	}
+}
+
 /* to improve the splash screen on super small screens */
 @media only screen and (max-width: 400px) and (max-height: 700px) {
     .cta-container {
