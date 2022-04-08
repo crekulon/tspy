@@ -2,6 +2,7 @@
 <div class="innernav">
     <a class="noglow" href="/">{% include multilingual_custom.html key="inner_nav_home" article=site.data.localization md=false %}</a>
     <a class="noglow {% if page.url contains "/patchnotes" %}currentsection{% endif %}" href="/patchnotes">{% include multilingual_custom.html key="btn_patchnotes" article=site.data.localization md=false %}</a>
+    <a class="noglow {% if page.url contains "/news" %}currentsection{% endif %}" href="/news">{% include multilingual_custom.html key="btn_news" article=site.data.localization md=false %}</a>
     <a class="noglow {% if page.url contains "/guides" %}currentsection{% endif %}" href="/guides">{% include multilingual_custom.html key="btn_guides" article=site.data.localization md=false %}</a>
     <a class="noglow {% if page.url contains "/account" %}currentsection{% endif %}" href="/account">{% include multilingual_custom.html key="hometitle_accounts" article=site.data.localization md=false %}</a>
 </div>

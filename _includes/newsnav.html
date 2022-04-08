@@ -1,7 +1,7 @@
 <div class="blognav">
-    {% assign sortednotes = site.patchnotes | sort: 'date' | reverse %}
+    {% assign sortednotes = site.news | sort: 'date' | reverse %}
     {% assign notesbyyearmonth = sortednotes | group_by_exp: "notes", "notes.date | date: '%Y-%m_%B %Y'" %}
-    <h2 class="motto">{% include multilingual_custom.html key="patchnotes_title" article=site.data.localization md=false %}</h2>
+    <h2 class="motto">{% include multilingual_custom.html key="news_title" article=site.data.localization md=false %}</h2>
     {% for yearmonth in notesbyyearmonth %}
         <div class="bloggroup">
             {% assign bloggroupname = yearmonth.name | split: "_" %}

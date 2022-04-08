@@ -1,13 +1,13 @@
-<div class="patchbox">
-    <a href="{{ notes.url }}" class="patchtitle noglow">
-        <div class="patchimg lazy" style="background-image:url({{ notes.icon }})"></div>
+<div class="blogbox">
+    <a href="{{ notes.url }}" class="blogtitle noglow">
+        <div class="blogimg lazy" style="background-image:url({{ notes.icon }})"></div>
         <h3>{% include multilingual_title.html article=notes %}</h3>
         {% assign date = notes.date | split: " " %}
 
         <h4>{{ date[0] | date_to_long_string: "ordinal" }}</h4>
     </a>
 
-    <div class="patchbody md">
+    <div class="blogbody md">
         {% include multilingual_content.html article=notes %}
     </div>
 </div>

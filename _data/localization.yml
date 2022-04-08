@@ -3,6 +3,7 @@ socials_twitter: "Twitter"
 socials_patreon: "Support on Patreon"
 socials_paypal: "Support with Paypal"
 btn_patchnotes: "Patch Notes"
+btn_news: "News"
 btn_forums: "Forums"
 btn_guides: "Guides"
 splash_whatsnew: "What's new?"
@@ -21,17 +22,22 @@ hometitle_accounts_change: "Change Password"
 hometitle_aboutus: "About Us"
 hometitle_patchnotes: "Latest Patch Notes"
 hometitle_patchnotes_more: "More Patch Notes"
+hometitle_news: "Latest News"
+hometitle_news_more: "More News"
 hometitle_policies_coc: "Code of Conduct"
 hometitle_policies_tos: "Terms of Service"
 inner_nav_home: "Home"
 patchnotes_title: "Patch History"
 patchnotes_back: "Back to Patch Notes Archive"
+news_title: "News History"
+news_back: "Back to News Archive"
 helpus_fr: "Help us translate!"
 socials_discord_fr:
 socials_twitter_fr:
 socials_patreon_fr:
 socials_paypal_fr:
 btn_patchnotes_fr:
+btn_news_fr:
 btn_forums_fr:
 btn_guides_fr:
 splash_whatsnew_fr:
@@ -50,17 +56,22 @@ hometitle_accounts_change_fr:
 hometitle_aboutus_fr:
 hometitle_patchnotes_fr:
 hometitle_patchnotes_more_fr:
+hometitle_news_fr:
+hometitle_news_more_fr:
 hometitle_policies_coc_fr:
 hometitle_policies_tos_fr:
 inner_nav_home_fr:
 patchnotes_title_fr:
 patchnotes_back_fr:
+news_title_fr:
+news_back_fr:
 helpus_es: "Help us translate!"
 socials_discord_es:
 socials_twitter_es:
 socials_patreon_es:
 socials_paypal_es:
 btn_patchnotes_es:
+btn_news_es:
 btn_forums_es:
 btn_guides_es:
 splash_whatsnew_es:
@@ -79,17 +90,22 @@ hometitle_accounts_change_es:
 hometitle_aboutus_es:
 hometitle_patchnotes_es:
 hometitle_patchnotes_more_es:
+hometitle_news_es:
+hometitle_news_more_es:
 hometitle_policies_coc_es:
 hometitle_policies_tos_es:
 inner_nav_home_es:
 patchnotes_title_es:
 patchnotes_back_es:
+news_title_es:
+news_back_es:
 helpus_jp: "Help us translate!"
 socials_discord_jp:
 socials_twitter_jp:
 socials_patreon_jp:
 socials_paypal_jp:
 btn_patchnotes_jp:
+btn_news_jp:
 btn_forums_jp:
 btn_guides_jp:
 splash_whatsnew_jp:
@@ -108,8 +124,12 @@ hometitle_accounts_change_jp:
 hometitle_aboutus_jp:
 hometitle_patchnotes_jp:
 hometitle_patchnotes_more_jp:
+hometitle_news_jp:
+hometitle_news_more_jp:
 hometitle_policies_coc_jp:
 hometitle_policies_tos_jp:
 inner_nav_home_jp:
 patchnotes_title_jp:
 patchnotes_back_jp:
+news_title_jp:
+news_back_jp:

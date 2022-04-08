@@ -1,15 +1,16 @@
 ---
 layout: inner
-title: "Patch Notes"
+title: "News"
 ---
-<section id="patchnotes" class="infosection">
+<section id="news" class="infosection">
     <div class="width-container blog-container">
-        {% include patchnav.html %}
+        {% include newsnav.html %}
 
-		{% assign sortednotes = site.patchnotes | sort: 'date' | reverse %}
+		{% assign sortednotes = site.news | sort: 'date' | reverse %}
         {% for notes in sortednotes %}
 			{% include blogbox.html %}
         {% endfor %}
 
     </div>
 </section>
+
