@@ -10,12 +10,15 @@ icon: /img/qachan.png
   * Removed nvDXT from Game includes, since it hasn't been in use for a while
   * Removed old AlienSDK include references in a few spots, since it has been removed from our codebase for a while
   * Added new Preview system to perform specific animations for previews in Power Customization
+
 ## Occlusion
   * Adjustments to a lot of small geometry to mark it as not needing to be occluded
+
 ## Bug Fixes
   * Fix an out-of-bounds read in the Power Customization menu
   * Fix crash in the old Tutorials caused by clicking "More" after the enhancement tutorial
   * Fix crash from viewing Info on powers missing Description text
+
 ## UI
   * Removed Archetype stat bars in the character creation, since they were both bugged and not very accurate outside of that
   * Removed the double % on Power Info displays
@@ -27,6 +30,7 @@ icon: /img/qachan.png
 ## Improvements
   * Adjustment to pathfinding improving calculation speeds, fixed memory leak, and possibly addressed issue with flying NPCs becoming stuck
   * Character slots expanded to 300
+
 ## Bug Fixes
   * Fixed MARTY trigger bug caused by XP normalization
   * Adjustment to code behind /respec - Was incorrectly flagging that you had a respec available when that was not the case, if you had used a Trial respec before
@@ -34,6 +38,7 @@ icon: /img/qachan.png
 # Backend
 ## Improvements
   * Adjustment to collision code to reduce some unnecessary slowdowns and an optimization for some of the math
+
 ## Bug Fixes:
   * getPhysicalMemory now returns actual RAM size values
 
@@ -56,6 +61,7 @@ icon: /img/qachan.png
 # Scripted Events
 ## Paladin
   * Fixed event in Kings Row to properly resets
+
 ## Dilemma Diabolique
   * Fixed Spines Badge Challenge to properly fail if the spines are not all destroyed within the timer
 
@@ -106,15 +112,10 @@ icon: /img/qachan.png
 ## Wind Control
   * Removed the debug floating text of "I Drain Pressure!" from the powers.
 
-#
- 
-
-
 ## Sprint Customization
   * Changes to make the Glide FX customizable
 
 ## Super Reflexes
-
 * Removed PvP specific Psionic defense 
 * Evasion's effects have been merged into Focused Senses
 * Agile and lucky's effects have been merged into Dodge, which is now the t3 power in the set.
@@ -209,7 +210,6 @@ There was a previous reduction of endurance costs and recharge times, this has b
 ## Energy Aura
 
 Revamp goals: Move active defensive powers to earlier in the set and equalize differences between the different versions.
- 
 
 * Kinetic Shield
   - Increased defense scale of smash/lethal from 1.75 to 2.0 for scrappers and brutes (Stalkers were already at 2.2)

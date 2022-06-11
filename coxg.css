@@ -67,13 +67,13 @@ ul ul, ul ol, ol ul, ol ol {
 .md * ~ h2, .md * ~ h3, .md * ~ h4, .md * ~ h5, .md * ~ h6 {
     margin-top: 3.5vh;
 }
-
+      
+.md .langcontent h2 { font-size: calc(1em + 1vw); border-bottom: 1px solid;}
+.md .langcontent h3 { font-size: calc(1em + 0.25vw); }
+.md .langcontent h4 { font-size: calc(1em + 0.5vw); }
+.md .langcontent h5 { font-size: calc(1em + 0.25vw); }
+.md .langcontent h6 { font-size: 1em; }
 .md li { margin-bottom: 0.5em; }
-.md h2 { font-size: calc(1em + 1vw); }
-.md h3 { font-size: calc(1em + 0.75vw); }
-.md h4 { font-size: calc(1em + 0.5vw); }
-.md h5 { font-size: calc(1em + 0.25vw); }
-.md h6 { font-size: 1em; }
 .md em { font-style: italic; }
 .md strong { font-weight: 600; }
 
