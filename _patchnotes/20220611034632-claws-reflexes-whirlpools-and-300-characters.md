@@ -106,8 +106,9 @@ icon: /img/qachan.png
 ## Wind Control
   * Removed the debug floating text of "I Drain Pressure!" from the powers.
 
-## Psychokinetic Assault
-  * Sword Pets now use a silent sequencer for movement, death, etc..
+#
+ 
+
 
 ## Sprint Customization
   * Changes to make the Glide FX customizable
