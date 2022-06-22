@@ -3,26 +3,40 @@
 <link rel="stylesheet" type="text/css" href='/coxg.css?{{site.time | date: "%s%N"}}'> {% comment %} the ? is a temporary cache buster {% endcomment %}
 
 <!-- Primary Meta Tags -->
-{% if page.url == "/" %}
-    <title>Thunderspy Gaming - A City of Heroes Private Server</title>
-{% elsif page.title %}
-    <title>{{ page.title }} - Thunderspy Gaming</title>	
-{% endif %}
-<meta name="title" content="Thunderspy Gaming - A City of Heroes Private Server">
-<meta name="description" content="{{ site.data.meta.description }}">
+{% capture title %} 
+    {% if page.url == "/" %}
+        Thunderspy Gaming - A City of Heroes Private Server
+    {% else %}
+        {{ page.title }} - Thunderspy Gaming
+    {% endif %}
+{% endcapture %}
+{% assign title = title | strip %}
+
+{% capture description %}
+    {% if page.description %}
+        {{ page.description }}
+    {% else %}
+        {{ site.data.meta.description }}
+    {% endif %}
+{% endcapture %}
+{% assign description = description | strip %}
+
+<title>{{ title }}</title>
+<meta name="title" content="{{ title }}">
+<meta name="description" content="{{ description }}">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thunderspygaming.net">
-<meta property="og:title" content="Thunderspy Gaming - A City of Heroes Private Server">
-<meta property="og:description" content="{{ site.data.meta.description }}">
-<meta property="og:image" content="https://eccentric.monster/tspy/img/thundersplash.png">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:image" content="https://thunderspygaming.com/img/thundersplash.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://thunderspygaming.net">
-<meta property="twitter:title" content="Thunderspy Gaming - A City of Heroes Private Server">
-<meta property="twitter:description" content="{{ site.data.meta.description }}">
-<meta property="twitter:image" content="https://eccentric.monster/tspy/img/thundersplash.png">
+<meta property="twitter:title" content="{{ title }}">
+<meta property="twitter:description" content="{{ description }}">
+<meta property="twitter:image" content="https://thunderspygaming.com/img/thundersplash.png">
 
 <script src="https://kit.fontawesome.com/ff46203259.js" crossorigin="anonymous"></script>
