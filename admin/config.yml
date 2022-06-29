@@ -21,7 +21,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image", default: "/img/qachan.png"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Meta Description/Discord Preview Text", name: "description", widget: "string", pattern: ['.{,150}', "Must be under 150 letters"]}
+      - {label: "Meta Description/Discord Preview Text", name: "description", widget: "string", pattern: ['.{0,150}', "Must be under 150 letters"]}
       - {label: "(FRENCH) Title", name: "title_fr", widget: "string", required: false}
       - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown", required: false}
       - {label: "(SPANISH) Title", name: "title_es", widget: "string", required: false}
@@ -39,7 +39,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image", default: "/img/qachan.png"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Meta Description/Discord Preview Text", name: "description", widget: "string", pattern: ['.{,150}', "Must be under 150 letters"]}
+      - {label: "Meta Description/Discord Preview Text", name: "description", widget: "string", pattern: ['.{0,150}', "Must be under 150 letters"]}
       - {label: "(FRENCH) Title", name: "title_fr", widget: "string", required: false}
       - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown", required: false}
       - {label: "(SPANISH) Title", name: "title_es", widget: "string", required: false}
@@ -57,7 +57,7 @@ collections:
       - {label: "Order", name: "order", widget: "number", default: 1, value_type: "int", hint: "You can use this number to change the order that the guide shows up in its category. Lower is closer to the top. You don't have to set this if you don't care."}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Meta Description/Discord Preview Text", name: "description", widget: "string", pattern: ['.{,150}', "Must be under 150 letters"]}
+      - {label: "Meta Description/Discord Preview Text", name: "description", widget: "string", pattern: ['.{0,150}', "Must be under 150 letters"]}
       - {label: "(FRENCH) Category", name: "category_fr", widget: "string", hint: "Only the category at the top is used for sorting, this is just used to translate it. Technically only the 'first' in the order for a given category needs this to be set, but if you want to be safe, just always set it.", required: false}
       - {label: "(FRENCH) Title", name: "title_fr", widget: "string", required: false}
       - {label: "(FRENCH) Body", name: "content_fr", widget: "markdown", required: false}
