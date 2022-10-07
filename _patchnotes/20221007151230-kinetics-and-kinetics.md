@@ -1,6 +1,6 @@
 ---
 date: 2022-07-03T15:00:00.000Z
-title: Kinetics and Kinetics
+title: Kinetics and Kinetics Accessories
 icon: /img/qachan.png
 description: Kinetics has been revamped to make Siphon Power buff damage with a
   chance to proc on any attack. Now Kinetic Assault set. More tweaks.
