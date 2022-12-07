@@ -34,29 +34,36 @@ description: This update is our first 64-bit release and also comes with tons of
 # Apartments
 * Fix UI displaying "Influence: {amount}" to be the proper amount rather than unformatted text
 * Fix text upon buying/selling details to properly say, "{playerName} bought {detail} for {cost} Influence." rather than just the unformatted text
-
 # Powers
+
 ## Inherent
 * Restraint
   - Fix to not save the Boost effect to the server, so that the power forcibly reapplies as needed
+
 ## Psionic Melee
 * Fix Telekinetic Blow using a different length animation with Shield
+
 ## Martial Arts
 * Focus Chi
   - No longer stacks
   - No longer boosts Knockback and Knockup
+
 ## Hard Life
 * Fix "It's A Hard Life" to accept ToHit IO sets
+
 ## Kinetic Assault
 * Coalescence
   - Reduce ToHit scale from 4 -> 2
+
 ## Kinetic Melee
 * Power Siphon
   - Increase ToHit from scale 0.75 -> 2
   - It was already 2 on Stalker
+
 ## Warshade
 * Starless Step
   - Fix IO slotting
+
 ## Pool - Speed
 * Flurry
   - Fix inconsistent delays on damage for Scrapper and Stalker
@@ -64,8 +71,10 @@ description: This update is our first 64-bit release and also comes with tons of
 
 # Power Customization
 * Color picker and slider are now available for fine-tuning colors
+
 ## Kheldians
 * Fix transformation FX customizations
+
 ## Arachnos Widow
 * Tarantula Form can now be customized between Male and Female instead of being based on the first costume slot
 
@@ -80,12 +89,13 @@ description: This update is our first 64-bit release and also comes with tons of
 * Fear
   - Fix Fear set enhancements to not spam client error log and properly show the Fear duration on specific pieces that were missing
 
- Costumes
+# Costumes
 * Clockwork Backpack NPC costume part is now available
 * Desdemona's hair is now available
 * Seer costume parts are now available
 * Praetorian Ghoul costume parts are now available
 * Wing Blade (Godsword) Titan Weapon is now available
+
 ## Backweapons
 * Fixed Main Gauche right-handed Dual Blade weapon being a greenman
 
@@ -95,10 +105,12 @@ description: This update is our first 64-bit release and also comes with tons of
   - Fixed the correct story arcs to no longer have the Pirate badge requirement for Flashbacks, since that was removed from her contact in i21
 
 # Encounters
+
 ## Circle of Thorns
 * Fix three CoT mobs that were misnamed by the OG devs, causing multiple static Lieutenants to be missing from a pack of CoT
 
 # Maps
+
 ## Brickstown
 * Remove reference to old GIFT Liason holiday NPC, since they're no longer used and it was causing error logging
 
