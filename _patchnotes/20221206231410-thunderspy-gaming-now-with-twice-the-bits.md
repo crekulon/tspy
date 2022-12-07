@@ -5,6 +5,8 @@ icon: /img/qachan.png
 description: This update is our first 64-bit release and also comes with tons of
   graphical optimizations.
 ---
+![](/img/uploads/super_64_bros.jpg)
+
 # 64-Bit
 * 64-bit MapServer and Client are now deployed
 
@@ -34,6 +36,7 @@ description: This update is our first 64-bit release and also comes with tons of
 # Apartments
 * Fix UI displaying "Influence: {amount}" to be the proper amount rather than unformatted text
 * Fix text upon buying/selling details to properly say, "{playerName} bought {detail} for {cost} Influence." rather than just the unformatted text
+
 # Powers
 
 ## Inherent
@@ -115,6 +118,7 @@ description: This update is our first 64-bit release and also comes with tons of
 * Remove reference to old GIFT Liason holiday NPC, since they're no longer used and it was causing error logging
 
 # Zone Events
+
 ## Port Oakes Ghost Traps
 * Now spawns ghosts relative to the level of the last attacking player, addressing an OG dev TODO that was exposed by our level range increases
 
