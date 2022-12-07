@@ -5,6 +5,8 @@ icon: /img/qachan.png
 description: This update is our first 64-bit release and also comes with tons of
   graphical optimizations.
 ---
+![](/img/uploads/super_64_bros.jpg)
+
 # 64-Bit
 * 64-bit MapServer and Client are now deployed
 
