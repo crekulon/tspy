@@ -6,6 +6,6 @@ description: This Saturday, we'll be hosting a PvP event in Siren's Call. XP
   rates will be set to 200% through the week so you can gear up for the big
   match.
 ---
-![](/img/uploads/SirensPvP.png)
+![](/img/uploads/sirenspvp.png)
 
 This Saturday, we'll be hosting a PvP event in Siren's Call. XP rates will be set to 200% through the week so you can gear up for the big match.
