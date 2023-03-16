@@ -137,7 +137,7 @@ collections:
           - {label: "socials_paypal", name: "socials_paypal", widget: "string", default: "Support with Paypal", required: false}
           - {label: "btn_patchnotes", name: "btn_patchnotes", widget: "string", default: "Patch Notes", required: false}
           - {label: "btn_news", name: "btn_news", widget: "string", default: "Patch Notes", required: false}
-          - {label: "btn_forums", name: "btn_forums", widget: "string", default: "Forums", required: false}
+          - {label: "btn_wiki", name: "btn_wiki", widget: "string", default: "Wiki", required: false}
           - {label: "btn_guides", name: "btn_guides", widget: "string", default: "Guides", required: false}
           - {label: "splash_whatsnew", name: "splash_whatsnew", widget: "string", default: "What's new?", required: false}
           - {label: "splash_playnow", name: "splash_playnow", widget: "string", default: "Play Now", required: false}
@@ -171,7 +171,7 @@ collections:
           - {label: "socials_paypal (FRENCH)", name: "socials_paypal_fr", widget: "string", required: false}
           - {label: "btn_patchnotes (FRENCH)", name: "btn_patchnotes_fr", widget: "string", required: false}
           - {label: "btn_news (FRENCH)", name: "btn_news_fr", widget: "string", required: false}
-          - {label: "btn_forums (FRENCH)", name: "btn_forums_fr", widget: "string", required: false}
+          - {label: "btn_wiki (FRENCH)", name: "btn_wiki_fr", widget: "string", required: false}
           - {label: "btn_guides (FRENCH)", name: "btn_guides_fr", widget: "string", required: false}
           - {label: "splash_whatsnew (FRENCH)", name: "splash_whatsnew_fr", widget: "string", required: false}
           - {label: "splash_playnow (FRENCH)", name: "splash_playnow_fr", widget: "string", required: false}
@@ -205,7 +205,7 @@ collections:
           - {label: "socials_paypal (SPANISH)", name: "socials_paypal_es", widget: "string", required: false}
           - {label: "btn_patchnotes (SPANISH)", name: "btn_patchnotes_es", widget: "string", required: false}
           - {label: "btn_news (SPANISH)", name: "btn_news_es", widget: "string", required: false}
-          - {label: "btn_forums (SPANISH)", name: "btn_forums_es", widget: "string", required: false}
+          - {label: "btn_wiki (SPANISH)", name: "btn_wiki_es", widget: "string", required: false}
           - {label: "btn_guides (SPANISH)", name: "btn_guides_es", widget: "string", required: false}
           - {label: "splash_whatsnew (SPANISH)", name: "splash_whatsnew_es", widget: "string", required: false}
           - {label: "splash_playnow (SPANISH)", name: "splash_playnow_es", widget: "string", required: false}
@@ -239,7 +239,7 @@ collections:
           - {label: "socials_paypal (JAPANESE)", name: "socials_paypal_jp", widget: "string", required: false}
           - {label: "btn_patchnotes (JAPANESE)", name: "btn_patchnotes_jp", widget: "string", required: false}
           - {label: "btn_news (JAPANESE)", name: "btn_news_jp", widget: "string", required: false}
-          - {label: "btn_forums (JAPANESE)", name: "btn_forums_jp", widget: "string", required: false}
+          - {label: "btn_wiki (JAPANESE)", name: "btn_wiki_jp", widget: "string", required: false}
           - {label: "btn_guides (JAPANESE)", name: "btn_guides_jp", widget: "string", required: false}
           - {label: "splash_whatsnew (JAPANESE)", name: "splash_whatsnew_jp", widget: "string", required: false}
           - {label: "splash_playnow (JAPANESE)", name: "splash_playnow_jp", widget: "string", required: false}

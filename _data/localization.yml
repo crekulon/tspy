@@ -4,7 +4,7 @@ socials_patreon: "Support on Patreon"
 socials_paypal: "Support with Paypal"
 btn_patchnotes: "Patch Notes"
 btn_news: "News"
-btn_forums: "Forums"
+btn_wiki: "Wiki"
 btn_guides: "Guides"
 splash_whatsnew: "What's new?"
 splash_playnow: "Play Now"
@@ -38,7 +38,7 @@ socials_patreon_fr:
 socials_paypal_fr:
 btn_patchnotes_fr:
 btn_news_fr:
-btn_forums_fr:
+btn_wiki_fr:
 btn_guides_fr:
 splash_whatsnew_fr:
 splash_playnow_fr:
@@ -72,7 +72,7 @@ socials_patreon_es:
 socials_paypal_es:
 btn_patchnotes_es:
 btn_news_es:
-btn_forums_es:
+btn_wiki_es:
 btn_guides_es:
 splash_whatsnew_es:
 splash_playnow_es:
@@ -106,7 +106,7 @@ socials_patreon_jp:
 socials_paypal_jp:
 btn_patchnotes_jp:
 btn_news_jp:
-btn_forums_jp:
+btn_wiki_jp:
 btn_guides_jp:
 splash_whatsnew_jp:
 splash_playnow_jp:
