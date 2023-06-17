@@ -2,6 +2,10 @@
 category: Core Changes
 order: 1
 title: Invention
+description: All recipes now require special material salvage, which you can get
+  by converting vanilla salvage under the 'Materials' section of an invention
+  table or bought at a merit vendor for inf. This streamlines the crafting
+  process.
 ---
 While all vanilla salvage still drops, all recipes now require special **material salvage**, which you can get by converting vanilla salvage under the 'Materials' section of an invention table.
 
@@ -14,3 +18,5 @@ Each of the materials are the result of converting salvage of their correspondin
 Once you have your materials ready, you'll be able to use them for crafting!
 
 ![](/img/uploads/coxg_upbtycqvff.png)
+
+Materials are also available at Merit Vendors for inf.
