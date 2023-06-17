@@ -1,5 +1,5 @@
 ---
-date: 2023-06-17T02:22:30.297Z
+date: 2023-04-24T13:00:00.000Z
 title: Inherent Hide and Placate
 icon: /img/qachan.png
 description: On Stalkers, Hide and Placate are now inherent powers. Generally,
