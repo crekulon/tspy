@@ -1,5 +1,5 @@
 ---
-date: 2023-06-17T02:56:08.382Z
+date: 2023-06-15T13:00:08.382Z
 title: I Just Wanna Grill
 icon: /img/qachan.png
 description: I wanted to name the last patch notes "I Just Wanna Grill" for the
