@@ -3,8 +3,9 @@ date: 2023-06-17T02:47:05.995Z
 title: Grossly Incandescent
 icon: /img/qachan.png
 description: We've added a Praise The Sun emote as our first custom animation
-  EVER! Titan Weapons new builds momentum even if it misses, but has lower
-  damage and endurance cost. Romulus no longer runs like a coward. More!
+  EVER! We also added a new grilling emote. Titan Weapons new builds momentum
+  even if it misses, but has lower damage and endurance cost. Romulus no longer
+  runs like a coward. More!
 ---
 # MapServer
 
@@ -13,6 +14,7 @@ description: We've added a Praise The Sun emote as our first custom animation
 # Emotes
 
   * Added new `/e praisethesun` emote
+  * Added new `/e grill` emote
 
 # Power System
 
