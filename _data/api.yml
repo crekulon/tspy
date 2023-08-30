@@ -1,4 +1,4 @@
 account:
-  create_account: https://thunderspygaming.com/account.php
-  reset_password: https://thunderspygaming.com/account.php
-  change_password: https://thunderspygaming.com/account.php
+  create_account: /account.php
+  reset_password: /account.php
+  change_password: /account.php
