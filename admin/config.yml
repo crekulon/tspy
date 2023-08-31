@@ -7,7 +7,7 @@ backend:
 
 publish_mode: editorial_workflow
 media_folder: "img/uploads"
-site_url: https://thunderspygaming.com/
+site_url: https://thunderspy.net/
 show_preview_links: false
 
 collections:
