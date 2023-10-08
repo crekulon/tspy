@@ -51,7 +51,7 @@ Although **Evil Mascot** falls well within the realm of parody, taking a shot at
 
 # Superman
 
-Making 2nd place on the most judge's top 3 put **Literally Superman** in 1st place after tallying the votes. He makes excellent use of our double chest details to copy Superman's *S* emblem. I can already hear Marvel lawyers busting down our door.
+Making 2nd place on the most judge's top 3 put **Literally Superman** in 1st place after tallying the votes. He makes excellent use of our double chest details to copy Superman's *S* emblem. I can already hear DC lawyers busting down our door.
 
 ![](/img/uploads/superman.png "Literally Superman")
 
