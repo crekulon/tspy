@@ -2,13 +2,23 @@
 category: Core Changes
 order: 1
 title: Pet Customization
+description: What was missing from the MMO with the best character
+  customization ever? Customizing pets! Now you can customize your pets to look
+  like Oompa Loompas, the X-Men, or whatever you can imagine. All pets can be
+  customized - even vanity pets.
 ---
-On Thunderspy, any pet can be customized - Mastermind minion, Controller/Dominator pet, veteran vanity pet, etc. If it can be named, it can be given a custom costume! Certain non-humanoid pets (Robots, Beasts) will have broken animations, but anything that uses the human skeleton will animate as expected.
 
-To customize a pet, rename it, then right click it and select 'Edit Costume'. Make something you're happy with, then simply hit 'Next'. And you're all set!
+Any pet can be customized on Thunderspy - Mastermind minions,
+Controller/Dominator pets, and vanity pets. Certain non-humanoid pets will be
+missing animations, but anything that uses the human skeleton will work
+perfectly.
 
-***Be sure you save your minion's costume, since you can't go in and retrieve it later!!***
+1. Rename the pet to anything you want
+2. Right-click the pet and select **Edit Costume**
+3. Make a really cool costume
+4. Hit the **Next** button
+5. You're all set!
 
-*Also, refer to this graphic from notjoe's "[The ThunderSpy 101 Primer collection AKA Teach me Trickshot!](https://thunderspygaming.boards.net/thread/71/thunderspy-primer-collection-teach-trickshot)"*
+**WARNING:** Save your pet costume in the editor. You can't get it back otherwise.
 
-![](/img/uploads/pets.jpg)
+![A comic about customizing pets](/img/uploads/pets.jpg)
