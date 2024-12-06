@@ -407,7 +407,7 @@ ul ul, ul ol, ol ul, ol ol {
 }
 
 .logo::after {
-    background-image: url(./img/coxg.gif);
+    background-image: url(./img/logocrop.png);
 }
 
 .road {
