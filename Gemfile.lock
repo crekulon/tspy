@@ -88,12 +88,8 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  base64 (~> 0.3.0)
-  bigdecimal (~> 4.0)
-  csv
   jekyll (~> 4.4.0)
   jekyll-feed (~> 0.12)
-  logger
   minima (~> 2.5)
   tzinfo
   tzinfo-data
