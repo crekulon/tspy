@@ -22,3 +22,8 @@ P﻿article physics have been ported from the old **PhysX** to the **Jolt** phys
 * Fixing numerous physics-related crashes
 * Fixing behavior at high frame rates
 * Freeing us from dependence of Nvidia's ancient PhysX runtime
+
+# ﻿Unrestricting Supergroup Base Editor
+W﻿ho likes restrictions? Anyone? Since we've decided not to recover the base raiding mechanic that was disabled by the live devs, we see no reason to restrict the supergroup base editor. Room placement and clipping restrictions have been removed, ceilings can now be removed, and **base upkeep tax is now free**.
+
+W﻿e've also **added storage to apartments**. Since apartments are shared with all characters on one account, the storage can be used to share items as well. No more emailing items to yourself. We also added self-explanatory `apt_music` and `apt_reset_portal` commands.
