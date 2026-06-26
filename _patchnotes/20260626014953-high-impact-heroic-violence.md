@@ -121,6 +121,7 @@ E﻿nemies beyond aggro cap will now attack targets in range without persuing th
   * Induced Coma
   * Pacing of the Turtle
   * Winter's Bite
+* Shield Wall proc is no longer affected by damage buffs
 
 ### D﻿arkness Control
 
