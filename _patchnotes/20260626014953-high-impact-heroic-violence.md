@@ -3,7 +3,7 @@ date: 2026-06-26T01:49:35.886Z
 title: High Impact Heroic Violence
 icon: /img/qachan.png
 description: Ragdolling mooks has never been more fun with knockback impact
-  damage. New particle physics. Freestyle supergroup bases. More!
+  damage. New particle physics. Aggro changes. Freestyle supergroup bases. More!
 ---
 # ﻿Knockback Overhaul
 
@@ -51,3 +51,29 @@ P﻿article physics have been ported from the old **PhysX** to the **Jolt** phys
 W﻿ho likes restrictions? Anyone? Since we've decided not to recover the base raiding mechanic that was disabled by the live devs, we see no reason to restrict the supergroup base editor. Room placement and clipping restrictions have been removed, ceilings can now be removed, and **base upkeep tax is now free**.
 
 W﻿e've also **added storage to apartments**. Since apartments are shared with all characters on one account, the storage can be used to share items as well. No more emailing items to yourself. We also added self-explanatory `apt_music` and `apt_reset_portal` commands.
+
+# O﻿ther New Stuff
+
+* Added Borderless Fullscreen mode
+* Power Tray now displays actual keybind text instead of numbered sprites
+
+# T﻿weaks
+
+* Enhancement Catalysts (1 Alignment Merit + 1.5M Influence)
+* Alignment Merits can now be converted directly for 5M Influence
+* PvP IO cost reduced from 35/30 Alignment Merits to 25
+* x10 Enhancement Converters now cost only 1 Alignment Merit
+
+### P﻿rimalist
+
+##### G﻿eneral
+
+* Pack Frenzy now grants a full Primal Energy bar instead of consuming one
+* Rejuvenate grants 3 Primal Energy (up from 1)
+* Inexhaustible now grants Slow and Endurance Drain Resistance
+
+##### P﻿rowler Form
+
+* Bleed chance increased to 100% (from 85%)
+* Missing Nature's Boon bleed effects added
+* Bleed duration increased to 4.1s (from 3.1s)
