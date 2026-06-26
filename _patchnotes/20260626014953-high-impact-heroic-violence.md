@@ -14,3 +14,11 @@ Every character begins with two impact tiers for nearby and distant collisions. 
 
 * Unlocking additional impact tiers for longer-distance lanches
 * Lowering the minimum distance required for each tier
+
+# ﻿New Physics Engine
+P﻿article physics have been ported from the old **PhysX** to the **Jolt** physics engine. The benefits include:
+
+* Improving physics performance
+* Fixing numerous physics-related crashes
+* Fixing behavior at high frame rates
+* Freeing us from dependence of Nvidia's ancient PhysX runtime
