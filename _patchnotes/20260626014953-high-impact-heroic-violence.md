@@ -20,7 +20,25 @@ Every character begins with two impact tiers for nearby and distant collisions. 
 
 T﻿his new **universal damage** enhancement set is focused on the new knockback impact system. With its knockback proc, it can add knockback to any attack- including knockback aura toggles. Its first tier set bonus is currently the only way to unlock additional tiers of knockback impact damage. Finally, it's the first IO set feature an **endurance drain resistance** bonus.
 
+##### E﻿nhancements
+
+1. A﻿ccuracy/Damage
+2. E﻿ndurance/Recharge
+3. Accuracy/Damage/Endurance
+4. Damage/Endurance/Recharge
+5. Accuracy/Damage/Endurance/Recharge
+6. **Chance for Knockback**
+
+##### S﻿et Bonuses
+
+1. U﻿nlock additional knockack impact tiers
+2. +8% Knockback effectiveness
+3. +4.2% Endurance Drain Resistance
+4. +3% Damage
+5. +2.5% Energy & Negative Energy Defense and +1.25% Ranged Defense
+
 # ﻿New Physics Engine
+
 P﻿article physics have been ported from the old **PhysX** to the **Jolt** physics engine. The benefits include:
 
 * Improving physics performance
