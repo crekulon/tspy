@@ -103,6 +103,8 @@ E﻿nemies beyond aggro cap will now attack targets in range without persuing th
 # B﻿ug Fixes
 
 * Fixed damage formula interactions so Offensive Adaptation, Hybrid Doublehit, and Sharpen Claws no longer incorrectly treat damage auras as click AoEs
+* Fixed crash when calculating pet power customization costs
+* Fixed two AccountServer issues that could cause outgoing email to stop functioning
 * Fixed multiple client and MapServer memory leaks
 
   * Titan Weapon-related leak
@@ -122,6 +124,7 @@ E﻿nemies beyond aggro cap will now attack targets in range without persuing th
   * Pacing of the Turtle
   * Winter's Bite
 * Shield Wall proc is no longer affected by damage buffs
+* Corrected outdated tooltip referencing the old 20-hour cooldown in Alignment Merit Vendor
 
 ### D﻿arkness Control
 
@@ -140,6 +143,11 @@ E﻿nemies beyond aggro cap will now attack targets in range without persuing th
 ### W﻿illpower
 
 * Removed incorrect Repel Resistance reference from Indomitable Will
+
+### P﻿rimalist
+
+* Standardized "Primal Form" capitalization
+* Wild Roar description now lists the correct form requirement
 
 # O﻿ptimizations
 
