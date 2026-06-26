@@ -52,6 +52,10 @@ W﻿ho likes restrictions? Anyone? Since we've decided not to recover the base r
 
 W﻿e've also **added storage to apartments**. Since apartments are shared with all characters on one account, the storage can be used to share items as well. No more emailing items to yourself. We also added self-explanatory `apt_music` and `apt_reset_portal` commands.
 
+# A﻿ggro
+
+E﻿nemies beyond aggro cap will now attack targets in range without persuing them. This means ranged enemies will take pot shots if you stand within range of them.
+
 # O﻿ther New Stuff
 
 * Added Borderless Fullscreen mode
