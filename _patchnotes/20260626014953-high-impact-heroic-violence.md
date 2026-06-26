@@ -125,6 +125,7 @@ E﻿nemies beyond aggro cap will now attack targets in range without persuing th
   * Winter's Bite
 * Shield Wall proc is no longer affected by damage buffs
 * Corrected outdated tooltip referencing the old 20-hour cooldown in Alignment Merit Vendor
+* C﻿ircle of Thorns Red Crystals now apply **Avoid** to enemies instead of allies, preventing allied ghosts and other Circle of Thorns units from fleeing unexpectedly
 
 ### D﻿arkness Control
 
