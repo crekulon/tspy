@@ -1,7 +1,7 @@
 ---
 date: 2026-06-26T01:49:35.886Z
 title: High Impact Heroic Violence
-icon: /img/qachan.png
+icon: /img/uploads/hisv.jpg
 description: Ragdolling mooks has never been more fun with knockback impact
   damage. New particle physics. Aggro changes. Freestyle supergroup bases. More!
 ---
