@@ -60,6 +60,7 @@ E﻿nemies beyond aggro cap will now attack targets in range without persuing th
 
 * Added Borderless Fullscreen mode
 * Power Tray now displays actual keybind text instead of numbered sprites
+* Sharpen Claws no longer affects Judgement
 
 # T﻿weaks
 
@@ -81,3 +82,24 @@ E﻿nemies beyond aggro cap will now attack targets in range without persuing th
 * Bleed chance increased to 100% (from 85%)
 * Missing Nature's Boon bleed effects added
 * Bleed duration increased to 4.1s (from 3.1s)
+
+##### D﻿arkness Control
+
+* Spirit Host now accepts appropriate Pet Damage/Fear sets
+* Haunt now accepts ToHit and Accurate ToHit Debuff sets
+
+### Radiation Melee
+
+* Irradiated Ground now accepts:
+
+  * Archetype Origin enhancements (Brute/Tanker)
+  * Accurate Defense Debuff sets
+  * Defense Debuff sets
+
+### Willpower
+
+* Rise to the Challenge now accepts Taunt enhancement sets (Brute/Scrapper/Tanker)
+
+# B﻿ug Fixes
+
+* Fixed damage formula interactions so Offensive Adaptation, Hybrid Doublehit, and Sharpen Claws no longer incorrectly treat damage auras as click AoEs
