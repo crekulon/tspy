@@ -103,3 +103,44 @@ E﻿nemies beyond aggro cap will now attack targets in range without persuing th
 # B﻿ug Fixes
 
 * Fixed damage formula interactions so Offensive Adaptation, Hybrid Doublehit, and Sharpen Claws no longer incorrectly treat damage auras as click AoEs
+* Fixed multiple client and MapServer memory leaks
+
+  * Titan Weapon-related leak
+  * ID cache leak
+  * Character destruction cleanup leak
+* Shared map token access is now non-blocking, preventing zone stalls during writes
+* Fixed stack limits not functioning correctly for:
+
+  * Achilles' Heel
+  * Absolute Amazement
+  * Annihilation
+  * Basilisk's Gaze
+  * Dark Watcher's Despair
+  * Dominion of Arachnos
+  * Fury of the Gladiator
+  * Induced Coma
+  * Pacing of the Turtle
+  * Winter's Bite
+
+### D﻿arkness Control
+
+* Umbra Beast now accepts Immobilize enhancement sets
+* Terrifying Roar now accepts Immobilize enhancements
+
+### R﻿adiant Blast
+
+* Fixed bonus damage against Undead/Demons/Ghosts affecting allies
+
+### A﻿tomic Mastery
+
+* Devastating Blow no longer accepts Taunt enhancements
+* Neutron Bomb now correctly accepts Universal Damage enhancements
+
+### W﻿illpower
+
+* Removed incorrect Repel Resistance reference from Indomitable Will
+
+# O﻿ptimizations
+
+* R﻿eplaced DirectSound with OpenAL
+* P﻿ort window initialization and event handling to SDL3
