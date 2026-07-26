@@ -9,13 +9,13 @@
 	{% include innernav.html %}
 
     <section id="patchnotes" class="infosection">
-        <div class="width-container blog-container">
+        <div class="width-container patch-container">
             <a href="/patchnotes" class="noglow">
                 <h2 class="motto title"><span><- {% include multilingual_custom.html key="patchnotes_back" article=site.data.localization md=false %}</span></h2>
             </a>
 
             {% assign notes = page %}
-            {% include blogbox.html %}
+            {% include patchbox.html %}
 
             {% include patchnav.html %}
         </div>

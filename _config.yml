@@ -25,11 +25,6 @@ collections:
     output: true
     permalink: /:collection/:name
 
-  news:
-    title: News
-    output: true
-    permalink: /:collection/:name
-
   guides:
     title: Guides
     output: true
@@ -48,16 +43,6 @@ defaults:
       layout: "patchnote"
   -
     scope:
-      path: "/news"
-    values:
-      layout: "inner"
-  -
-    scope:
-      type: "news"
-    values:
-      layout: "news"
-  -
-    scope:
       path: "/guides"
     values:
       layout: "inner"
@@ -71,5 +56,3 @@ feed:
   collections:
     patchnotes:
       path: "/patchnotes.xml"
-    news:
-      path: "/news.xml"
