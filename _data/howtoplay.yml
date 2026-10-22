@@ -1,10 +1,19 @@
 body: >-
   1. Download and install the [Sweet Tea
-  launcher](https://github.com/Thunderspies/launcher/releases/latest).
+     launcher](https://github.com/Thunderspies/launcher/releases/latest).
 
   2. The Sweet Tea launcher should be available in your Start Menu.
 
   3. If Thunderspy (/coxg/) server is not listed,
 
      1. Go to the launcher's options menu
+
      2. Add the link to this manifest: <https://thunderspy.net/manifest/live.xml>
+
+  4. Download and validate the game files with the Sweet Tea launcher
+
+  5. Launch the game
+
+  6. Create a new account using the in-game form
+
+  7. Log in!
