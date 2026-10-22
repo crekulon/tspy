@@ -1,4 +1,0 @@
-account:
-  create_account: /account.php
-  reset_password: /account.php
-  change_password: /account.php
